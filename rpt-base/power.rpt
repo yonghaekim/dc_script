@@ -1,0 +1,2254 @@
+Loading db file '/nethome/ykim816/syn-dpt/lib/gscl45nm.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_45_512_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_20_64_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_240_32_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_32_32_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_30_128_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_14_128_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_40_128_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_2_2048_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_11_128_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_12_256_freepdk45_TT_1p0V_25C_lib.db'
+Loading db file '/nethome/ykim816/syn-dpt/lib/sram_13_128_freepdk45_TT_1p0V_25C_lib.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : BoomTile
+Version: T-2022.03-SP1
+Date   : Fri Jul 29 23:38:03 2022
+****************************************
+
+
+Library(s) Used:
+
+    gscl45nm (File: /nethome/ykim816/syn-dpt/lib/gscl45nm.db)
+
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+BoomTile                                  1.275    1.668 1.49e+07   17.806 100.0
+  hellaCacheArb (HellaCacheArbiter)       0.000    0.000    0.000    0.000   0.0
+  ptw (PTW)                            1.60e-04 3.02e-02 2.30e+05    0.261   1.5
+    eq_450597 (PTW_DW01_cmp6_8_DW01_cmp6_51)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_450599 (PTW_DW01_cmp6_7_DW01_cmp6_50)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_450601 (PTW_DW01_cmp6_6_DW01_cmp6_49)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_450603 (PTW_DW01_cmp6_5_DW01_cmp6_48)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_450605 (PTW_DW01_cmp6_4_DW01_cmp6_47)
+                                          0.000    0.000 1.27e+03 1.27e-03   0.0
+    eq_450607 (PTW_DW01_cmp6_3_DW01_cmp6_46)
+                                          0.000    0.000 1.27e+03 1.27e-03   0.0
+    eq_450609 (PTW_DW01_cmp6_2_DW01_cmp6_45)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_450611 (PTW_DW01_cmp6_1_DW01_cmp6_44)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    srl_450700 (PTW_DW_rash_1_DW_rash_2)
+                                          0.000    0.000 7.61e+03 7.61e-03   0.0
+    sll_450707 (PTW_DW01_ash_1_DW01_ash_10)
+                                          0.000    0.000 1.38e+04 1.38e-02   0.1
+    sll_450712 (PTW_DW01_ash_0_DW01_ash_9)
+                                          0.000    0.000 1.39e+04 1.39e-02   0.1
+    srl_450726 (PTW_DW_rash_0_DW_rash_1)
+                                          0.000    0.000 7.61e+03 7.61e-03   0.0
+    lt_450808 (PTW_DW01_cmp2_15_DW01_cmp2_73)
+                                          0.000    0.000  702.842 7.03e-04   0.0
+    lt_450838 (PTW_DW01_cmp2_13_DW01_cmp2_71)
+                                          0.000    0.000  702.842 7.03e-04   0.0
+    lt_450864 (PTW_DW01_cmp2_11_DW01_cmp2_69)
+                                          0.000    0.000  702.842 7.03e-04   0.0
+    lt_450890 (PTW_DW01_cmp2_9_DW01_cmp2_67)
+                                          0.000    0.000  702.842 7.03e-04   0.0
+    lt_450916 (PTW_DW01_cmp2_7_DW01_cmp2_65)
+                                          0.000    0.000  702.842 7.03e-04   0.0
+    lt_450942 (PTW_DW01_cmp2_5_DW01_cmp2_63)
+                                          0.000    0.000  702.842 7.03e-04   0.0
+    lt_450968 (PTW_DW01_cmp2_3_DW01_cmp2_61)
+                                          0.000    0.000  702.842 7.03e-04   0.0
+    lt_450994 (PTW_DW01_cmp2_1_DW01_cmp2_59)
+                                          0.000    0.000  722.595 7.23e-04   0.0
+    r_pte_barrier (OptimizationBarrier_42)
+                                          0.000    0.000    0.000    0.000   0.0
+    state_barrier (OptimizationBarrier_41)
+                                          0.000    0.000    0.000    0.000   0.0
+    l2_tlb_ram (l2_tlb_ram)            4.90e-06 6.81e-03 2.37e+04 3.05e-02   0.2
+      l2_tlb_ram_ext (l2_tlb_ram_ext)  4.90e-06 6.81e-03 2.37e+04 3.05e-02   0.2
+        mem_0_0 (split_l2_tlb_ram_ext) 4.90e-06 6.81e-03 2.37e+04 3.05e-02   0.2
+    arb (Arbiter_20)                      0.000    0.000  461.386 4.61e-04   0.0
+  lsu (LSU)                            2.02e-04    0.131 1.30e+06    1.431   8.0
+    sll_408864 (LSU_DW01_ash_101_DW01_ash_113)
+                                          0.000    0.000  791.536 7.92e-04   0.0
+    sll_411616 (LSU_DW01_ash_100_DW01_ash_112)
+                                          0.000    0.000  678.911 6.79e-04   0.0
+    sll_414196 (LSU_DW01_ash_99_DW01_ash_111)
+                                          0.000    0.000  782.597 7.83e-04   0.0
+    sll_416055 (LSU_DW01_ash_98_DW01_ash_110)
+                                          0.000    0.000  730.754 7.31e-04   0.0
+    eq_419839 (LSU_DW01_cmp6_78_DW01_cmp6_130)
+                                          0.000    0.000 1.57e+03 1.57e-03   0.0
+    eq_420080 (LSU_DW01_cmp6_77_DW01_cmp6_129)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_420320 (LSU_DW01_cmp6_76_DW01_cmp6_128)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_420560 (LSU_DW01_cmp6_75_DW01_cmp6_127)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_420800 (LSU_DW01_cmp6_74_DW01_cmp6_126)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_421040 (LSU_DW01_cmp6_73_DW01_cmp6_125)
+                                          0.000    0.000 1.57e+03 1.57e-03   0.0
+    eq_421280 (LSU_DW01_cmp6_72_DW01_cmp6_124)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_421520 (LSU_DW01_cmp6_71_DW01_cmp6_123)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_421760 (LSU_DW01_cmp6_70_DW01_cmp6_122)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_422000 (LSU_DW01_cmp6_69_DW01_cmp6_121)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_422240 (LSU_DW01_cmp6_68_DW01_cmp6_120)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_422480 (LSU_DW01_cmp6_67_DW01_cmp6_119)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_422720 (LSU_DW01_cmp6_66_DW01_cmp6_118)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_422960 (LSU_DW01_cmp6_65_DW01_cmp6_117)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_423200 (LSU_DW01_cmp6_64_DW01_cmp6_116)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_423440 (LSU_DW01_cmp6_63_DW01_cmp6_115)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_423680 (LSU_DW01_cmp6_62_DW01_cmp6_114)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_423920 (LSU_DW01_cmp6_61_DW01_cmp6_113)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_424160 (LSU_DW01_cmp6_60_DW01_cmp6_112)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_424400 (LSU_DW01_cmp6_59_DW01_cmp6_111)
+                                          0.000    0.000 1.57e+03 1.57e-03   0.0
+    eq_424640 (LSU_DW01_cmp6_58_DW01_cmp6_110)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_424880 (LSU_DW01_cmp6_57_DW01_cmp6_109)
+                                          0.000    0.000 1.57e+03 1.57e-03   0.0
+    eq_425120 (LSU_DW01_cmp6_56_DW01_cmp6_108)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_425360 (LSU_DW01_cmp6_55_DW01_cmp6_107)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_425590 (LSU_DW01_cmp6_54_DW01_cmp6_106)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_425740 (LSU_DW01_cmp6_52_DW01_cmp6_104)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_425890 (LSU_DW01_cmp6_50_DW01_cmp6_102)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_426040 (LSU_DW01_cmp6_48_DW01_cmp6_100)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_426190 (LSU_DW01_cmp6_46_DW01_cmp6_98)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_426340 (LSU_DW01_cmp6_44_DW01_cmp6_96)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_426490 (LSU_DW01_cmp6_42_DW01_cmp6_94)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_426640 (LSU_DW01_cmp6_40_DW01_cmp6_92)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_426791 (LSU_DW01_cmp6_38_DW01_cmp6_90)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_426942 (LSU_DW01_cmp6_36_DW01_cmp6_88)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_427093 (LSU_DW01_cmp6_34_DW01_cmp6_86)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_427244 (LSU_DW01_cmp6_32_DW01_cmp6_84)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_427395 (LSU_DW01_cmp6_30_DW01_cmp6_82)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_427546 (LSU_DW01_cmp6_28_DW01_cmp6_80)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_427697 (LSU_DW01_cmp6_26_DW01_cmp6_78)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_427848 (LSU_DW01_cmp6_24_DW01_cmp6_76)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_427999 (LSU_DW01_cmp6_22_DW01_cmp6_74)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_428150 (LSU_DW01_cmp6_20_DW01_cmp6_72)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_428301 (LSU_DW01_cmp6_18_DW01_cmp6_70)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_428452 (LSU_DW01_cmp6_16_DW01_cmp6_68)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_428603 (LSU_DW01_cmp6_14_DW01_cmp6_66)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_428754 (LSU_DW01_cmp6_12_DW01_cmp6_64)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_428905 (LSU_DW01_cmp6_10_DW01_cmp6_62)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    eq_429056 (LSU_DW01_cmp6_8_DW01_cmp6_60)
+                                          0.000    0.000 1.22e+03 1.22e-03   0.0
+    forwarding_age_logic_0 (ForwardingAgeLogic)
+                                          0.000    0.000  867.299 8.67e-04   0.0
+    dtlb (NBDTLB)                      8.97e-06 1.32e-02 1.13e+05    0.126   0.7
+      normal_entries_barrier_7 (OptimizationBarrier_14_0)
+                                          0.000    0.000    0.000    0.000   0.0
+      normal_entries_barrier_6 (OptimizationBarrier_14_1)
+                                          0.000    0.000    0.000    0.000   0.0
+      normal_entries_barrier_5 (OptimizationBarrier_14_2)
+                                          0.000    0.000    0.000    0.000   0.0
+      normal_entries_barrier_4 (OptimizationBarrier_14_3)
+                                          0.000    0.000    0.000    0.000   0.0
+      normal_entries_barrier_3 (OptimizationBarrier_14_4)
+                                          0.000    0.000    0.000    0.000   0.0
+      normal_entries_barrier_2 (OptimizationBarrier_14_5)
+                                          0.000    0.000    0.000    0.000   0.0
+      normal_entries_barrier_1 (OptimizationBarrier_14_6)
+                                          0.000    0.000    0.000    0.000   0.0
+      normal_entries_barrier (OptimizationBarrier_14_7)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_8 (OptimizationBarrier_14_8)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_7 (OptimizationBarrier_14_9)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_6 (OptimizationBarrier_14_10)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_5 (OptimizationBarrier_14_11)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_4 (OptimizationBarrier_14_12)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_3 (OptimizationBarrier_14_13)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_2 (OptimizationBarrier_14_14)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_1 (OptimizationBarrier_14_15)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier (OptimizationBarrier_14_16)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_8 (OptimizationBarrier_14_17)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_7 (OptimizationBarrier_14_18)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_6 (OptimizationBarrier_14_19)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_5 (OptimizationBarrier_14_20)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_4 (OptimizationBarrier_14_21)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_3 (OptimizationBarrier_14_22)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_2 (OptimizationBarrier_14_23)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier_1 (OptimizationBarrier_14_24)
+                                          0.000    0.000    0.000    0.000   0.0
+      ppn_data_barrier (OptimizationBarrier_14_25)
+                                          0.000    0.000    0.000    0.000   0.0
+      pmp_0 (PMPChecker_1)             2.56e-08 5.95e-08 1.91e+04 1.91e-02   0.1
+        lt_401576 (PMPChecker_1_DW01_cmp2_7_DW01_cmp2_227)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+        lt_401583 (PMPChecker_1_DW01_cmp2_6_DW01_cmp2_226)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+        lt_401619 (PMPChecker_1_DW01_cmp2_5_DW01_cmp2_225)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+        lt_401659 (PMPChecker_1_DW01_cmp2_4_DW01_cmp2_224)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+        lt_401699 (PMPChecker_1_DW01_cmp2_3_DW01_cmp2_223)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+        lt_401739 (PMPChecker_1_DW01_cmp2_2_DW01_cmp2_222)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+        lt_401779 (PMPChecker_1_DW01_cmp2_1_DW01_cmp2_221)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+        lt_401819 (PMPChecker_1_DW01_cmp2_0_DW01_cmp2_220)
+                                          0.000    0.000  616.157 6.16e-04   0.0
+      mpu_ppn_data_barrier (OptimizationBarrier_14_26)
+                                          0.000    0.000    0.000    0.000   0.0
+  core (BoomCore)                      1.32e-03    0.751 8.01e+06    8.762  49.2
+    add_0_root_sub_0_root_sub_400432 (BoomCore_DW01_add_3_DW01_add_111)
+                                          0.000    0.000 1.35e+03 1.35e-03   0.0
+    add_0_root_add_0_root_add_395810 (BoomCore_DW01_add_1_DW01_add_109)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    add_1_root_add_0_root_add_395810 (BoomCore_DW01_add_2_DW01_add_110)
+                                          0.000    0.000 1.59e+03 1.59e-03   0.0
+    add_400597 (BoomCore_DW01_add_10_DW01_add_140)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400593 (BoomCore_DW01_add_11_DW01_add_142)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400589 (BoomCore_DW01_add_9_DW01_add_138)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_0_root_add_0_root_add_395790_aco (BoomCore_DW01_add_4_DW01_add_112)
+                                       6.77e-10 3.84e-09 1.55e+03 1.55e-03   0.0
+    add_400594 (BoomCore_DW01_add_13_DW01_add_146)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400590 (BoomCore_DW01_add_14_DW01_add_148)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400586 (BoomCore_DW01_add_12_DW01_add_144)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400596 (BoomCore_DW01_add_7_DW01_add_134)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400592 (BoomCore_DW01_add_8_DW01_add_136)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400588 (BoomCore_DW01_add_6_DW01_add_132)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400595 (BoomCore_DW01_add_16_DW01_add_152)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400591 (BoomCore_DW01_add_17_DW01_add_154)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_400587 (BoomCore_DW01_add_15_DW01_add_150)
+                                          0.000    0.000 3.85e+03 3.85e-03   0.0
+    add_395804 (BoomCore_DW01_add_0_DW01_add_3)
+                                          0.000    0.000 2.33e+03 2.33e-03   0.0
+    eq_395822 (BoomCore_DW01_cmp6_0_DW01_cmp6_167)
+                                          0.000    0.000 1.50e+03 1.50e-03   0.0
+    ftq_arb (Arbiter_19)               1.85e-08 1.06e-08   99.815 9.98e-05   0.0
+    csr (CSRFile)                      9.18e-05 1.72e-02 1.46e+05    0.163   0.9
+      srl_390452 (CSRFile_DW_rash_0_DW_rash_33)
+                                       1.34e-08 1.56e-08  410.934 4.11e-04   0.0
+      add_390543 (CSRFile_DW01_inc_9_DW01_inc_135)
+                                          0.000    0.000 2.71e+03 2.71e-03   0.0
+      add_390553 (CSRFile_DW01_inc_8_DW01_inc_134)
+                                          0.000    0.000 2.71e+03 2.71e-03   0.0
+      add_390629 (CSRFile_DW01_inc_7_DW01_inc_133)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+      add_390634 (CSRFile_DW01_inc_6_DW01_inc_132)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+      add_390639 (CSRFile_DW01_inc_5_DW01_inc_131)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+      add_390644 (CSRFile_DW01_inc_4_DW01_inc_130)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+      add_390649 (CSRFile_DW01_inc_3_DW01_inc_129)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+      add_390654 (CSRFile_DW01_inc_2_DW01_inc_128)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+      add_390659 (CSRFile_DW01_inc_1_DW01_inc_127)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+      add_390664 (CSRFile_DW01_inc_0_DW01_inc_126)
+                                          0.000    0.000 1.38e+03 1.38e-03   0.0
+    rob (Rob)                          6.82e-05    0.111 7.85e+05    0.896   5.0
+      rob_debug_inst_mem (rob_debug_inst_mem)
+                                          0.000 1.82e-03 3.88e+03 5.71e-03   0.0
+        rob_debug_inst_mem_ext (rob_debug_inst_mem_ext)
+                                          0.000 1.82e-03 3.88e+03 5.71e-03   0.0
+          mem_0_2 (split_rob_debug_inst_mem_ext_0)
+                                          0.000 6.08e-04 1.29e+03 1.90e-03   0.0
+          mem_0_1 (split_rob_debug_inst_mem_ext_1)
+                                          0.000 6.08e-04 1.29e+03 1.90e-03   0.0
+          mem_0_0 (split_rob_debug_inst_mem_ext_2)
+                                          0.000 6.08e-04 1.29e+03 1.90e-03   0.0
+    iregister_read (RegisterRead_1)    2.58e-06 2.14e-02 1.28e+05    0.150   0.8
+      rrd_decode_unit_3 (RegisterReadDecode_4)
+                                          0.000    0.000 1.39e+03 1.39e-03   0.0
+      rrd_decode_unit_2 (RegisterReadDecode_3)
+                                          0.000    0.000 1.25e+03 1.25e-03   0.0
+      rrd_decode_unit_1 (RegisterReadDecode_2)
+                                          0.000    0.000 1.45e+03 1.45e-03   0.0
+      rrd_decode_unit (RegisterReadDecode_1)
+                                          0.000    0.000  443.818 4.44e-04   0.0
+    ll_wbarb (Arbiter_18)              2.41e-09 5.44e-09  734.351 7.34e-04   0.0
+    iregfile (RegisterFileSynthesizable_1)
+                                          0.000 9.08e-02 1.18e+06    1.269   7.1
+    dispatcher (BasicDispatcher)       1.71e-08 3.79e-08  160.340 1.60e-04   0.0
+    int_issue_unit (IssueUnitCollapsing_2)
+                                       2.53e-04 6.73e-02 9.13e+05    0.981   5.5
+      add_0_root_add_11_root_add_332791 (IssueUnitCollapsing_2_DW01_add_0_DW01_add_199)
+                                          0.000    0.000  284.291 2.84e-04   0.0
+      slots_31 (IssueSlot_24_0)        7.86e-06 2.10e-03 1.90e+04 2.11e-02   0.1
+      slots_30 (IssueSlot_24_1)        7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_29 (IssueSlot_24_2)        7.89e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_28 (IssueSlot_24_3)        7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_27 (IssueSlot_24_4)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_26 (IssueSlot_24_5)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_25 (IssueSlot_24_6)        7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_24 (IssueSlot_24_7)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_23 (IssueSlot_24_8)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_22 (IssueSlot_24_9)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_21 (IssueSlot_24_10)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_20 (IssueSlot_24_11)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_19 (IssueSlot_24_12)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_18 (IssueSlot_24_13)       7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_17 (IssueSlot_24_14)       7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_16 (IssueSlot_24_15)       7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_15 (IssueSlot_24_16)       7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_14 (IssueSlot_24_17)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_13 (IssueSlot_24_18)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_12 (IssueSlot_24_19)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_11 (IssueSlot_24_20)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_10 (IssueSlot_24_21)       7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_9 (IssueSlot_24_22)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_8 (IssueSlot_24_23)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_7 (IssueSlot_24_24)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_6 (IssueSlot_24_25)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_5 (IssueSlot_24_26)        7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_4 (IssueSlot_24_27)        7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_3 (IssueSlot_24_28)        7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_2 (IssueSlot_24_29)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_1 (IssueSlot_24_30)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_0 (IssueSlot_24_31)        7.89e-06 2.10e-03 1.87e+04 2.09e-02   0.1
+    mem_issue_unit (IssueUnitCollapsing_1)
+                                       1.26e-04 3.37e-02 3.93e+05    0.427   2.4
+      slots_15 (IssueSlot_24_32)       7.85e-06 2.10e-03 1.90e+04 2.11e-02   0.1
+      slots_14 (IssueSlot_24_33)       7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_13 (IssueSlot_24_34)       7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_12 (IssueSlot_24_35)       7.88e-06 2.10e-03 1.87e+04 2.08e-02   0.1
+      slots_11 (IssueSlot_24_36)       7.88e-06 2.10e-03 1.88e+04 2.09e-02   0.1
+      slots_10 (IssueSlot_24_37)       7.88e-06 2.10e-03 1.88e+04 2.09e-02   0.1
+      slots_9 (IssueSlot_24_38)        7.88e-06 2.10e-03 1.88e+04 2.09e-02   0.1
+      slots_8 (IssueSlot_24_39)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_7 (IssueSlot_24_40)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_6 (IssueSlot_24_41)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_5 (IssueSlot_24_42)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_4 (IssueSlot_24_43)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_3 (IssueSlot_24_44)        7.88e-06 2.10e-03 1.88e+04 2.09e-02   0.1
+      slots_2 (IssueSlot_24_45)        7.88e-06 2.10e-03 1.88e+04 2.09e-02   0.1
+      slots_1 (IssueSlot_24_46)        7.88e-06 2.10e-03 1.89e+04 2.10e-02   0.1
+      slots_0 (IssueSlot_24_47)        7.88e-06 2.10e-03 1.86e+04 2.07e-02   0.1
+    fp_rename_stage (RenameStage_1)    2.13e-04 8.09e-02 7.81e+05    0.862   4.8
+      busytable (RenameBusyTable_1)    1.76e-05 1.37e-03 3.53e+04 3.67e-02   0.2
+        sll_313464 (RenameBusyTable_1_DW01_ash_4_DW01_ash_125)
+                                          0.000    0.000 2.34e+03 2.34e-03   0.0
+        sll_313468 (RenameBusyTable_1_DW01_ash_3_DW01_ash_124)
+                                          0.000    0.000 2.34e+03 2.34e-03   0.0
+        sll_313476 (RenameBusyTable_1_DW01_ash_2_DW01_ash_123)
+                                       3.51e-08 3.77e-08 2.40e+03 2.40e-03   0.0
+        sll_313480 (RenameBusyTable_1_DW01_ash_1_DW01_ash_122)
+                                       3.51e-08 3.51e-08 2.34e+03 2.34e-03   0.0
+        sll_313484 (RenameBusyTable_1_DW01_ash_0_DW01_ash_121)
+                                       3.79e-08 3.51e-08 2.34e+03 2.34e-03   0.0
+        srl_313491 (RenameBusyTable_1_DW_rash_8_DW_rash_43)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+        srl_313492 (RenameBusyTable_1_DW_rash_7_DW_rash_42)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+        srl_313493 (RenameBusyTable_1_DW_rash_6_DW_rash_41)
+                                          0.000    0.000 1.70e+03 1.70e-03   0.0
+        srl_313494 (RenameBusyTable_1_DW_rash_5_DW_rash_40)
+                                          0.000    0.000 1.68e+03 1.68e-03   0.0
+        srl_313495 (RenameBusyTable_1_DW_rash_4_DW_rash_39)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+        srl_313496 (RenameBusyTable_1_DW_rash_3_DW_rash_38)
+                                          0.000    0.000 1.73e+03 1.73e-03   0.0
+        srl_313497 (RenameBusyTable_1_DW_rash_2_DW_rash_37)
+                                          0.000    0.000 1.68e+03 1.68e-03   0.0
+        srl_313498 (RenameBusyTable_1_DW_rash_1_DW_rash_36)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+        srl_313499 (RenameBusyTable_1_DW_rash_0_DW_rash_35)
+                                          0.000    0.000 1.70e+03 1.70e-03   0.0
+      freelist (RenameFreeList_1)      1.37e-04 2.31e-02 1.81e+05    0.204   1.1
+        sll_312784 (RenameFreeList_1_DW01_ash_8_DW01_ash_134)
+                                       3.62e-08 3.39e-08 3.36e+03 3.36e-03   0.0
+        sll_312785 (RenameFreeList_1_DW01_ash_7_DW01_ash_133)
+                                       3.67e-08 3.51e-08 2.42e+03 2.42e-03   0.0
+        sll_312786 (RenameFreeList_1_DW01_ash_6_DW01_ash_132)
+                                       3.90e-08 3.51e-08 2.40e+03 2.40e-03   0.0
+        sll_312832 (RenameFreeList_1_DW01_ash_5_DW01_ash_131)
+                                          0.000    0.000 2.38e+03 2.38e-03   0.0
+        sll_312835 (RenameFreeList_1_DW01_ash_4_DW01_ash_130)
+                                          0.000    0.000 2.41e+03 2.41e-03   0.0
+        sll_312838 (RenameFreeList_1_DW01_ash_3_DW01_ash_129)
+                                          0.000    0.000 2.41e+03 2.41e-03   0.0
+      maptable (RenameMapTable_1)      5.71e-05 5.36e-02 5.35e+05    0.588   3.3
+        sll_301058 (RenameMapTable_1_DW01_ash_2_DW01_ash_137)
+                                       1.26e-08 1.02e-08 1.39e+03 1.39e-03   0.0
+        sll_301062 (RenameMapTable_1_DW01_ash_1_DW01_ash_136)
+                                       1.24e-08 1.02e-08 1.16e+03 1.16e-03   0.0
+        sll_301066 (RenameMapTable_1_DW01_ash_0_DW01_ash_135)
+                                       1.26e-08 1.02e-08 1.39e+03 1.39e-03   0.0
+    rename_stage (RenameStage)         2.35e-04 8.77e-02 8.04e+05    0.892   5.0
+      busytable (RenameBusyTable)      2.96e-05 1.47e-03 4.83e+04 4.98e-02   0.3
+        sll_297365 (RenameBusyTable_DW01_ash_9_DW01_ash_147)
+                                          0.000    0.000 2.54e+03 2.54e-03   0.0
+        sll_297369 (RenameBusyTable_DW01_ash_8_DW01_ash_146)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        sll_297373 (RenameBusyTable_DW01_ash_7_DW01_ash_145)
+                                          0.000    0.000 2.85e+03 2.85e-03   0.0
+        sll_297377 (RenameBusyTable_DW01_ash_6_DW01_ash_144)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        sll_297381 (RenameBusyTable_DW01_ash_5_DW01_ash_143)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        sll_297385 (RenameBusyTable_DW01_ash_4_DW01_ash_142)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        sll_297389 (RenameBusyTable_DW01_ash_3_DW01_ash_141)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        sll_297402 (RenameBusyTable_DW01_ash_2_DW01_ash_140)
+                                       5.40e-09 5.39e-09 2.46e+03 2.46e-03   0.0
+        sll_297406 (RenameBusyTable_DW01_ash_1_DW01_ash_139)
+                                       5.54e-09 5.62e-09 2.46e+03 2.46e-03   0.0
+        sll_297410 (RenameBusyTable_DW01_ash_0_DW01_ash_138)
+                                       5.97e-09 5.57e-09 2.46e+03 2.46e-03   0.0
+        srl_297417 (RenameBusyTable_DW_rash_5_DW_rash_49)
+                                          0.000    0.000 1.75e+03 1.75e-03   0.0
+        srl_297418 (RenameBusyTable_DW_rash_4_DW_rash_48)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+        srl_297419 (RenameBusyTable_DW_rash_3_DW_rash_47)
+                                          0.000    0.000 1.75e+03 1.75e-03   0.0
+        srl_297420 (RenameBusyTable_DW_rash_2_DW_rash_46)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+        srl_297421 (RenameBusyTable_DW_rash_1_DW_rash_45)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+        srl_297422 (RenameBusyTable_DW_rash_0_DW_rash_44)
+                                          0.000    0.000 1.74e+03 1.74e-03   0.0
+      freelist (RenameFreeList)        1.41e-04 2.41e-02 1.84e+05    0.208   1.2
+        sll_296677 (RenameFreeList_DW01_ash_8_DW01_ash_156)
+                                       3.62e-08 3.20e-08 2.90e+03 2.90e-03   0.0
+        sll_296678 (RenameFreeList_DW01_ash_7_DW01_ash_155)
+                                       3.63e-08 3.35e-08 2.52e+03 2.52e-03   0.0
+        sll_296679 (RenameFreeList_DW01_ash_6_DW01_ash_154)
+                                       3.94e-08 3.41e-08 2.54e+03 2.54e-03   0.0
+        sll_296725 (RenameFreeList_DW01_ash_5_DW01_ash_153)
+                                          0.000    0.000 2.43e+03 2.43e-03   0.0
+        sll_296728 (RenameFreeList_DW01_ash_4_DW01_ash_152)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        sll_296731 (RenameFreeList_DW01_ash_3_DW01_ash_151)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+      maptable (RenameMapTable)        5.47e-05 5.19e-02 5.09e+05    0.561   3.2
+        sll_285370 (RenameMapTable_DW01_ash_2_DW01_ash_159)
+                                       1.15e-08 9.06e-09 1.30e+03 1.30e-03   0.0
+        sll_285374 (RenameMapTable_DW01_ash_1_DW01_ash_158)
+                                       1.16e-08 9.06e-09 1.09e+03 1.09e-03   0.0
+        sll_285378 (RenameMapTable_DW01_ash_0_DW01_ash_157)
+                                       1.15e-08 9.06e-09 1.34e+03 1.34e-03   0.0
+    dec_brmask_logic (BranchMaskGenerationLogic)
+                                       2.41e-06 2.26e-04 4.29e+03 4.52e-03   0.0
+    decode_units_2 (DecodeUnit_0)      1.10e-05 2.72e-06 4.89e+03 4.90e-03   0.0
+    decode_units_1 (DecodeUnit_1)      1.09e-05 2.65e-06 4.89e+03 4.90e-03   0.0
+    decode_units_0 (DecodeUnit_2)      1.09e-05 2.65e-06 4.87e+03 4.88e-03   0.0
+    fp_pipeline (FpPipeline)           1.58e-04    0.192 2.14e+06    2.330  13.1
+      sll_282381 (FpPipeline_DW01_ash_1_DW01_ash_161)
+                                          0.000    0.000 5.71e+03 5.71e-03   0.0
+      sll_282461 (FpPipeline_DW01_ash_0_DW01_ash_160)
+                                          0.000    0.000 2.12e+03 2.12e-03   0.0
+      ll_wbarb (Arbiter_16_1)          1.83e-09 5.42e-09 1.11e+03 1.11e-03   0.0
+      fregister_read (RegisterRead)    3.85e-07 5.01e-03 2.52e+04 3.02e-02   0.2
+        rrd_decode_unit (RegisterReadDecode)
+                                          0.000    0.000  553.345 5.53e-04   0.0
+      fregfile (RegisterFileSynthesizable)
+                                          0.000 8.81e-02 7.97e+05    0.885   5.0
+      fp_issue_unit (IssueUnitCollapsing)
+                                       1.44e-04 3.72e-02 3.87e+05    0.424   2.4
+        slots_23 (IssueSlot_0)         5.98e-06 1.55e-03 1.15e+04 1.30e-02   0.1
+        slots_22 (IssueSlot_1)         5.98e-06 1.55e-03 1.13e+04 1.28e-02   0.1
+        slots_21 (IssueSlot_2)         5.98e-06 1.55e-03 1.13e+04 1.28e-02   0.1
+        slots_20 (IssueSlot_3)         6.02e-06 1.55e-03 1.13e+04 1.29e-02   0.1
+        slots_19 (IssueSlot_4)         6.02e-06 1.55e-03 1.13e+04 1.29e-02   0.1
+        slots_18 (IssueSlot_5)         6.02e-06 1.55e-03 1.13e+04 1.29e-02   0.1
+        slots_17 (IssueSlot_6)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_16 (IssueSlot_7)         6.02e-06 1.55e-03 1.13e+04 1.29e-02   0.1
+        slots_15 (IssueSlot_8)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_14 (IssueSlot_9)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_13 (IssueSlot_10)        6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_12 (IssueSlot_11)        6.02e-06 1.55e-03 1.13e+04 1.29e-02   0.1
+        slots_11 (IssueSlot_12)        6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_10 (IssueSlot_13)        6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_9 (IssueSlot_14)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_8 (IssueSlot_15)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_7 (IssueSlot_16)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_6 (IssueSlot_17)         6.02e-06 1.55e-03 1.13e+04 1.29e-02   0.1
+        slots_5 (IssueSlot_18)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_4 (IssueSlot_19)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_3 (IssueSlot_20)         6.02e-06 1.55e-03 1.13e+04 1.29e-02   0.1
+        slots_2 (IssueSlot_21)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_1 (IssueSlot_22)         6.02e-06 1.55e-03 1.14e+04 1.29e-02   0.1
+        slots_0 (IssueSlot_23)         6.02e-06 1.55e-03 1.13e+04 1.28e-02   0.1
+      fpiu_unit (FPUExeUnit)           8.42e-06 6.06e-02 9.12e+05    0.972   5.5
+        srl_273458 (FPUExeUnit_DW_rash_1_DW_rash_51)
+                                          0.000    0.000 3.19e+03 3.19e-03   0.0
+        srl_273498 (FPUExeUnit_DW_rash_0_DW_rash_50)
+                                          0.000    0.000 1.36e+03 1.36e-03   0.0
+        resp_arb (Arbiter_16_0)        2.62e-09 5.54e-09 1.11e+03 1.11e-03   0.0
+        fp_sdq (BranchKillableQueue_7) 3.03e-06 4.84e-03 3.14e+04 3.62e-02   0.2
+        queue (BranchKillableQueue_6)  2.98e-06 1.25e-02 7.84e+04 9.09e-02   0.5
+        fdivsqrt (FDivSqrtUnit)        7.92e-07 1.80e-02 3.16e+05    0.334   1.9
+          downvert_d2s (RecFNToRecFN_2)
+                                          0.000    0.000 6.22e+03 6.22e-03   0.0
+            roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_4_1)
+                                          0.000    0.000 6.16e+03 6.16e-03   0.0
+              add_267790 (RoundAnyRawFNToRecFN_4_1_DW01_inc_0_DW01_inc_139)
+                                          0.000    0.000 1.11e+03 1.11e-03   0.0
+          divsqrt (DivSqrtRecF64)      6.32e-07 1.35e-02 2.79e+05    0.292   1.6
+            mul (Mul54)                   0.000 4.54e-03 1.92e+05    0.197   1.1
+              add_270543 (Mul54_DW01_add_0_DW01_add_116)
+                                          0.000    0.000 4.14e+03 4.14e-03   0.0
+              mult_270542 (Mul54_DW02_mult_0_DW02_mult_3)
+                                          0.000    0.000 1.65e+05    0.165   0.9
+            ds (DivSqrtRecF64_mulAddZ31)
+                                       6.32e-07 8.94e-03 8.69e+04 9.58e-02   0.5
+              roundRawFNToRecFN (RoundRawFNToRecFN_2)
+                                          0.000    0.000 1.13e+04 1.13e-02   0.1
+                roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_7)
+                                          0.000    0.000 1.13e+04 1.13e-02   0.1
+                  add_270271 (RoundAnyRawFNToRecFN_7_DW01_inc_0_DW01_inc_140)
+                                          0.000    0.000 2.49e+03 2.49e-03   0.0
+              divSqrtRecF64ToRaw (DivSqrtRecF64ToRaw_mulAddZ31)
+                                       6.32e-07 8.94e-03 7.56e+04 8.45e-02   0.5
+                add_269547 (DivSqrtRecF64ToRaw_mulAddZ31_DW01_add_4_DW01_add_130)
+                                          0.000    0.000  736.281 7.36e-04   0.0
+                mult_269546 (DivSqrtRecF64ToRaw_mulAddZ31_DW02_mult_0_DW02_mult_4)
+                                          0.000    0.000 5.46e+03 5.46e-03   0.0
+                add_269321 (DivSqrtRecF64ToRaw_mulAddZ31_DW01_add_3_DW01_add_14)
+                                          0.000    0.000  597.974 5.98e-04   0.0
+                add_269548 (DivSqrtRecF64ToRaw_mulAddZ31_DW01_inc_2_DW01_inc_143)
+                                          0.000    0.000  284.715 2.85e-04   0.0
+                add_269699 (DivSqrtRecF64ToRaw_mulAddZ31_DW01_inc_1_DW01_inc_142)
+                                          0.000    0.000  570.105 5.70e-04   0.0
+                add_269700 (DivSqrtRecF64ToRaw_mulAddZ31_DW01_inc_0_DW01_inc_141)
+                                          0.000    0.000 2.52e+03 2.52e-03   0.0
+          in2_upconvert_s2d (RecFNToRecFN_1_0)
+                                          0.000    0.000  777.311 7.77e-04   0.0
+            roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_5_0)
+                                          0.000    0.000  719.719 7.20e-04   0.0
+          in1_upconvert_s2d (RecFNToRecFN_1_1)
+                                          0.000    0.000  766.507 7.67e-04   0.0
+            roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_5_1)
+                                          0.000    0.000  708.915 7.09e-04   0.0
+          fdiv_decoder (UOPCodeFDivDecoder)
+                                          0.000    0.000   32.026 3.20e-05   0.0
+        fpu (FPUUnit)                  1.63e-06 2.52e-02 4.76e+05    0.502   2.8
+          fpu (FPU)                    8.42e-07 2.19e-02 4.61e+05    0.483   2.7
+            fpmu (FPToFP)                 0.000 4.94e-03 3.63e+04 4.12e-02   0.2
+              narrower (RecFNToRecFN_0)
+                                          0.000    0.000 6.85e+03 6.85e-03   0.0
+                roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_4_0)
+                                          0.000    0.000 6.79e+03 6.79e-03   0.0
+                  add_267790 (RoundAnyRawFNToRecFN_4_0_DW01_inc_0_DW01_inc_144)
+                                          0.000    0.000 1.11e+03 1.11e-03   0.0
+            fpiu_io_in_bits_fma_decoder (FMADecoder_0)
+                                          0.000    0.000  105.348 1.05e-04   0.0
+            fpiu (FPToInt)                0.000 1.95e-03 4.55e+04 4.74e-02   0.3
+              srl_267463 (FPToInt_DW_rash_1_DW_rash_56)
+                                          0.000    0.000 3.19e+03 3.19e-03   0.0
+              srl_267486 (FPToInt_DW_rash_0_DW_rash_55)
+                                          0.000    0.000 1.36e+03 1.36e-03   0.0
+              narrow (RecFNToIN_1)        0.000    0.000 7.34e+03 7.34e-03   0.0
+                sll_267367 (RecFNToIN_1_DW01_ash_0_DW01_ash_162)
+                                          0.000    0.000 6.24e+03 6.24e-03   0.0
+              conv (RecFNToIN)            0.000    0.000 1.63e+04 1.63e-02   0.1
+                sll_267291 (RecFNToIN_DW01_ash_0_DW01_ash_163)
+                                          0.000    0.000 8.15e+03 8.15e-03   0.0
+                add_267309 (RecFNToIN_DW01_inc_0_DW01_inc_145)
+                                          0.000    0.000 3.00e+03 3.00e-03   0.0
+              dcmp (CompareRecFN)         0.000    0.000 2.37e+03 2.37e-03   0.0
+                r58 (CompareRecFN_DW01_cmp6_0_DW01_cmp6_1574)
+                                          0.000    0.000 1.69e+03 1.69e-03   0.0
+            sfma_io_in_bits_fma_decoder (FMADecoder_1)
+                                          0.000    0.000  125.102 1.25e-04   0.0
+            sfma (FPUFMAPipe_1)           0.000 4.22e-03 8.75e+04 9.17e-02   0.5
+              fma (MulAddRecFNPipe_1)     0.000 2.19e-03 7.81e+04 8.03e-02   0.5
+                add_266719 (MulAddRecFNPipe_1_DW01_add_0_DW01_add_168)
+                                          0.000    0.000 1.90e+03 1.90e-03   0.0
+                mult_266718 (MulAddRecFNPipe_1_DW02_mult_0_DW02_mult_5)
+                                          0.000    0.000 3.39e+04 3.39e-02   0.2
+                roundRawFNToRecFN (RoundRawFNToRecFN_1)
+                                          0.000    0.000 5.96e+03 5.96e-03   0.0
+                  roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_3)
+                                          0.000    0.000 5.96e+03 5.96e-03   0.0
+                    add_266495 (RoundAnyRawFNToRecFN_3_DW01_inc_0_DW01_inc_146)
+                                          0.000    0.000 1.14e+03 1.14e-03   0.0
+                mulAddRecFNToRaw_postMul (MulAddRecFNToRaw_postMul_1)
+                                          0.000    0.000 1.92e+04 1.92e-02   0.1
+                  add_266254 (MulAddRecFNToRaw_postMul_1_DW01_inc_0_DW01_inc_147)
+                                          0.000    0.000 1.19e+03 1.19e-03   0.0
+                  sll_266268 (MulAddRecFNToRaw_postMul_1_DW01_ash_1_DW01_ash_165)
+                                          0.000    0.000 4.49e+03 4.49e-03   0.0
+                  add_266294 (MulAddRecFNToRaw_postMul_1_DW01_add_0_DW01_add_21)
+                                          0.000    0.000 3.08e+03 3.08e-03   0.0
+                  sll_266368 (MulAddRecFNToRaw_postMul_1_DW01_ash_0_DW01_ash_164)
+                                          0.000    0.000 4.47e+03 4.47e-03   0.0
+                mulAddRecFNToRaw_preMul (MulAddRecFNToRaw_preMul_1)
+                                          0.000    0.000 6.94e+03 6.94e-03   0.0
+                  add_0_root_sub_0_root_sub_266163 (MulAddRecFNToRaw_preMul_1_DW01_add_0_DW01_add_106)
+                                          0.000    0.000  480.343 4.80e-04   0.0
+                  sub_266166 (MulAddRecFNToRaw_preMul_1_DW01_sub_1_DW01_sub_16)
+                                          0.000    0.000  446.784 4.47e-04   0.0
+            dfma_io_in_bits_fma_decoder (FMADecoder_2)
+                                          0.000    0.000  125.102 1.25e-04   0.0
+            dfma (FPUFMAPipe)             0.000 7.75e-03 2.66e+05    0.274   1.5
+              fma (MulAddRecFNPipe)       0.000 3.92e-03 2.48e+05    0.252   1.4
+                add_265588 (MulAddRecFNPipe_DW01_add_0_DW01_add_170)
+                                          0.000    0.000 4.19e+03 4.19e-03   0.0
+                mult_265587 (MulAddRecFNPipe_DW02_mult_0_DW02_mult_6)
+                                          0.000    0.000 1.60e+05    0.160   0.9
+                roundRawFNToRecFN (RoundRawFNToRecFN)
+                                          0.000    0.000 1.05e+04 1.05e-02   0.1
+                  roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_2)
+                                          0.000    0.000 1.05e+04 1.05e-02   0.1
+                    add_265364 (RoundAnyRawFNToRecFN_2_DW01_inc_0_DW01_inc_148)
+                                          0.000    0.000 2.52e+03 2.52e-03   0.0
+                mulAddRecFNToRaw_postMul (MulAddRecFNToRaw_postMul)
+                                          0.000    0.000 4.48e+04 4.48e-02   0.3
+                  add_264954 (MulAddRecFNToRaw_postMul_DW01_inc_0_DW01_inc_149)
+                                          0.000    0.000 2.57e+03 2.57e-03   0.0
+                  sll_264968 (MulAddRecFNToRaw_postMul_DW01_ash_1_DW01_ash_167)
+                                          0.000    0.000 1.16e+04 1.16e-02   0.1
+                  add_265019 (MulAddRecFNToRaw_postMul_DW01_add_0_DW01_add_23)
+                                          0.000    0.000 6.61e+03 6.61e-03   0.0
+                  sll_265168 (MulAddRecFNToRaw_postMul_DW01_ash_0_DW01_ash_166)
+                                          0.000    0.000 1.16e+04 1.16e-02   0.1
+                mulAddRecFNToRaw_preMul (MulAddRecFNToRaw_preMul)
+                                          0.000    0.000 1.13e+04 1.13e-02   0.1
+                  add_0_root_sub_0_root_sub_264839 (MulAddRecFNToRaw_preMul_DW01_add_0_DW01_add_107)
+                                          0.000    0.000  597.974 5.98e-04   0.0
+                  sub_264842 (MulAddRecFNToRaw_preMul_DW01_sub_1_DW01_sub_20)
+                                          0.000    0.000  569.640 5.70e-04   0.0
+            fp_decoder (UOPCodeFPUDecoder_0)
+                                          0.000    0.000  691.585 6.92e-04   0.0
+    alu_exe_unit (ALUExeUnit_3)        2.58e-06 9.44e-03 3.04e+05    0.313   1.8
+      imul (PipelinedMulUnit)          6.13e-07 5.19e-03 2.65e+05    0.270   1.5
+        imul (PipelinedMultiplier)        0.000 3.67e-03 2.58e+05    0.261   1.5
+          mult_264038 (PipelinedMultiplier_DW02_mult_0_DW02_mult_1)
+                                          0.000    0.000 2.39e+05    0.239   1.3
+      alu (ALUUnit_2)                  1.96e-06 4.25e-03 3.82e+04 4.24e-02   0.2
+        r83 (ALUUnit_2_DW01_cmp6_0_DW01_cmp6_1576)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        alu (ALU_0)                    2.17e-07 1.93e-08 1.40e+04 1.40e-02   0.1
+          sra_259194 (ALU_0_DW_rash_0_DW_rash_67)
+                                          0.000    0.000 4.01e+03 4.01e-03   0.0
+          add_1_root_add_259243 (ALU_0_DW01_add_0_DW01_add_24)
+                                          0.000    0.000 2.51e+03 2.51e-03   0.0
+    csr_exe_unit (ALUExeUnit_2)        5.08e-06 1.41e-02 1.57e+05    0.171   1.0
+      queue (BranchKillableQueue_5)    3.11e-06 8.96e-03 6.31e+04 7.21e-02   0.4
+      ifpu (IntToFPUnit)               5.89e-07 3.40e-03 6.60e+04 6.94e-02   0.4
+        ifpu (IntToFP)                    0.000 2.01e-03 5.81e+04 6.01e-02   0.3
+          sll_261534 (IntToFP_DW01_ash_1_DW01_ash_169)
+                                          0.000    0.000 5.74e+03 5.74e-03   0.0
+          sll_261585 (IntToFP_DW01_ash_0_DW01_ash_168)
+                                          0.000    0.000 2.07e+03 2.07e-03   0.0
+          i2f_1 (INToRecFN_1)             0.000    0.000 1.77e+04 1.77e-02   0.1
+            sub_261284 (INToRecFN_1_DW01_sub_0_DW01_sub_21)
+                                          0.000    0.000 3.91e+03 3.91e-03   0.0
+            sll_261413 (INToRecFN_1_DW01_ash_0_DW01_ash_170)
+                                          0.000    0.000 7.34e+03 7.34e-03   0.0
+            roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN_1)
+                                          0.000    0.000 3.92e+03 3.92e-03   0.0
+              add_261243 (RoundAnyRawFNToRecFN_1_DW01_inc_0_DW01_inc_150)
+                                          0.000    0.000 2.49e+03 2.49e-03   0.0
+          i2f (INToRecFN)                 0.000    0.000 1.61e+04 1.61e-02   0.1
+            sub_261064 (INToRecFN_DW01_sub_0_DW01_sub_22)
+                                          0.000    0.000 3.91e+03 3.91e-03   0.0
+            sll_261193 (INToRecFN_DW01_ash_0_DW01_ash_171)
+                                          0.000    0.000 7.33e+03 7.33e-03   0.0
+            roundAnyRawFNToRecFN (RoundAnyRawFNToRecFN)
+                                          0.000    0.000 2.33e+03 2.33e-03   0.0
+              add_261023 (RoundAnyRawFNToRecFN_DW01_inc_0_DW01_inc_151)
+                                          0.000    0.000 1.11e+03 1.11e-03   0.0
+        fp_decoder (UOPCodeFPUDecoder_1)
+                                          0.000    0.000  702.158 7.02e-04   0.0
+      alu (ALUUnit_1)                  1.37e-06 1.73e-03 2.74e+04 2.91e-02   0.2
+        r79 (ALUUnit_1_DW01_cmp6_0_DW01_cmp6_1577)
+                                          0.000    0.000 2.46e+03 2.46e-03   0.0
+        alu (ALU_1)                    7.73e-07 2.84e-07 1.40e+04 1.40e-02   0.1
+          sra_259194 (ALU_1_DW_rash_0_DW_rash_68)
+                                       5.26e-07 2.13e-07 4.01e+03 4.01e-03   0.0
+          add_1_root_add_259243 (ALU_1_DW01_add_0_DW01_add_27)
+                                       3.61e-09 1.79e-08 2.51e+03 2.51e-03   0.0
+    jmp_unit (ALUExeUnit_1)            2.40e-06 4.84e-03 9.89e+04    0.104   0.6
+      div (DivUnit)                    1.51e-06 3.43e-03 6.42e+04 6.77e-02   0.4
+        div (MulDiv)                   1.49e-06 2.94e-03 6.12e+04 6.41e-02   0.4
+          add_259630 (MulDiv_DW01_add_0_DW01_add_100)
+                                          0.000    0.000 2.61e+03 2.61e-03   0.0
+          mult_259628 (MulDiv_DW02_mult_0)
+                                          0.000    0.000 1.84e+04 1.84e-02   0.1
+          sub_259615 (MulDiv_DW01_sub_2_DW01_sub_25)
+                                          0.000    0.000 2.67e+03 2.67e-03   0.0
+          sub_259617 (MulDiv_DW01_sub_1_DW01_sub_24)
+                                          0.000    0.000 3.92e+03 3.92e-03   0.0
+          add_259636 (MulDiv_DW01_inc_0_DW01_inc_152)
+                                          0.000    0.000  284.715 2.85e-04   0.0
+          sub_259863 (MulDiv_DW01_sub_0_DW01_sub_23)
+                                          0.000    0.000  250.225 2.50e-04   0.0
+          sll_259867 (MulDiv_DW01_ash_0_DW01_ash_172)
+                                          0.000    0.000 9.60e+03 9.60e-03   0.1
+      alu (ALUUnit)                    8.91e-07 1.41e-03 3.38e+04 3.52e-02   0.2
+        r97 (ALUUnit_DW01_cmp6_3_DW01_cmp6_1581)
+                                          0.000    0.000 2.50e+03 2.50e-03   0.0
+        sub_259376 (ALUUnit_DW01_sub_0_DW01_sub_26)
+                                          0.000    0.000 1.69e+03 1.69e-03   0.0
+        add_259421 (ALUUnit_DW01_add_1_DW01_add_29)
+                                          0.000    0.000 1.54e+03 1.54e-03   0.0
+        add_259422 (ALUUnit_DW01_add_0_DW01_add_28)
+                                          0.000    0.000 1.57e+03 1.57e-03   0.0
+        ne_259431 (ALUUnit_DW01_cmp6_0_DW01_cmp6_1578)
+                                          0.000    0.000 1.66e+03 1.66e-03   0.0
+        alu (ALU_2)                    2.11e-07 1.99e-08 1.36e+04 1.36e-02   0.1
+          sra_259194 (ALU_2_DW_rash_0_DW_rash_69)
+                                          0.000    0.000 4.01e+03 4.01e-03   0.0
+          add_1_root_add_259243 (ALU_2_DW01_add_0_DW01_add_30)
+                                          0.000    0.000 2.51e+03 2.51e-03   0.0
+    mem_units_0 (ALUExeUnit)              0.000    0.000 3.60e+03 3.60e-03   0.0
+      maddrcalc (MemAddrCalcUnit)         0.000    0.000 3.59e+03 3.59e-03   0.0
+        add_258740 (MemAddrCalcUnit_DW01_add_0_DW01_add_31)
+                                          0.000    0.000 2.53e+03 2.53e-03   0.0
+  frontend (BoomFrontend)                 1.055    0.582 4.16e+06    5.796  32.6
+    add_0_root_add_0_root_add_256921 (BoomFrontend_DW01_add_17_DW01_add_173)
+                                          0.000    0.000 2.33e+03 2.33e-03   0.0
+    add_1_root_add_0_root_add_256921 (BoomFrontend_DW01_add_18_DW01_add_174)
+                                          0.000    0.000 2.23e+03 2.23e-03   0.0
+    add_256416 (BoomFrontend_DW01_add_15_DW01_add_47)
+                                       4.52e-06 1.37e-05 2.21e+03 2.23e-03   0.0
+    r806 (BoomFrontend_DW01_cmp6_13_DW01_cmp6_1596)
+                                       7.38e-06 1.79e-05 1.58e+03 1.61e-03   0.0
+    add_256267 (BoomFrontend_DW01_add_14_DW01_add_46)
+                                          0.000    0.000 2.21e+03 2.21e-03   0.0
+    r808 (BoomFrontend_DW01_cmp6_12_DW01_cmp6_1595)
+                                       1.58e-06 8.66e-06 1.54e+03 1.55e-03   0.0
+    r809 (BoomFrontend_DW01_cmp6_11_DW01_cmp6_1594)
+                                       1.57e-06 6.80e-06 1.54e+03 1.55e-03   0.0
+    r825 (BoomFrontend_DW01_add_13_DW01_add_45)
+                                          0.000    0.000 2.17e+03 2.17e-03   0.0
+    r847 (BoomFrontend_DW01_sub_3_DW01_sub_30)
+                                          0.000    0.000 1.56e+03 1.56e-03   0.0
+    sub_258140 (BoomFrontend_DW01_sub_2_DW01_sub_29)
+                                          0.000    0.000 1.56e+03 1.56e-03   0.0
+    add_258166 (BoomFrontend_DW01_add_12_DW01_add_44)
+                                          0.000    0.000 2.17e+03 2.17e-03   0.0
+    add_258163 (BoomFrontend_DW01_add_11_DW01_add_43)
+                                          0.000    0.000 2.17e+03 2.17e-03   0.0
+    eq_256346 (BoomFrontend_DW01_cmp6_10_DW01_cmp6_1593)
+                                       1.63e-07 5.69e-07 2.55e+03 2.55e-03   0.0
+    eq_256504 (BoomFrontend_DW01_cmp6_9_DW01_cmp6_1592)
+                                       1.89e-07 6.69e-07 2.78e+03 2.78e-03   0.0
+    eq_256518 (BoomFrontend_DW01_cmp6_8_DW01_cmp6_1591)
+                                       1.59e-07 5.74e-07 2.49e+03 2.49e-03   0.0
+    add_256602 (BoomFrontend_DW01_add_7_DW01_add_39)
+                                       4.40e-06 1.48e-05 2.21e+03 2.23e-03   0.0
+    ne_256779 (BoomFrontend_DW01_cmp6_7_DW01_cmp6_1590)
+                                       3.37e-06 1.26e-05 1.64e+03 1.65e-03   0.0
+    ne_256795 (BoomFrontend_DW01_cmp6_6_DW01_cmp6_1589)
+                                       3.38e-06 1.12e-05 1.62e+03 1.63e-03   0.0
+    ne_256805 (BoomFrontend_DW01_cmp6_5_DW01_cmp6_1588)
+                                       3.37e-06 1.26e-05 1.62e+03 1.63e-03   0.0
+    ne_256815 (BoomFrontend_DW01_cmp6_4_DW01_cmp6_1587)
+                                       3.38e-06 1.27e-05 1.62e+03 1.63e-03   0.0
+    ne_256836 (BoomFrontend_DW01_cmp6_3_DW01_cmp6_1586)
+                                       3.37e-06 1.27e-05 1.60e+03 1.61e-03   0.0
+    ne_256847 (BoomFrontend_DW01_cmp6_2_DW01_cmp6_1585)
+                                       3.39e-06 1.27e-05 1.64e+03 1.65e-03   0.0
+    ne_256857 (BoomFrontend_DW01_cmp6_1_DW01_cmp6_1584)
+                                       3.38e-06 1.27e-05 1.62e+03 1.63e-03   0.0
+    add_258169 (BoomFrontend_DW01_add_1_DW01_add_33)
+                                          0.000    0.000 2.17e+03 2.17e-03   0.0
+    ne_256867 (BoomFrontend_DW01_cmp6_0_DW01_cmp6_1583)
+                                       3.39e-06 1.26e-05 1.64e+03 1.65e-03   0.0
+    bpd_update_arbiter (Arbiter_15)       0.000    0.000 3.95e+03 3.95e-03   0.0
+    ftq (FetchTargetQueue)             1.85e-02 5.85e-02 4.62e+05    0.539   3.0
+      r2716 (FetchTargetQueue_DW01_cmp6_68_DW01_cmp6_1665)
+                                          0.000    0.000 1.80e+03 1.80e-03   0.0
+      ghist_1 (ghist_0_0)              9.20e-03    0.000    0.000 9.20e-03   0.1
+        ghist_0_ext (ghist_0_ext_0)    9.20e-03    0.000    0.000 9.20e-03   0.1
+          mem_0_0 (split_ghist_0_ext_0)
+                                       9.20e-03    0.000    0.000 9.20e-03   0.1
+      ghist_0 (ghist_0_1)              9.20e-03    0.000    0.000 9.20e-03   0.1
+        ghist_0_ext (ghist_0_ext_1)    9.20e-03    0.000    0.000 9.20e-03   0.1
+          mem_0_0 (split_ghist_0_ext_1)
+                                       9.20e-03    0.000    0.000 9.20e-03   0.1
+      meta (meta)                      4.09e-05 3.28e-03 8.17e+03 1.15e-02   0.1
+        meta_ext (meta_ext)            4.09e-05 3.28e-03 8.17e+03 1.15e-02   0.1
+          mem_0_0 (split_meta_ext)     4.09e-05 3.28e-03 8.17e+03 1.15e-02   0.1
+    fb (FetchBuffer)                   3.15e-05 2.92e-02 2.54e+05    0.284   1.6
+    f4 (Queue_37)                      9.77e-06 1.33e-02 6.19e+04 7.52e-02   0.4
+    f4_btb_corrections (Queue_36)      4.82e-05 1.00e-02 6.43e+04 7.44e-02   0.4
+    bpd_decoder_5 (BranchDecode_0)        0.000    0.000 3.66e+03 3.66e-03   0.0
+      add_237570 (BranchDecode_0_DW01_add_1_DW01_add_56)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_0_DW01_add_0_DW01_add_55)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst_rvc_exp_5 (RVCExpander_0)    0.000    0.000 2.74e+03 2.74e-03   0.0
+    bpd_decoder_4 (BranchDecode_1)        0.000    0.000 3.65e+03 3.65e-03   0.0
+      add_237570 (BranchDecode_1_DW01_add_1_DW01_add_58)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_1_DW01_add_0_DW01_add_57)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst_rvc_exp_4 (RVCExpander_1)    0.000    0.000 2.80e+03 2.80e-03   0.0
+    bpd_decoder_3 (BranchDecode_2)        0.000    0.000 3.67e+03 3.67e-03   0.0
+      add_237570 (BranchDecode_2_DW01_add_1_DW01_add_60)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_2_DW01_add_0_DW01_add_59)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst_rvc_exp_3 (RVCExpander_2)    0.000    0.000 2.83e+03 2.83e-03   0.0
+    bpd_decoder0b (BranchDecode_3)        0.000    0.000 3.64e+03 3.64e-03   0.0
+      add_237570 (BranchDecode_3_DW01_add_1_DW01_add_62)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_3_DW01_add_0_DW01_add_61)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst0b_rvc_exp (RVCExpander_3)    0.000    0.000 2.63e+03 2.63e-03   0.0
+    bpd_decoder1_1 (BranchDecode_4)       0.000    0.000 3.64e+03 3.64e-03   0.0
+      add_237570 (BranchDecode_4_DW01_add_1_DW01_add_64)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_4_DW01_add_0_DW01_add_63)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    bpd_decoder0_1 (BranchDecode_5)       0.000    0.000 3.63e+03 3.63e-03   0.0
+      add_237570 (BranchDecode_5_DW01_add_1_DW01_add_66)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_5_DW01_add_0_DW01_add_65)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst1_rvc_exp_1 (RVCExpander_4)
+                                          0.000    0.000 2.85e+03 2.85e-03   0.0
+    exp_inst0_rvc_exp_1 (RVCExpander_5)
+                                          0.000    0.000 2.84e+03 2.84e-03   0.0
+    bpd_decoder_2 (BranchDecode_6)        0.000    0.000 3.65e+03 3.65e-03   0.0
+      add_237570 (BranchDecode_6_DW01_add_1_DW01_add_68)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_6_DW01_add_0_DW01_add_67)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst_rvc_exp_2 (RVCExpander_6)    0.000    0.000 2.57e+03 2.57e-03   0.0
+    bpd_decoder_1 (BranchDecode_7)        0.000    0.000 3.65e+03 3.65e-03   0.0
+      add_237570 (BranchDecode_7_DW01_add_1_DW01_add_70)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_7_DW01_add_0_DW01_add_69)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst_rvc_exp_1 (RVCExpander_7)    0.000    0.000 2.79e+03 2.79e-03   0.0
+    bpd_decoder (BranchDecode_8)          0.000    0.000 3.65e+03 3.65e-03   0.0
+      add_237570 (BranchDecode_8_DW01_add_1_DW01_add_72)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_8_DW01_add_0_DW01_add_71)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst_rvc_exp (RVCExpander_8)      0.000    0.000 2.83e+03 2.83e-03   0.0
+    bpd_decoder1 (BranchDecode_9)         0.000    0.000 3.63e+03 3.63e-03   0.0
+      add_237570 (BranchDecode_9_DW01_add_1_DW01_add_74)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_9_DW01_add_0_DW01_add_73)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    bpd_decoder0 (BranchDecode_10)        0.000    0.000 3.63e+03 3.63e-03   0.0
+      add_237570 (BranchDecode_10_DW01_add_1_DW01_add_76)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+      add_237576 (BranchDecode_10_DW01_add_0_DW01_add_75)
+                                          0.000    0.000 1.55e+03 1.55e-03   0.0
+    exp_inst1_rvc_exp (RVCExpander_9)     0.000    0.000 2.84e+03 2.84e-03   0.0
+    exp_inst0_rvc_exp (RVCExpander_10)    0.000    0.000 2.84e+03 2.84e-03   0.0
+    f3_bpd_resp (Queue_35)             1.34e-04 8.76e-03 6.29e+04 7.18e-02   0.4
+    f3 (Queue_34)                      7.19e-07 3.56e-03 1.66e+04 2.01e-02   0.1
+    tlb (TLB)                          9.06e-05 1.92e-02 1.54e+05    0.173   1.0
+      entries_barrier_12 (OptimizationBarrier_0)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_11 (OptimizationBarrier_1)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_10 (OptimizationBarrier_2)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_9 (OptimizationBarrier_3)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_8 (OptimizationBarrier_4)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_7 (OptimizationBarrier_5)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_6 (OptimizationBarrier_6)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_5 (OptimizationBarrier_7)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_4 (OptimizationBarrier_8)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_3 (OptimizationBarrier_9)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_2 (OptimizationBarrier_10)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier_1 (OptimizationBarrier_11)
+                                          0.000    0.000    0.000    0.000   0.0
+      entries_barrier (OptimizationBarrier_12)
+                                          0.000    0.000    0.000    0.000   0.0
+      pmp (PMPChecker)                 5.44e-05 1.19e-04 1.90e+04 1.91e-02   0.1
+        lt_232452 (PMPChecker_DW01_cmp2_7_DW01_cmp2_301)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+        lt_232456 (PMPChecker_DW01_cmp2_6_DW01_cmp2_300)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+        lt_232490 (PMPChecker_DW01_cmp2_5_DW01_cmp2_299)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+        lt_232526 (PMPChecker_DW01_cmp2_4_DW01_cmp2_298)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+        lt_232562 (PMPChecker_DW01_cmp2_3_DW01_cmp2_297)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+        lt_232598 (PMPChecker_DW01_cmp2_2_DW01_cmp2_296)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+        lt_232634 (PMPChecker_DW01_cmp2_1_DW01_cmp2_295)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+        lt_232670 (PMPChecker_DW01_cmp2_0_DW01_cmp2_294)
+                                       1.59e-06 1.23e-06  585.302 5.88e-04   0.0
+      mpu_ppn_barrier (OptimizationBarrier_13)
+                                          0.000    0.000    0.000    0.000   0.0
+    ras (BoomRAS)                      4.10e-07 1.91e-02 1.16e+05    0.135   0.8
+    bpd (BranchPredictor)                 0.889    0.386 2.61e+06    3.884  21.8
+      add_231348 (BranchPredictor_DW01_add_1_DW01_add_78)
+                                       1.64e-06 9.19e-06 2.17e+03 2.18e-03   0.0
+      add_231383 (BranchPredictor_DW01_add_0_DW01_add_77)
+                                          0.000    0.000 2.17e+03 2.17e-03   0.0
+      banked_predictors_1 (ComposedBranchPredictorBank_0)
+                                          0.444    0.190 1.27e+06    1.908  10.7
+        components_3 (FAMicroBTBBranchPredictorBank_0)
+                                       1.75e-03 5.63e-02 4.70e+05    0.529   3.0
+          sub_0_root_sub_0_root_sub_226775 (FAMicroBTBBranchPredictorBank_0_DW01_sub_0_DW01_sub_35)
+                                       1.00e-07 1.43e-07  536.889 5.37e-04   0.0
+          add_0_root_add_0_root_add_226913 (FAMicroBTBBranchPredictorBank_0_DW01_add_2_DW01_add_156)
+                                       2.37e-06 5.51e-06 1.59e+03 1.60e-03   0.0
+          add_1_root_add_0_root_add_226913 (FAMicroBTBBranchPredictorBank_0_DW01_add_3_DW01_add_157)
+                                       4.31e-06 6.52e-06 2.28e+03 2.29e-03   0.0
+          add_0_root_add_0_root_add_226908 (FAMicroBTBBranchPredictorBank_0_DW01_add_4_DW01_add_158)
+                                       2.37e-06 5.51e-06 1.59e+03 1.60e-03   0.0
+          add_1_root_add_0_root_add_226908 (FAMicroBTBBranchPredictorBank_0_DW01_add_5_DW01_add_159)
+                                       4.31e-06 6.52e-06 2.23e+03 2.24e-03   0.0
+          add_0_root_add_0_root_add_226903 (FAMicroBTBBranchPredictorBank_0_DW01_add_6_DW01_add_160)
+                                       2.37e-06 5.51e-06 1.59e+03 1.60e-03   0.0
+          add_1_root_add_0_root_add_226903 (FAMicroBTBBranchPredictorBank_0_DW01_add_7_DW01_add_161)
+                                       4.31e-06 6.52e-06 2.29e+03 2.31e-03   0.0
+          eq_224929 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_63_DW01_cmp6_1730)
+                                       6.59e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224931 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_62_DW01_cmp6_1729)
+                                       6.74e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224933 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_61_DW01_cmp6_1728)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224935 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_60_DW01_cmp6_1727)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224937 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_59_DW01_cmp6_1726)
+                                       6.59e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224939 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_58_DW01_cmp6_1725)
+                                       6.89e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224941 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_57_DW01_cmp6_1724)
+                                       6.88e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224943 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_56_DW01_cmp6_1723)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224945 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_55_DW01_cmp6_1722)
+                                       6.76e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224947 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_54_DW01_cmp6_1721)
+                                       6.90e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224949 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_53_DW01_cmp6_1720)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224951 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_52_DW01_cmp6_1719)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224953 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_51_DW01_cmp6_1718)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224955 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_50_DW01_cmp6_1717)
+                                       7.49e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_224957 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_49_DW01_cmp6_1716)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224959 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_48_DW01_cmp6_1715)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224964 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_47_DW01_cmp6_1714)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224966 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_46_DW01_cmp6_1713)
+                                       7.32e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224968 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_45_DW01_cmp6_1712)
+                                       7.47e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_224970 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_44_DW01_cmp6_1711)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224972 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_43_DW01_cmp6_1710)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224974 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_42_DW01_cmp6_1709)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224976 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_41_DW01_cmp6_1708)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224978 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_40_DW01_cmp6_1707)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224980 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_39_DW01_cmp6_1706)
+                                       7.34e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224982 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_38_DW01_cmp6_1705)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224984 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_37_DW01_cmp6_1704)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224986 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_36_DW01_cmp6_1703)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224988 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_35_DW01_cmp6_1702)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224990 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_34_DW01_cmp6_1701)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224992 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_33_DW01_cmp6_1700)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224994 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_32_DW01_cmp6_1699)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224999 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_31_DW01_cmp6_1698)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225001 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_30_DW01_cmp6_1697)
+                                       7.49e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_225003 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_29_DW01_cmp6_1696)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225005 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_28_DW01_cmp6_1695)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225007 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_27_DW01_cmp6_1694)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225009 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_26_DW01_cmp6_1693)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225011 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_25_DW01_cmp6_1692)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225013 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_24_DW01_cmp6_1691)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225015 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_23_DW01_cmp6_1690)
+                                       7.34e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225017 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_22_DW01_cmp6_1689)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225019 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_21_DW01_cmp6_1688)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225021 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_20_DW01_cmp6_1687)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225023 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_19_DW01_cmp6_1686)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225025 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_18_DW01_cmp6_1685)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225027 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_17_DW01_cmp6_1684)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225029 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_16_DW01_cmp6_1683)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225034 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_15_DW01_cmp6_1682)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225036 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_14_DW01_cmp6_1681)
+                                       7.49e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_225038 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_13_DW01_cmp6_1680)
+                                       7.47e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_225040 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_12_DW01_cmp6_1679)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225042 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_11_DW01_cmp6_1678)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225044 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_10_DW01_cmp6_1677)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225046 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_9_DW01_cmp6_1676)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225048 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_8_DW01_cmp6_1675)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225050 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_7_DW01_cmp6_1674)
+                                       7.34e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225052 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_6_DW01_cmp6_1673)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225054 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_5_DW01_cmp6_1672)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225056 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_4_DW01_cmp6_1671)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225058 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_3_DW01_cmp6_1670)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225060 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_2_DW01_cmp6_1669)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225062 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_1_DW01_cmp6_1668)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225064 (FAMicroBTBBranchPredictorBank_0_DW01_cmp6_0_DW01_cmp6_1667)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          add_226898 (FAMicroBTBBranchPredictorBank_0_DW01_add_0_DW01_add_79)
+                                       2.37e-06 5.98e-06 1.59e+03 1.60e-03   0.0
+        components_4 (BIMBranchPredictorBank_0)
+                                       2.12e-05 7.87e-03 2.88e+04 3.67e-02   0.2
+          data (data_0)                8.79e-07 6.28e-03 1.91e+04 2.54e-02   0.1
+            data_ext (data_ext_0)      8.79e-07 6.28e-03 1.91e+04 2.54e-02   0.1
+              mem_0_3 (split_data_ext_0)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+              mem_0_2 (split_data_ext_1)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+              mem_0_1 (split_data_ext_2)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+              mem_0_0 (split_data_ext_3)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+        components_2 (BTBBranchPredictorBank_0)
+                                       1.19e-03 2.98e-02 1.35e+05    0.166   0.9
+          sub_0_root_sub_0_root_sub_223390 (BTBBranchPredictorBank_0_DW01_sub_0_DW01_sub_36)
+                                       2.84e-07 5.25e-07 1.64e+03 1.64e-03   0.0
+          add_1_root_sub_0_root_sub_223390 (BTBBranchPredictorBank_0_DW01_add_2_DW01_add_103)
+                                       9.16e-10 7.91e-09 2.33e+03 2.33e-03   0.0
+          add_0_root_add_0_root_add_222993 (BTBBranchPredictorBank_0_DW01_add_7_DW01_add_122)
+                                       2.73e-05 8.23e-05 1.59e+03 1.70e-03   0.0
+          add_1_root_add_0_root_add_222993 (BTBBranchPredictorBank_0_DW01_add_8_DW01_add_123)
+                                       4.31e-06 6.52e-06 2.29e+03 2.31e-03   0.0
+          add_0_root_add_0_root_add_223015 (BTBBranchPredictorBank_0_DW01_add_5_DW01_add_120)
+                                       2.62e-05 8.00e-05 1.59e+03 1.70e-03   0.0
+          add_1_root_add_0_root_add_223015 (BTBBranchPredictorBank_0_DW01_add_6_DW01_add_121)
+                                       4.31e-06 6.52e-06 2.23e+03 2.24e-03   0.0
+          add_0_root_add_0_root_add_223037 (BTBBranchPredictorBank_0_DW01_add_3_DW01_add_118)
+                                       2.67e-05 8.01e-05 1.59e+03 1.70e-03   0.0
+          add_1_root_add_0_root_add_223037 (BTBBranchPredictorBank_0_DW01_add_4_DW01_add_119)
+                                       4.31e-06 6.52e-06 2.28e+03 2.29e-03   0.0
+          eq_222948 (BTBBranchPredictorBank_0_DW01_cmp6_7_DW01_cmp6_1740)
+                                       7.30e-06 2.55e-05 1.08e+03 1.11e-03   0.0
+          eq_222949 (BTBBranchPredictorBank_0_DW01_cmp6_6_DW01_cmp6_1739)
+                                       7.26e-06 2.54e-05 1.08e+03 1.11e-03   0.0
+          eq_222950 (BTBBranchPredictorBank_0_DW01_cmp6_5_DW01_cmp6_1738)
+                                       7.26e-06 2.54e-05 1.08e+03 1.11e-03   0.0
+          eq_222951 (BTBBranchPredictorBank_0_DW01_cmp6_4_DW01_cmp6_1737)
+                                       7.31e-06 2.55e-05 1.08e+03 1.11e-03   0.0
+          eq_222952 (BTBBranchPredictorBank_0_DW01_cmp6_3_DW01_cmp6_1736)
+                                       7.30e-06 2.56e-05 1.08e+03 1.11e-03   0.0
+          eq_222953 (BTBBranchPredictorBank_0_DW01_cmp6_2_DW01_cmp6_1735)
+                                       7.29e-06 2.56e-05 1.08e+03 1.11e-03   0.0
+          eq_222954 (BTBBranchPredictorBank_0_DW01_cmp6_1_DW01_cmp6_1734)
+                                       7.32e-06 2.56e-05 1.08e+03 1.11e-03   0.0
+          eq_222955 (BTBBranchPredictorBank_0_DW01_cmp6_0_DW01_cmp6_1733)
+                                       7.28e-06 2.55e-05 1.08e+03 1.11e-03   0.0
+          add_222971 (BTBBranchPredictorBank_0_DW01_add_0_DW01_add_81)
+                                       2.58e-05 7.63e-05 1.59e+03 1.69e-03   0.0
+          ebtb (ebtb_0)                2.66e-05 1.83e-03 5.53e+03 7.39e-03   0.0
+            ebtb_ext (ebtb_ext_0)      2.66e-05 1.83e-03 5.53e+03 7.39e-03   0.0
+              mem_0_0 (split_ebtb_ext_0)
+                                       2.66e-05 1.83e-03 5.53e+03 7.39e-03   0.0
+          btb_1 (btb_0_0)              9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+            btb_0_ext (btb_0_ext_0)    9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+              mem_0_3 (split_btb_0_ext_0)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_2 (split_btb_0_ext_1)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_1 (split_btb_0_ext_2)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_0 (split_btb_0_ext_3)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+          btb_0 (btb_0_1)              9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+            btb_0_ext (btb_0_ext_1)    9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+              mem_0_3 (split_btb_0_ext_4)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_2 (split_btb_0_ext_5)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_1 (split_btb_0_ext_6)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_0 (split_btb_0_ext_7)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+          meta_1 (meta_0_0)            1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+            meta_0_ext (meta_0_ext_0)  1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+              mem_0_3 (split_meta_0_ext_0)
+                                       2.66e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_2 (split_meta_0_ext_1)
+                                       2.63e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_1 (split_meta_0_ext_2)
+                                       2.63e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_0 (split_meta_0_ext_3)
+                                       2.73e-05 1.45e-03 4.24e+03 5.72e-03   0.0
+          meta_0 (meta_0_1)            1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+            meta_0_ext (meta_0_ext_1)  1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+              mem_0_3 (split_meta_0_ext_4)
+                                       2.60e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_2 (split_meta_0_ext_5)
+                                       2.67e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_1 (split_meta_0_ext_6)
+                                       2.66e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_0 (split_meta_0_ext_7)
+                                       2.66e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+        components_1 (TageBranchPredictorBank_0)
+                                          0.441 4.91e-02 2.41e+05    0.731   4.1
+          alloc_lfsr_prng_3 (MaxPeriodFibonacciLFSR_3_0)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          alloc_lfsr_prng_2 (MaxPeriodFibonacciLFSR_3_1)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          alloc_lfsr_prng_1 (MaxPeriodFibonacciLFSR_3_2)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          alloc_lfsr_prng (MaxPeriodFibonacciLFSR_3_3)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          tables_5 (TageTable_5_0)     7.34e-02 4.72e-03 2.94e+04    0.108   0.6
+            add_218169 (TageTable_5_0_DW01_inc_0_DW01_inc_162)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table_1_0)         1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+              table_1_ext (table_1_ext_0)
+                                       1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+                mem_0_3 (split_table_1_ext_0)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_2 (split_table_1_ext_1)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_1 (split_table_1_ext_2)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_0 (split_table_1_ext_3)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+            lo_us (hi_us_1)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_0)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_0)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_1)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_2)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_3)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_2)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_1)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_4)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_5)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_6)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_7)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_4 (TageTable_4_0)     7.34e-02 4.71e-03 2.51e+04    0.103   0.6
+            add_217494 (TageTable_4_0_DW01_inc_0_DW01_inc_163)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table_1_1)         1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+              table_1_ext (table_1_ext_1)
+                                       1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+                mem_0_3 (split_table_1_ext_4)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_2 (split_table_1_ext_5)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_1 (split_table_1_ext_6)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_0 (split_table_1_ext_7)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+            lo_us (hi_us_3)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_2)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_8)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_9)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_10)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_11)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_4)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_3)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_12)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_13)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_14)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_15)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_3 (TageTable_3_0)     7.34e-02 6.33e-03 3.07e+04    0.110   0.6
+            add_216851 (TageTable_3_0_DW01_inc_0_DW01_inc_164)
+                                       3.07e-07 5.30e-07  903.059 9.04e-04   0.0
+            table_ (table_0_0)         1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+              table_0_ext (table_0_ext_0)
+                                       1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+                mem_0_3 (split_table_0_ext_0)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_2 (split_table_0_ext_1)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_1 (split_table_0_ext_2)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_0 (split_table_0_ext_3)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+            lo_us (hi_us_0_0)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_0)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_0)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_1)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_2)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_3)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_0_1)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_1)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_4)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_5)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_6)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_7)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_2 (TageTable_2_0)     7.34e-02 6.33e-03 3.00e+04    0.110   0.6
+            add_216225 (TageTable_2_0_DW01_inc_0_DW01_inc_165)
+                                       3.07e-07 5.30e-07  903.059 9.04e-04   0.0
+            table_ (table_0_1)         1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+              table_0_ext (table_0_ext_1)
+                                       1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+                mem_0_3 (split_table_0_ext_4)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_2 (split_table_0_ext_5)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_1 (split_table_0_ext_6)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_0 (split_table_0_ext_7)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+            lo_us (hi_us_0_2)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_2)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_8)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_9)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_10)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_11)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_0_3)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_3)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_12)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_13)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_14)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_15)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_1 (TageTable_1_0)     7.34e-02 4.29e-03 2.16e+04 9.93e-02   0.6
+            add_215601 (TageTable_1_0_DW01_inc_0_DW01_inc_166)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table__0)          1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+              table_ext (table_ext_0)  1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+                mem_0_3 (split_table_ext_0)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_2 (split_table_ext_1)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_1 (split_table_ext_2)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_0 (split_table_ext_3)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+            lo_us (hi_us_5)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_4)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_16)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_17)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_18)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_19)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_6)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_5)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_20)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_21)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_22)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_23)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_0 (TageTable_0)       7.34e-02 4.29e-03 2.13e+04 9.90e-02   0.6
+            add_214977 (TageTable_0_DW01_inc_0_DW01_inc_167)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table__1)          1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+              table_ext (table_ext_1)  1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+                mem_0_3 (split_table_ext_4)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_2 (split_table_ext_5)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_1 (split_table_ext_6)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_0 (split_table_ext_7)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+            lo_us (hi_us_7)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_6)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_24)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_25)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_26)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_27)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_8)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_7)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_28)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_29)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_30)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_31)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+        components_0 (LoopBranchPredictorBank_0)
+                                       9.11e-04 4.70e-02 3.99e+05    0.447   2.5
+          columns_3 (LoopBranchPredictorColumn_0)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_0_DW01_cmp6_8_DW01_cmp6_1797)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_0_DW01_cmp6_7_DW01_cmp6_1796)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_0_DW01_cmp6_4_DW01_cmp6_1793)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_0_DW01_inc_0_DW01_inc_168)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+          columns_2 (LoopBranchPredictorColumn_1)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_1_DW01_cmp6_8_DW01_cmp6_1806)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_1_DW01_cmp6_7_DW01_cmp6_1805)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_1_DW01_cmp6_4_DW01_cmp6_1802)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_1_DW01_inc_0_DW01_inc_169)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+          columns_1 (LoopBranchPredictorColumn_2)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_2_DW01_cmp6_8_DW01_cmp6_1815)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_2_DW01_cmp6_7_DW01_cmp6_1814)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_2_DW01_cmp6_4_DW01_cmp6_1811)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_2_DW01_inc_0_DW01_inc_170)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+          columns_0 (LoopBranchPredictorColumn_3)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_3_DW01_cmp6_8_DW01_cmp6_1824)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_3_DW01_cmp6_7_DW01_cmp6_1823)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_3_DW01_cmp6_4_DW01_cmp6_1820)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_3_DW01_inc_0_DW01_inc_171)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+      banked_predictors_0 (ComposedBranchPredictorBank_1)
+                                          0.444    0.190 1.27e+06    1.908  10.7
+        components_3 (FAMicroBTBBranchPredictorBank_1)
+                                       1.75e-03 5.63e-02 4.70e+05    0.529   3.0
+          sub_0_root_sub_0_root_sub_226775 (FAMicroBTBBranchPredictorBank_1_DW01_sub_0_DW01_sub_37)
+                                          0.000    0.000  536.889 5.37e-04   0.0
+          add_0_root_add_0_root_add_226913 (FAMicroBTBBranchPredictorBank_1_DW01_add_2_DW01_add_162)
+                                       2.36e-06 5.51e-06 1.59e+03 1.60e-03   0.0
+          add_1_root_add_0_root_add_226913 (FAMicroBTBBranchPredictorBank_1_DW01_add_3_DW01_add_163)
+                                       4.31e-06 6.51e-06 2.28e+03 2.29e-03   0.0
+          add_0_root_add_0_root_add_226908 (FAMicroBTBBranchPredictorBank_1_DW01_add_4_DW01_add_164)
+                                       2.36e-06 5.51e-06 1.59e+03 1.60e-03   0.0
+          add_1_root_add_0_root_add_226908 (FAMicroBTBBranchPredictorBank_1_DW01_add_5_DW01_add_165)
+                                       4.31e-06 6.51e-06 2.23e+03 2.24e-03   0.0
+          add_0_root_add_0_root_add_226903 (FAMicroBTBBranchPredictorBank_1_DW01_add_6_DW01_add_166)
+                                       2.36e-06 5.51e-06 1.59e+03 1.60e-03   0.0
+          add_1_root_add_0_root_add_226903 (FAMicroBTBBranchPredictorBank_1_DW01_add_7_DW01_add_167)
+                                       4.31e-06 6.51e-06 2.29e+03 2.31e-03   0.0
+          eq_224929 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_63_DW01_cmp6_1888)
+                                       6.59e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224931 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_62_DW01_cmp6_1887)
+                                       6.74e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224933 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_61_DW01_cmp6_1886)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224935 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_60_DW01_cmp6_1885)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224937 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_59_DW01_cmp6_1884)
+                                       6.59e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224939 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_58_DW01_cmp6_1883)
+                                       6.89e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224941 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_57_DW01_cmp6_1882)
+                                       6.88e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224943 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_56_DW01_cmp6_1881)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224945 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_55_DW01_cmp6_1880)
+                                       6.76e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224947 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_54_DW01_cmp6_1879)
+                                       6.90e-06 1.63e-05 1.54e+03 1.56e-03   0.0
+          eq_224949 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_53_DW01_cmp6_1878)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224951 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_52_DW01_cmp6_1877)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224953 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_51_DW01_cmp6_1876)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224955 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_50_DW01_cmp6_1875)
+                                       7.49e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_224957 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_49_DW01_cmp6_1874)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224959 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_48_DW01_cmp6_1873)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224964 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_47_DW01_cmp6_1872)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224966 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_46_DW01_cmp6_1871)
+                                       7.32e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224968 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_45_DW01_cmp6_1870)
+                                       7.47e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_224970 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_44_DW01_cmp6_1869)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224972 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_43_DW01_cmp6_1868)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224974 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_42_DW01_cmp6_1867)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224976 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_41_DW01_cmp6_1866)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224978 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_40_DW01_cmp6_1865)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224980 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_39_DW01_cmp6_1864)
+                                       7.34e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224982 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_38_DW01_cmp6_1863)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224984 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_37_DW01_cmp6_1862)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224986 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_36_DW01_cmp6_1861)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224988 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_35_DW01_cmp6_1860)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224990 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_34_DW01_cmp6_1859)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224992 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_33_DW01_cmp6_1858)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224994 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_32_DW01_cmp6_1857)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_224999 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_31_DW01_cmp6_1856)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225001 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_30_DW01_cmp6_1855)
+                                       7.49e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_225003 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_29_DW01_cmp6_1854)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225005 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_28_DW01_cmp6_1853)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225007 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_27_DW01_cmp6_1852)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225009 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_26_DW01_cmp6_1851)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225011 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_25_DW01_cmp6_1850)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225013 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_24_DW01_cmp6_1849)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225015 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_23_DW01_cmp6_1848)
+                                       7.34e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225017 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_22_DW01_cmp6_1847)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225019 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_21_DW01_cmp6_1846)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225021 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_20_DW01_cmp6_1845)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225023 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_19_DW01_cmp6_1844)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225025 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_18_DW01_cmp6_1843)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225027 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_17_DW01_cmp6_1842)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225029 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_16_DW01_cmp6_1841)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225034 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_15_DW01_cmp6_1840)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225036 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_14_DW01_cmp6_1839)
+                                       7.49e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_225038 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_13_DW01_cmp6_1838)
+                                       7.47e-06 1.90e-05 1.64e+03 1.67e-03   0.0
+          eq_225040 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_12_DW01_cmp6_1837)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225042 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_11_DW01_cmp6_1836)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225044 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_10_DW01_cmp6_1835)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225046 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_9_DW01_cmp6_1834)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225048 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_8_DW01_cmp6_1833)
+                                       7.33e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225050 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_7_DW01_cmp6_1832)
+                                       7.34e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225052 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_6_DW01_cmp6_1831)
+                                       7.48e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225054 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_5_DW01_cmp6_1830)
+                                       7.29e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225056 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_4_DW01_cmp6_1829)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225058 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_3_DW01_cmp6_1828)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225060 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_2_DW01_cmp6_1827)
+                                       7.47e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225062 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_1_DW01_cmp6_1826)
+                                       7.17e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          eq_225064 (FAMicroBTBBranchPredictorBank_1_DW01_cmp6_0_DW01_cmp6_1825)
+                                       7.25e-06 1.86e-05 1.59e+03 1.62e-03   0.0
+          add_226898 (FAMicroBTBBranchPredictorBank_1_DW01_add_0_DW01_add_89)
+                                       2.36e-06 5.97e-06 1.59e+03 1.60e-03   0.0
+        components_4 (BIMBranchPredictorBank_1)
+                                       2.13e-05 7.87e-03 2.88e+04 3.67e-02   0.2
+          data (data_1)                8.79e-07 6.28e-03 1.91e+04 2.54e-02   0.1
+            data_ext (data_ext_1)      8.79e-07 6.28e-03 1.91e+04 2.54e-02   0.1
+              mem_0_3 (split_data_ext_4)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+              mem_0_2 (split_data_ext_5)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+              mem_0_1 (split_data_ext_6)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+              mem_0_0 (split_data_ext_7)
+                                       2.20e-07 1.57e-03 4.77e+03 6.34e-03   0.0
+        components_2 (BTBBranchPredictorBank_1)
+                                       1.19e-03 2.98e-02 1.35e+05    0.166   0.9
+          sub_0_root_sub_0_root_sub_223390 (BTBBranchPredictorBank_1_DW01_sub_0_DW01_sub_38)
+                                          0.000    0.000 1.64e+03 1.64e-03   0.0
+          add_1_root_sub_0_root_sub_223390 (BTBBranchPredictorBank_1_DW01_add_2_DW01_add_105)
+                                          0.000    0.000 2.33e+03 2.33e-03   0.0
+          add_0_root_add_0_root_add_222993 (BTBBranchPredictorBank_1_DW01_add_7_DW01_add_128)
+                                       2.56e-05 7.88e-05 1.59e+03 1.69e-03   0.0
+          add_1_root_add_0_root_add_222993 (BTBBranchPredictorBank_1_DW01_add_8_DW01_add_129)
+                                       4.31e-06 6.51e-06 2.29e+03 2.31e-03   0.0
+          add_0_root_add_0_root_add_223015 (BTBBranchPredictorBank_1_DW01_add_5_DW01_add_126)
+                                       2.56e-05 7.83e-05 1.59e+03 1.69e-03   0.0
+          add_1_root_add_0_root_add_223015 (BTBBranchPredictorBank_1_DW01_add_6_DW01_add_127)
+                                       4.31e-06 6.51e-06 2.23e+03 2.24e-03   0.0
+          add_0_root_add_0_root_add_223037 (BTBBranchPredictorBank_1_DW01_add_3_DW01_add_124)
+                                       2.66e-05 8.06e-05 1.59e+03 1.70e-03   0.0
+          add_1_root_add_0_root_add_223037 (BTBBranchPredictorBank_1_DW01_add_4_DW01_add_125)
+                                       4.31e-06 6.51e-06 2.28e+03 2.29e-03   0.0
+          eq_222948 (BTBBranchPredictorBank_1_DW01_cmp6_7_DW01_cmp6_1898)
+                                       7.33e-06 2.56e-05 1.08e+03 1.11e-03   0.0
+          eq_222949 (BTBBranchPredictorBank_1_DW01_cmp6_6_DW01_cmp6_1897)
+                                       7.31e-06 2.55e-05 1.08e+03 1.11e-03   0.0
+          eq_222950 (BTBBranchPredictorBank_1_DW01_cmp6_5_DW01_cmp6_1896)
+                                       7.30e-06 2.55e-05 1.08e+03 1.11e-03   0.0
+          eq_222951 (BTBBranchPredictorBank_1_DW01_cmp6_4_DW01_cmp6_1895)
+                                       7.30e-06 2.55e-05 1.08e+03 1.11e-03   0.0
+          eq_222952 (BTBBranchPredictorBank_1_DW01_cmp6_3_DW01_cmp6_1894)
+                                       7.29e-06 2.56e-05 1.08e+03 1.11e-03   0.0
+          eq_222953 (BTBBranchPredictorBank_1_DW01_cmp6_2_DW01_cmp6_1893)
+                                       7.30e-06 2.55e-05 1.08e+03 1.11e-03   0.0
+          eq_222954 (BTBBranchPredictorBank_1_DW01_cmp6_1_DW01_cmp6_1892)
+                                       7.26e-06 2.54e-05 1.08e+03 1.11e-03   0.0
+          eq_222955 (BTBBranchPredictorBank_1_DW01_cmp6_0_DW01_cmp6_1891)
+                                       7.33e-06 2.56e-05 1.08e+03 1.11e-03   0.0
+          add_222971 (BTBBranchPredictorBank_1_DW01_add_0_DW01_add_91)
+                                       2.39e-05 7.22e-05 1.59e+03 1.69e-03   0.0
+          ebtb (ebtb_1)                2.66e-05 1.83e-03 5.53e+03 7.39e-03   0.0
+            ebtb_ext (ebtb_ext_1)      2.66e-05 1.83e-03 5.53e+03 7.39e-03   0.0
+              mem_0_0 (split_ebtb_ext_1)
+                                       2.66e-05 1.83e-03 5.53e+03 7.39e-03   0.0
+          btb_1 (btb_0_2)              9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+            btb_0_ext (btb_0_ext_2)    9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+              mem_0_3 (split_btb_0_ext_8)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_2 (split_btb_0_ext_9)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_1 (split_btb_0_ext_10)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_0 (split_btb_0_ext_11)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+          btb_0 (btb_0_3)              9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+            btb_0_ext (btb_0_ext_3)    9.39e-06 3.09e-03 8.22e+03 1.13e-02   0.1
+              mem_0_3 (split_btb_0_ext_12)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_2 (split_btb_0_ext_13)
+                                       2.37e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_1 (split_btb_0_ext_14)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+              mem_0_0 (split_btb_0_ext_15)
+                                       2.32e-06 7.73e-04 2.06e+03 2.83e-03   0.0
+          meta_1 (meta_0_2)            1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+            meta_0_ext (meta_0_ext_2)  1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+              mem_0_3 (split_meta_0_ext_8)
+                                       2.66e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_2 (split_meta_0_ext_9)
+                                       2.63e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_1 (split_meta_0_ext_10)
+                                       2.63e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_0 (split_meta_0_ext_11)
+                                       2.73e-05 1.45e-03 4.24e+03 5.72e-03   0.0
+          meta_0 (meta_0_3)            1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+            meta_0_ext (meta_0_ext_3)  1.06e-04 5.78e-03 1.70e+04 2.29e-02   0.1
+              mem_0_3 (split_meta_0_ext_12)
+                                       2.60e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_2 (split_meta_0_ext_13)
+                                       2.67e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_1 (split_meta_0_ext_14)
+                                       2.66e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+              mem_0_0 (split_meta_0_ext_15)
+                                       2.66e-05 1.45e-03 4.24e+03 5.71e-03   0.0
+        components_1 (TageBranchPredictorBank_1)
+                                          0.441 4.91e-02 2.41e+05    0.731   4.1
+          alloc_lfsr_prng_3 (MaxPeriodFibonacciLFSR_3_4)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          alloc_lfsr_prng_2 (MaxPeriodFibonacciLFSR_3_5)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          alloc_lfsr_prng_1 (MaxPeriodFibonacciLFSR_3_6)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          alloc_lfsr_prng (MaxPeriodFibonacciLFSR_3_7)
+                                       7.84e-06 1.10e-04  456.963 5.75e-04   0.0
+          tables_5 (TageTable_5_1)     7.34e-02 4.72e-03 2.94e+04    0.108   0.6
+            add_218169 (TageTable_5_1_DW01_inc_0_DW01_inc_172)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table_1_2)         1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+              table_1_ext (table_1_ext_2)
+                                       1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+                mem_0_3 (split_table_1_ext_8)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_2 (split_table_1_ext_9)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_1 (split_table_1_ext_10)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_0 (split_table_1_ext_11)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+            lo_us (hi_us_9)            3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_8)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_32)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_33)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_34)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_35)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_10)           3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_9)  3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_36)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_37)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_38)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_39)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_4 (TageTable_4_1)     7.34e-02 4.71e-03 2.51e+04    0.103   0.6
+            add_217494 (TageTable_4_1_DW01_inc_0_DW01_inc_173)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table_1_3)         1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+              table_1_ext (table_1_ext_3)
+                                       1.42e-05 2.94e-03 7.71e+03 1.07e-02   0.1
+                mem_0_3 (split_table_1_ext_12)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_2 (split_table_1_ext_13)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_1 (split_table_1_ext_14)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+                mem_0_0 (split_table_1_ext_15)
+                                       3.54e-06 7.34e-04 1.93e+03 2.66e-03   0.0
+            lo_us (hi_us_11)           3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_10) 3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_40)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_41)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_42)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_43)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_12)           3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_11) 3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_44)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_45)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_46)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_47)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_3 (TageTable_3_1)     7.34e-02 6.33e-03 3.07e+04    0.110   0.6
+            add_216851 (TageTable_3_1_DW01_inc_0_DW01_inc_174)
+                                       3.07e-07 5.30e-07  903.059 9.04e-04   0.0
+            table_ (table_0_2)         1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+              table_0_ext (table_0_ext_2)
+                                       1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+                mem_0_3 (split_table_0_ext_8)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_2 (split_table_0_ext_9)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_1 (split_table_0_ext_10)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_0 (split_table_0_ext_11)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+            lo_us (hi_us_0_4)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_4)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_16)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_17)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_18)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_19)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_0_5)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_5)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_20)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_21)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_22)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_23)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_2 (TageTable_2_1)     7.34e-02 6.33e-03 3.00e+04    0.110   0.6
+            add_216225 (TageTable_2_1_DW01_inc_0_DW01_inc_175)
+                                       3.07e-07 5.30e-07  903.059 9.04e-04   0.0
+            table_ (table_0_3)         1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+              table_0_ext (table_0_ext_3)
+                                       1.28e-05 4.55e-03 1.34e+04 1.79e-02   0.1
+                mem_0_3 (split_table_0_ext_12)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_2 (split_table_0_ext_13)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_1 (split_table_0_ext_14)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+                mem_0_0 (split_table_0_ext_15)
+                                       3.20e-06 1.14e-03 3.35e+03 4.49e-03   0.0
+            lo_us (hi_us_0_6)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_6)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_24)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_25)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_26)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_27)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_0_7)          3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_0_ext (hi_us_0_ext_7)
+                                       3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_0_ext_28)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_0_ext_29)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_0_ext_30)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_0_ext_31)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_1 (TageTable_1_1)     7.34e-02 4.29e-03 2.16e+04 9.93e-02   0.6
+            add_215601 (TageTable_1_1_DW01_inc_0_DW01_inc_176)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table__2)          1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+              table_ext (table_ext_2)  1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+                mem_0_3 (split_table_ext_8)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_2 (split_table_ext_9)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_1 (split_table_ext_10)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_0 (split_table_ext_11)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+            lo_us (hi_us_13)           3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_12) 3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_48)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_49)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_50)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_51)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_14)           3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_13) 3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_52)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_53)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_54)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_55)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          tables_0 (TageTable_6)       7.34e-02 4.29e-03 2.13e+04 9.90e-02   0.6
+            add_214977 (TageTable_6_DW01_inc_0_DW01_inc_177)
+                                       3.07e-07 5.30e-07  855.494 8.56e-04   0.0
+            table_ (table__3)          1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+              table_ext (table_ext_3)  1.14e-05 2.61e-03 6.68e+03 9.30e-03   0.1
+                mem_0_3 (split_table_ext_12)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_2 (split_table_ext_13)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_1 (split_table_ext_14)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+                mem_0_0 (split_table_ext_15)
+                                       2.86e-06 6.54e-04 1.67e+03 2.33e-03   0.0
+            lo_us (hi_us_15)           3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_14) 3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_56)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_57)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_58)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_59)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+            hi_us (hi_us_16)           3.67e-02    0.000    0.000 3.67e-02   0.2
+              hi_us_ext (hi_us_ext_15) 3.67e-02    0.000    0.000 3.67e-02   0.2
+                mem_0_3 (split_hi_us_ext_60)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_2 (split_hi_us_ext_61)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_1 (split_hi_us_ext_62)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+                mem_0_0 (split_hi_us_ext_63)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+        components_0 (LoopBranchPredictorBank_1)
+                                       9.11e-04 4.70e-02 3.99e+05    0.447   2.5
+          columns_3 (LoopBranchPredictorColumn_4)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_4_DW01_cmp6_8_DW01_cmp6_1955)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_4_DW01_cmp6_7_DW01_cmp6_1954)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_4_DW01_cmp6_4_DW01_cmp6_1951)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_4_DW01_inc_0_DW01_inc_178)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+          columns_2 (LoopBranchPredictorColumn_5)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_5_DW01_cmp6_8_DW01_cmp6_1964)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_5_DW01_cmp6_7_DW01_cmp6_1963)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_5_DW01_cmp6_4_DW01_cmp6_1960)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_5_DW01_inc_0_DW01_inc_179)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+          columns_1 (LoopBranchPredictorColumn_6)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_6_DW01_cmp6_8_DW01_cmp6_1973)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_6_DW01_cmp6_7_DW01_cmp6_1972)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_6_DW01_cmp6_4_DW01_cmp6_1969)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_6_DW01_inc_0_DW01_inc_180)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+          columns_0 (LoopBranchPredictorColumn_7)
+                                       2.19e-04 1.11e-02 9.72e+04    0.109   0.6
+            r1205 (LoopBranchPredictorColumn_7_DW01_cmp6_8_DW01_cmp6_1982)
+                                       7.30e-06 1.44e-05 1.59e+03 1.61e-03   0.0
+            r1206 (LoopBranchPredictorColumn_7_DW01_cmp6_7_DW01_cmp6_1981)
+                                       6.59e-06 1.06e-05 1.54e+03 1.56e-03   0.0
+            r1216 (LoopBranchPredictorColumn_7_DW01_cmp6_4_DW01_cmp6_1978)
+                                       6.63e-06 1.07e-05 1.54e+03 1.56e-03   0.0
+            add_212716 (LoopBranchPredictorColumn_7_DW01_inc_0_DW01_inc_181)
+                                          0.000    0.000  427.410 4.27e-04   0.0
+    icache (ICache)                       0.147 2.95e-02 1.63e+05    0.340   1.9
+      srl_211792 (ICache_DW_rash_7_DW_rash_88)
+                                          0.000    0.000 1.32e+03 1.32e-03   0.0
+      srl_211797 (ICache_DW_rash_6_DW_rash_87)
+                                       1.99e-08 6.82e-08 1.32e+03 1.32e-03   0.0
+      srl_211801 (ICache_DW_rash_5_DW_rash_86)
+                                       1.32e-08 4.49e-08 1.32e+03 1.32e-03   0.0
+      srl_211805 (ICache_DW_rash_4_DW_rash_85)
+                                          0.000    0.000 1.32e+03 1.32e-03   0.0
+      srl_211809 (ICache_DW_rash_3_DW_rash_84)
+                                       6.62e-10 2.02e-09 1.32e+03 1.32e-03   0.0
+      srl_211813 (ICache_DW_rash_2_DW_rash_83)
+                                       1.79e-06 2.96e-07 1.32e+03 1.32e-03   0.0
+      srl_211817 (ICache_DW_rash_1_DW_rash_82)
+                                          0.000    0.000 1.32e+03 1.32e-03   0.0
+      srl_211821 (ICache_DW_rash_0_DW_rash_81)
+                                          0.000    0.000 1.32e+03 1.32e-03   0.0
+      sll_211867 (ICache_DW01_ash_0_DW01_ash_190)
+                                       1.67e-05 2.77e-06 1.82e+04 1.82e-02   0.1
+      add_211885_round (ICache_DW01_inc_0_DW01_inc_182)
+                                       8.48e-07 4.44e-06  378.104 3.83e-04   0.0
+      dataArrayB1Way_7 (dataArrayB0Way_0_0)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_0)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_0)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB1Way_6 (dataArrayB0Way_0_1)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_1)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_1)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB1Way_5 (dataArrayB0Way_0_2)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_2)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_2)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB1Way_4 (dataArrayB0Way_0_3)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_3)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_3)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB1Way_3 (dataArrayB0Way_0_4)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_4)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_4)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB1Way_2 (dataArrayB0Way_0_5)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_5)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_5)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB1Way_1 (dataArrayB0Way_0_6)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_6)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_6)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB1Way_0 (dataArrayB0Way_0_7)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_7)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_7)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_7 (dataArrayB0Way_0_8)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_8)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_8)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_6 (dataArrayB0Way_0_9)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_9)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_9)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_5 (dataArrayB0Way_0_10)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_10)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_10)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_4 (dataArrayB0Way_0_11)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_11)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_11)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_3 (dataArrayB0Way_0_12)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_12)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_12)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_2 (dataArrayB0Way_0_13)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_13)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_13)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_1 (dataArrayB0Way_0_14)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_14)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_14)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      dataArrayB0Way_0 (dataArrayB0Way_0_15)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+        dataArrayB0Way_0_ext (dataArrayB0Way_0_ext_15)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+          mem_0_0 (split_dataArrayB0Way_0_ext_15)
+                                       9.18e-03    0.000    0.000 9.18e-03   0.1
+      tag_array (tag_array_0)          5.23e-05 5.19e-03 1.25e+04 1.77e-02   0.1
+        tag_array_0_ext (tag_array_0_ext)
+                                       5.23e-05 5.19e-03 1.25e+04 1.77e-02   0.1
+          mem_0_7 (split_tag_array_0_ext_0)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+          mem_0_6 (split_tag_array_0_ext_1)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+          mem_0_5 (split_tag_array_0_ext_2)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+          mem_0_4 (split_tag_array_0_ext_3)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+          mem_0_3 (split_tag_array_0_ext_4)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+          mem_0_2 (split_tag_array_0_ext_5)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+          mem_0_1 (split_tag_array_0_ext_6)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+          mem_0_0 (split_tag_array_0_ext_7)
+                                       6.53e-06 6.48e-04 1.56e+03 2.21e-03   0.0
+      repl_way_prng (MaxPeriodFibonacciLFSR_1_0)
+                                       2.32e-05 2.29e-04 1.38e+03 1.63e-03   0.0
+  dcache (BoomNonBlockingDCache)          0.157    0.173 1.16e+06    1.486   8.3
+    eq_209943 (BoomNonBlockingDCache_DW01_cmp6_13_DW01_cmp6_2004)
+                                       5.44e-06 1.77e-05  874.890 8.98e-04   0.0
+    eq_209943_2 (BoomNonBlockingDCache_DW01_cmp6_12_DW01_cmp6_2003)
+                                       5.43e-06 1.76e-05  874.890 8.98e-04   0.0
+    eq_209943_3 (BoomNonBlockingDCache_DW01_cmp6_11_DW01_cmp6_2002)
+                                       5.40e-06 1.75e-05  874.890 8.98e-04   0.0
+    eq_209943_4 (BoomNonBlockingDCache_DW01_cmp6_10_DW01_cmp6_2001)
+                                       5.37e-06 1.75e-05  874.890 8.98e-04   0.0
+    eq_209943_5 (BoomNonBlockingDCache_DW01_cmp6_9_DW01_cmp6_2000)
+                                       5.39e-06 1.75e-05  874.890 8.98e-04   0.0
+    eq_209943_6 (BoomNonBlockingDCache_DW01_cmp6_8_DW01_cmp6_1999)
+                                       5.43e-06 1.76e-05  874.890 8.98e-04   0.0
+    eq_209943_7 (BoomNonBlockingDCache_DW01_cmp6_7_DW01_cmp6_1998)
+                                       5.40e-06 1.76e-05  874.890 8.98e-04   0.0
+    eq_209943_8 (BoomNonBlockingDCache_DW01_cmp6_6_DW01_cmp6_1997)
+                                       5.43e-06 1.76e-05  874.890 8.98e-04   0.0
+    eq_209992 (BoomNonBlockingDCache_DW01_cmp6_5_DW01_cmp6_1996)
+                                          0.000    0.000 1.52e+03 1.52e-03   0.0
+    eq_210190 (BoomNonBlockingDCache_DW01_cmp6_4_DW01_cmp6_1995)
+                                          0.000    0.000 1.63e+03 1.63e-03   0.0
+    eq_210194 (BoomNonBlockingDCache_DW01_cmp6_3_DW01_cmp6_1994)
+                                          0.000    0.000 1.63e+03 1.63e-03   0.0
+    eq_210198 (BoomNonBlockingDCache_DW01_cmp6_2_DW01_cmp6_1993)
+                                          0.000    0.000 1.63e+03 1.63e-03   0.0
+    amoalu (AMOALU)                       0.000    0.000 7.79e+03 7.79e-03   0.0
+      r70 (AMOALU_DW01_cmp6_0_DW01_cmp6_2006)
+                                          0.000    0.000  614.750 6.15e-04   0.0
+      add_209210 (AMOALU_DW01_add_0_DW01_add_99)
+                                          0.000    0.000 2.53e+03 2.53e-03   0.0
+      lt_209213 (AMOALU_DW01_cmp2_0_DW01_cmp2_308)
+                                          0.000    0.000  660.440 6.60e-04   0.0
+    lsu_release_arb (Arbiter_14)       1.85e-06 5.05e-06  304.854 3.12e-04   0.0
+    wbArb (Arbiter_13)                    0.000    0.000  347.630 3.48e-04   0.0
+    lfsr_prng (MaxPeriodFibonacciLFSR_1_1)
+                                       2.84e-06 2.25e-04 1.38e+03 1.61e-03   0.0
+    dataReadArb (Arbiter_12)              0.000    0.000  370.223 3.70e-04   0.0
+    dataWriteArb (Arbiter_11)             0.000 1.79e-05 1.57e+03 1.59e-03   0.0
+    data (BoomDuplicatedDataArray)        0.147 1.58e-02 5.66e+04    0.219   1.2
+      array_7_0 (array_0_0_0)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_0)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_0)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_1)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+      array_6_0 (array_0_0_1)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_1)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_2)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_3)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+      array_5_0 (array_0_0_2)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_2)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_4)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_5)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+      array_4_0 (array_0_0_3)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_3)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_6)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_7)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+      array_3_0 (array_0_0_4)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_4)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_8)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_9)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+      array_2_0 (array_0_0_5)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_5)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_10)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_11)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+      array_1_0 (array_0_0_6)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_6)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_12)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_13)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+      array_0_0 (array_0_0_7)          1.83e-02    0.000    0.000 1.83e-02   0.1
+        array_0_0_ext (array_0_0_ext_7)
+                                       1.83e-02    0.000    0.000 1.83e-02   0.1
+          mem_0_1 (split_array_0_0_ext_14)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+          mem_0_0 (split_array_0_0_ext_15)
+                                       9.17e-03    0.000    0.000 9.17e-03   0.1
+    metaReadArb (Arbiter_10)           1.18e-06 2.25e-06  255.797 2.59e-04   0.0
+    metaWriteArb (Arbiter_9)           2.31e-06 6.85e-06  892.176 9.01e-04   0.0
+    meta_0 (L1MetadataArray)           9.26e-03 1.47e-04 1.43e+03 1.08e-02   0.1
+      add_208261 (L1MetadataArray_DW01_inc_0_DW01_inc_183)
+                                       2.62e-06 4.69e-06  284.715 2.92e-04   0.0
+      tag_array (tag_array)            9.24e-03    0.000    0.000 9.24e-03   0.1
+    mshrs (BoomMSHRFile)               5.23e-04    0.135 9.36e+05    1.072   6.0
+      eq_206242 (BoomMSHRFile_DW01_cmp6_10_DW01_cmp6_2017)
+                                          0.000    0.000 1.14e+03 1.14e-03   0.0
+      eq_206244 (BoomMSHRFile_DW01_cmp6_8_DW01_cmp6_2015)
+                                          0.000    0.000 1.14e+03 1.14e-03   0.0
+      eq_206248 (BoomMSHRFile_DW01_cmp6_7_DW01_cmp6_2014)
+                                          0.000    0.000 1.14e+03 1.14e-03   0.0
+      eq_206246 (BoomMSHRFile_DW01_cmp6_5_DW01_cmp6_2012)
+                                          0.000    0.000 1.14e+03 1.14e-03   0.0
+      sll_206506 (BoomMSHRFile_DW01_ash_0_DW01_ash_193)
+                                          0.000    0.000  602.214 6.02e-04   0.0
+      respq (BranchKillableQueue_4)    3.68e-06 5.42e-03 3.45e+04 3.99e-02   0.2
+      mmios_0 (BoomIOMSHR)             1.50e-05 2.84e-03 1.89e+04 2.18e-02   0.1
+      mmio_alloc_arb (Arbiter_8)          0.000    0.000    0.000    0.000   0.0
+      mshrs_3 (BoomMSHR_0)             2.96e-05 2.04e-02 1.37e+05    0.158   0.9
+        rpq (BranchKillableQueue_0)    1.12e-05 1.90e-02 1.23e+05    0.142   0.8
+      mshrs_2 (BoomMSHR_1)             2.97e-05 2.04e-02 1.46e+05    0.167   0.9
+        rpq (BranchKillableQueue_1)    1.12e-05 1.90e-02 1.31e+05    0.150   0.8
+      mshrs_1 (BoomMSHR_2)             2.96e-05 2.04e-02 1.46e+05    0.167   0.9
+        rpq (BranchKillableQueue_2)    1.12e-05 1.90e-02 1.31e+05    0.150   0.8
+      mshrs_0 (BoomMSHR_3)             2.98e-05 2.04e-02 1.38e+05    0.158   0.9
+        rpq (BranchKillableQueue_3)    1.12e-05 1.90e-02 1.23e+05    0.142   0.8
+      refill_arb (Arbiter_7)              0.000    0.000 3.05e+03 3.05e-03   0.0
+      resp_arb (Arbiter_6)                0.000    0.000 2.20e+03 2.20e-03   0.0
+      replay_arb (Arbiter_5)              0.000    0.000 3.07e+03 3.07e-03   0.0
+      wb_req_arb (Arbiter_4)              0.000    0.000 1.83e+03 1.83e-03   0.0
+      meta_read_arb (Arbiter_3)           0.000    0.000 1.83e+03 1.83e-03   0.0
+      meta_write_arb (Arbiter_2)          0.000    0.000 1.45e+03 1.45e-03   0.0
+      lb_write_arb (Arbiter_1)         2.84e-05 1.34e-04 2.38e+03 2.54e-03   0.0
+      lb_read_arb (Arbiter)               0.000    0.000  290.276 2.90e-04   0.0
+    prober (BoomProbeUnit)             3.59e-05 8.08e-04 4.32e+03 5.16e-03   0.0
+    wb (BoomWritebackUnit)             3.75e-06 7.95e-03 4.62e+04 5.42e-02   0.3
+  broadcast (BundleBridgeNexus_6)         0.000    0.000    0.000    0.000   0.0
+  intXbar (IntXbar_1)                     0.000    0.000    0.000    0.000   0.0
+  tlMasterXbar (TLXbar_7)              5.84e-02 2.91e-04 1.00e+04 6.87e-02   0.4
+1

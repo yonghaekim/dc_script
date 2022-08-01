@@ -1,0 +1,194 @@
+Warning: Design 'BoomTile' has '130' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BoomTile
+Version: T-2022.03-SP1
+Date   : Fri Jul 29 23:36:40 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: frontend/bpd/banked_predictors_0/components_2/meta_0/meta_0_ext/mem_0_0/u_sram/clk0
+              (internal path startpoint clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_2/f3_meta_REG_write_way_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (fall edge)                           500.00     500.00
+  clock network delay (ideal)                             0.00     500.00
+  input external delay                                    0.00     500.00 f
+  frontend/bpd/banked_predictors_0/components_2/meta_0/meta_0_ext/mem_0_0/u_sram/clk0 (sram_30_128_freepdk45)
+                                                          0.00 #   500.00 f
+  frontend/bpd/banked_predictors_0/components_2/meta_0/meta_0_ext/mem_0_0/u_sram/dout0[5] (sram_30_128_freepdk45)
+                                                          0.30     500.30 r
+  frontend/bpd/banked_predictors_0/components_2/meta_0/meta_0_ext/mem_0_0/R0_data[5] (split_meta_0_ext_15)
+                                                          0.00     500.30 r
+  frontend/bpd/banked_predictors_0/components_2/meta_0/meta_0_ext/R0_data[5] (meta_0_ext_3)
+                                                          0.00     500.30 r
+  frontend/bpd/banked_predictors_0/components_2/meta_0/R0_data_0[5] (meta_0_3)
+                                                          0.00     500.30 r
+  frontend/bpd/banked_predictors_0/components_2/U1240/Y (XOR2X1)
+                                                          0.07     500.37 r
+  frontend/bpd/banked_predictors_0/components_2/U1239/YS (FAX1)
+                                                          0.10     500.47 r
+  frontend/bpd/banked_predictors_0/components_2/U1220/YS (FAX1)
+                                                          0.10     500.58 r
+  frontend/bpd/banked_predictors_0/components_2/U1219/YS (FAX1)
+                                                          0.09     500.67 f
+  frontend/bpd/banked_predictors_0/components_2/U1218/YS (FAX1)
+                                                          0.09     500.76 r
+  frontend/bpd/banked_predictors_0/components_2/U1217/YS (FAX1)
+                                                          0.09     500.85 f
+  frontend/bpd/banked_predictors_0/components_2/U1216/YS (FAX1)
+                                                          0.09     500.93 r
+  frontend/bpd/banked_predictors_0/components_2/U1215/YS (FAX1)
+                                                          0.09     501.03 f
+  frontend/bpd/banked_predictors_0/components_2/U1214/YS (FAX1)
+                                                          0.09     501.11 r
+  frontend/bpd/banked_predictors_0/components_2/U1213/YS (FAX1)
+                                                          0.09     501.20 f
+  frontend/bpd/banked_predictors_0/components_2/U1212/YS (FAX1)
+                                                          0.09     501.29 r
+  frontend/bpd/banked_predictors_0/components_2/U1211/YS (FAX1)
+                                                          0.09     501.38 f
+  frontend/bpd/banked_predictors_0/components_2/U1210/YS (FAX1)
+                                                          0.09     501.47 r
+  frontend/bpd/banked_predictors_0/components_2/U1209/YS (FAX1)
+                                                          0.09     501.56 f
+  frontend/bpd/banked_predictors_0/components_2/U1208/YS (FAX1)
+                                                          0.09     501.65 r
+  frontend/bpd/banked_predictors_0/components_2/U1207/YS (FAX1)
+                                                          0.09     501.74 f
+  frontend/bpd/banked_predictors_0/components_2/U1206/YS (FAX1)
+                                                          0.09     501.83 r
+  frontend/bpd/banked_predictors_0/components_2/U1205/YS (FAX1)
+                                                          0.09     501.92 f
+  frontend/bpd/banked_predictors_0/components_2/U1204/YS (FAX1)
+                                                          0.09     502.01 r
+  frontend/bpd/banked_predictors_0/components_2/U1203/YS (FAX1)
+                                                          0.09     502.10 f
+  frontend/bpd/banked_predictors_0/components_2/U1202/YS (FAX1)
+                                                          0.09     502.19 r
+  frontend/bpd/banked_predictors_0/components_2/U1201/YS (FAX1)
+                                                          0.09     502.28 f
+  frontend/bpd/banked_predictors_0/components_2/U1200/YS (FAX1)
+                                                          0.09     502.37 r
+  frontend/bpd/banked_predictors_0/components_2/U1199/YS (FAX1)
+                                                          0.09     502.46 f
+  frontend/bpd/banked_predictors_0/components_2/U1198/YS (FAX1)
+                                                          0.09     502.55 r
+  frontend/bpd/banked_predictors_0/components_2/U1197/YS (FAX1)
+                                                          0.09     502.64 f
+  frontend/bpd/banked_predictors_0/components_2/U1196/YS (FAX1)
+                                                          0.09     502.73 r
+  frontend/bpd/banked_predictors_0/components_2/U1195/YS (FAX1)
+                                                          0.09     502.82 f
+  frontend/bpd/banked_predictors_0/components_2/U1194/YS (FAX1)
+                                                          0.09     502.91 r
+  frontend/bpd/banked_predictors_0/components_2/U1193/YS (FAX1)
+                                                          0.09     503.00 f
+  frontend/bpd/banked_predictors_0/components_2/U1192/YS (FAX1)
+                                                          0.09     503.09 r
+  frontend/bpd/banked_predictors_0/components_2/U1191/YS (FAX1)
+                                                          0.09     503.18 f
+  frontend/bpd/banked_predictors_0/components_2/U1190/YS (FAX1)
+                                                          0.09     503.27 r
+  frontend/bpd/banked_predictors_0/components_2/U1189/YS (FAX1)
+                                                          0.09     503.36 f
+  frontend/bpd/banked_predictors_0/components_2/U1188/YS (FAX1)
+                                                          0.09     503.45 r
+  frontend/bpd/banked_predictors_0/components_2/U1187/YS (FAX1)
+                                                          0.09     503.54 f
+  frontend/bpd/banked_predictors_0/components_2/U1186/YS (FAX1)
+                                                          0.09     503.63 r
+  frontend/bpd/banked_predictors_0/components_2/U1185/YS (FAX1)
+                                                          0.09     503.72 f
+  frontend/bpd/banked_predictors_0/components_2/U1184/YS (FAX1)
+                                                          0.09     503.80 r
+  frontend/bpd/banked_predictors_0/components_2/U1183/YS (FAX1)
+                                                          0.09     503.90 f
+  frontend/bpd/banked_predictors_0/components_2/U1182/YS (FAX1)
+                                                          0.09     503.98 r
+  frontend/bpd/banked_predictors_0/components_2/U1181/YS (FAX1)
+                                                          0.09     504.07 f
+  frontend/bpd/banked_predictors_0/components_2/U1180/YS (FAX1)
+                                                          0.09     504.16 r
+  frontend/bpd/banked_predictors_0/components_2/U1179/YS (FAX1)
+                                                          0.09     504.25 f
+  frontend/bpd/banked_predictors_0/components_2/U1178/YS (FAX1)
+                                                          0.09     504.34 r
+  frontend/bpd/banked_predictors_0/components_2/U1177/YS (FAX1)
+                                                          0.09     504.43 f
+  frontend/bpd/banked_predictors_0/components_2/U1176/YS (FAX1)
+                                                          0.09     504.52 r
+  frontend/bpd/banked_predictors_0/components_2/U1175/YS (FAX1)
+                                                          0.09     504.61 f
+  frontend/bpd/banked_predictors_0/components_2/U1174/YS (FAX1)
+                                                          0.09     504.70 r
+  frontend/bpd/banked_predictors_0/components_2/U1173/YS (FAX1)
+                                                          0.09     504.79 f
+  frontend/bpd/banked_predictors_0/components_2/U1172/YS (FAX1)
+                                                          0.09     504.88 r
+  frontend/bpd/banked_predictors_0/components_2/U1171/YS (FAX1)
+                                                          0.09     504.97 f
+  frontend/bpd/banked_predictors_0/components_2/U1170/YS (FAX1)
+                                                          0.09     505.06 r
+  frontend/bpd/banked_predictors_0/components_2/U1169/YS (FAX1)
+                                                          0.09     505.15 f
+  frontend/bpd/banked_predictors_0/components_2/U1168/YS (FAX1)
+                                                          0.09     505.24 r
+  frontend/bpd/banked_predictors_0/components_2/U1167/YS (FAX1)
+                                                          0.09     505.33 f
+  frontend/bpd/banked_predictors_0/components_2/U1166/YS (FAX1)
+                                                          0.09     505.42 r
+  frontend/bpd/banked_predictors_0/components_2/U1165/YS (FAX1)
+                                                          0.09     505.51 f
+  frontend/bpd/banked_predictors_0/components_2/U1164/YS (FAX1)
+                                                          0.09     505.60 r
+  frontend/bpd/banked_predictors_0/components_2/U1163/YS (FAX1)
+                                                          0.09     505.69 f
+  frontend/bpd/banked_predictors_0/components_2/U1162/YS (FAX1)
+                                                          0.09     505.78 r
+  frontend/bpd/banked_predictors_0/components_2/U1161/YS (FAX1)
+                                                          0.09     505.87 f
+  frontend/bpd/banked_predictors_0/components_2/U1160/YS (FAX1)
+                                                          0.09     505.96 r
+  frontend/bpd/banked_predictors_0/components_2/U1159/YS (FAX1)
+                                                          0.09     506.05 f
+  frontend/bpd/banked_predictors_0/components_2/U1158/YS (FAX1)
+                                                          0.09     506.14 r
+  frontend/bpd/banked_predictors_0/components_2/U1157/YS (FAX1)
+                                                          0.09     506.23 f
+  frontend/bpd/banked_predictors_0/components_2/U1156/YS (FAX1)
+                                                          0.07     506.30 r
+  frontend/bpd/banked_predictors_0/components_2/U1153/Y (MUX2X1)
+                                                          0.02     506.32 f
+  frontend/bpd/banked_predictors_0/components_2/f3_meta_REG_write_way_reg/D (DFFPOSX1)
+                                                          0.00     506.32 f
+  data arrival time                                                506.32
+
+  clock clk_input (rise edge)                          1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  clock uncertainty                                      -0.20     999.80
+  frontend/bpd/banked_predictors_0/components_2/f3_meta_REG_write_way_reg/CLK (DFFPOSX1)
+                                                          0.00     999.80 r
+  library setup time                                     -0.06     999.74
+  data required time                                               999.74
+  --------------------------------------------------------------------------
+  data required time                                               999.74
+  data arrival time                                               -506.32
+  --------------------------------------------------------------------------
+  slack (MET)                                                      493.42
+
+
+1

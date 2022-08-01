@@ -1,0 +1,1380 @@
+ 
+****************************************
+Report : area
+Design : BoomTile
+Version: Q-2019.12-SP2
+Date   : Thu Nov 12 04:28:43 2020
+****************************************
+
+Library(s) Used:
+
+    gscl45nm (File: /nethome/ykim816/syn/lib/gscl45nm.db)
+
+Number of ports:                       345395
+Number of nets:                       3696395
+Number of cells:                      3385492
+Number of combinational cells:        2830566
+Number of sequential cells:            551577
+Number of macros/black boxes:               0
+Number of buf/inv:                    1038474
+Number of references:                      16
+
+Combinational area:            7084476.221875
+Buf/Inv area:                  1580307.180068
+Noncombinational area:         4400336.913574
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:              11484813.135449
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                 Local cell area
+                                  ----------------------  ---------------------------------- 
+Hierarchical cell                 Absolute       Percent  Combi-        Noncombi-     Black-
+                                  Total          Total    national      national      boxes   Design
+--------------------------------  -------------  -------  ------------  ------------  ------  ----------------------------------------------------
+BoomTile                          11484813.1354    100.0     3496.2850        0.0000  0.0000  BoomTile
+buffer                               19319.2035      0.2        0.0000        0.0000  0.0000  TLBuffer_13
+buffer/Queue                          6289.0892      0.1     3169.6522     3119.4370  0.0000  Queue_20
+buffer/Queue_1                        4768.0879      0.0     2398.5923     2369.4956  0.0000  Queue_21
+buffer/Queue_2                        1522.8785      0.0      908.5648      614.3137  0.0000  Queue_22
+buffer/Queue_3                        6536.8796      0.1     3672.7417     2864.1378  0.0000  Queue_23
+buffer/Queue_4                         202.2683      0.0      114.5092       87.7591  0.0000  Queue_24
+core                               3844580.6349     33.5     2791.8657     5098.0058  0.0000  BoomCore
+core/ALUExeUnit                     137759.7298      1.2      561.7521        0.0000  0.0000  ALUExeUnit_1
+core/ALUExeUnit/BranchKillableQueue
+                                     11862.9652      0.1     6860.6966     5002.2686  0.0000  BranchKillableQueue_4
+core/ALUExeUnit/alu                  30336.0208      0.3     3543.2149    18772.4689  0.0000  ALUUnit
+core/ALUExeUnit/alu/add_0_root_add_0_root_add_255656
+                                       354.7908      0.0      354.7908        0.0000  0.0000  ALUUnit_DW01_add_2_DW01_add_111
+core/ALUExeUnit/alu/add_1_root_add_0_root_add_255656
+                                       345.8741      0.0      345.8741        0.0000  0.0000  ALUUnit_DW01_add_3_DW01_add_112
+core/ALUExeUnit/alu/add_255590         274.5405      0.0      274.5405        0.0000  0.0000  ALUUnit_DW01_add_1_DW01_add_33
+core/ALUExeUnit/alu/add_255631         564.0986      0.0      564.0986        0.0000  0.0000  ALUUnit_DW01_add_0_DW01_add_32
+core/ALUExeUnit/alu/alu               5203.1290      0.0     2748.2207        0.0000  0.0000  ALU_1
+core/ALUExeUnit/alu/alu/add_1_root_add_254297
+                                       570.6688      0.0      570.6688        0.0000  0.0000  ALU_1_DW01_add_0_DW01_add_34
+core/ALUExeUnit/alu/alu/sra_254226
+                                      1884.2395      0.0     1884.2395        0.0000  0.0000  ALU_1_DW_rash_0_DW_rash_78
+core/ALUExeUnit/alu/ne_255660          269.3782      0.0      269.3782        0.0000  0.0000  ALUUnit_DW01_cmp6_0_DW01_cmp6_1602
+core/ALUExeUnit/alu/r167               733.0466      0.0      733.0466        0.0000  0.0000  ALUUnit_DW01_cmp6_3_DW01_cmp6_1605
+core/ALUExeUnit/alu/sub_255556         275.4791      0.0      275.4791        0.0000  0.0000  ALUUnit_DW01_sub_0_DW01_sub_38
+core/ALUExeUnit/ifpu                 15727.1814      0.1      468.3614      757.9195  0.0000  IntToFPUnit
+core/ALUExeUnit/ifpu/fp_decoder        172.2331      0.0      172.2331        0.0000  0.0000  UOPCodeFPUDecoder_1
+core/ALUExeUnit/ifpu/ifpu            14328.6674      0.1     2330.0745     1140.8683  0.0000  IntToFP
+core/ALUExeUnit/ifpu/ifpu/INToRecFN
+                                      4170.6690      0.0      732.5773        0.0000  0.0000  INToRecFN
+core/ALUExeUnit/ifpu/ifpu/INToRecFN/roundAnyRawFNToRecFN
+                                       693.6254      0.0      412.0454        0.0000  0.0000  RoundAnyRawFNToRecFN
+core/ALUExeUnit/ifpu/ifpu/INToRecFN/roundAnyRawFNToRecFN/add_260838
+                                       281.5800      0.0      281.5800        0.0000  0.0000  RoundAnyRawFNToRecFN_DW01_inc_J60_0
+core/ALUExeUnit/ifpu/ifpu/INToRecFN/sll_261163
+                                      1918.4984      0.0     1918.4984        0.0000  0.0000  INToRecFN_DW01_ash_J60_0
+core/ALUExeUnit/ifpu/ifpu/INToRecFN/sub_261032
+                                       825.9680      0.0      825.9680        0.0000  0.0000  INToRecFN_DW01_sub_J61_0
+core/ALUExeUnit/ifpu/ifpu/INToRecFN_1
+                                      4724.9123      0.0      735.3931        0.0000  0.0000  INToRecFN_1
+core/ALUExeUnit/ifpu/ifpu/INToRecFN_1/roundAnyRawFNToRecFN
+                                      1265.7021      0.0      569.7302        0.0000  0.0000  RoundAnyRawFNToRecFN_1
+core/ALUExeUnit/ifpu/ifpu/INToRecFN_1/roundAnyRawFNToRecFN/add_261269
+                                       695.9719      0.0      695.9719        0.0000  0.0000  RoundAnyRawFNToRecFN_1_DW01_inc_J46_0
+core/ALUExeUnit/ifpu/ifpu/INToRecFN_1/sll_261594
+                                      1905.8273      0.0     1905.8273        0.0000  0.0000  INToRecFN_1_DW01_ash_J46_0
+core/ALUExeUnit/ifpu/ifpu/INToRecFN_1/sub_261463
+                                       817.9899      0.0      817.9899        0.0000  0.0000  INToRecFN_1_DW01_sub_J47_0
+core/ALUExeUnit/ifpu/ifpu/sll_262013
+                                      1453.4221      0.0     1453.4221        0.0000  0.0000  IntToFP_DW01_ash_1_DW01_ash_164
+core/ALUExeUnit/ifpu/ifpu/sll_262090
+                                       508.7212      0.0      508.7212        0.0000  0.0000  IntToFP_DW01_ash_0_DW01_ash_163
+core/ALUExeUnit/imul                 79271.8103      0.7      439.7341    14815.3314  0.0000  PipelinedMulUnit
+core/ALUExeUnit/imul/imul            64016.7448      0.6     1742.5109     2082.2841  0.0000  PipelinedMultiplier
+core/ALUExeUnit/imul/imul/mult_257942
+                                     60191.9499      0.5    58111.5430        0.0000  0.0000  PipelinedMultiplier_DW02_mult_0_DW02_mult_1
+core/ALUExeUnit/imul/imul/mult_257942/FS_1
+                                      2080.4069      0.0     2080.4069        0.0000  0.0000  PipelinedMultiplier_DW01_add_1
+core/add_0_root_sub_0_root_sub_666086
+                                       301.7599      0.0      301.7599        0.0000  0.0000  BoomCore_DW01_add_1_DW01_add_140
+core/add_0_root_sub_0_root_sub_666098
+                                       301.7599      0.0      301.7599        0.0000  0.0000  BoomCore_DW01_add_2_DW01_add_141
+core/add_0_root_sub_0_root_sub_666108
+                                       301.7599      0.0      301.7599        0.0000  0.0000  BoomCore_DW01_add_0_DW01_add_139
+core/add_0_root_sub_0_root_sub_669022
+                                       301.2906      0.0      301.2906        0.0000  0.0000  BoomCore_DW01_add_3_DW01_add_144
+core/add_665688                        297.0669      0.0      297.0669        0.0000  0.0000  BoomCore_DW01_inc_0_DW01_inc_60
+core/csr                             59913.6527      0.5    27752.5244    30109.3487  0.0000  CSRFile
+core/csr/add_649910                    268.9089      0.0      268.9089        0.0000  0.0000  CSRFile_DW01_inc_11_DW01_inc_72
+core/csr/add_649916                    268.9089      0.0      268.9089        0.0000  0.0000  CSRFile_DW01_inc_10_DW01_inc_71
+core/csr/add_649921                    156.2769      0.0      156.2769        0.0000  0.0000  CSRFile_DW01_inc_9_DW01_inc_70
+core/csr/add_649926                    156.2769      0.0      156.2769        0.0000  0.0000  CSRFile_DW01_inc_8_DW01_inc_69
+core/csr/add_650066                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_7_DW01_inc_68
+core/csr/add_650072                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_6_DW01_inc_67
+core/csr/add_650078                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_5_DW01_inc_66
+core/csr/add_650084                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_4_DW01_inc_65
+core/csr/add_650090                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_3_DW01_inc_64
+core/csr/add_650096                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_2_DW01_inc_63
+core/csr/add_650102                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_1_DW01_inc_62
+core/csr/add_650108                    150.1760      0.0      150.1760        0.0000  0.0000  CSRFile_DW01_inc_0_DW01_inc_61
+core/csr_exe_unit                    34387.0184      0.3      505.4361        0.0000  0.0000  ALUExeUnit_2
+core/csr_exe_unit/alu                11473.4462      0.1     1047.9469     5441.0641  0.0000  ALUUnit_1
+core/csr_exe_unit/alu/alu             4984.4352      0.0     2493.8601        0.0000  0.0000  ALU_0
+core/csr_exe_unit/alu/alu/add_1_root_add_254297
+                                       570.6688      0.0      570.6688        0.0000  0.0000  ALU_0_DW01_add_0_DW01_add_29
+core/csr_exe_unit/alu/alu/sra_254226
+                                      1919.9063      0.0     1919.9063        0.0000  0.0000  ALU_0_DW_rash_0_DW_rash_77
+core/csr_exe_unit/div                22408.1361      0.2     3515.0570     4922.4876  0.0000  DivUnit
+core/csr_exe_unit/div/div            13970.5915      0.1     4313.8055     1667.4229  0.0000  MulDiv
+core/csr_exe_unit/div/div/add_267461
+                                       587.0943      0.0      587.0943        0.0000  0.0000  MulDiv_DW01_add_0_DW01_add_98
+core/csr_exe_unit/div/div/add_267475
+                                        29.5659      0.0       29.5659        0.0000  0.0000  MulDiv_DW01_inc_0_DW01_inc_87
+core/csr_exe_unit/div/div/mult_267459
+                                      3745.0139      0.0      863.9813        0.0000  0.0000  MulDiv_DW02_mult_0
+core/csr_exe_unit/div/div/mult_267459/A2_2
+                                      1057.8022      0.0      430.3481        0.0000  0.0000  MulDiv_DW01_absval_0
+core/csr_exe_unit/div/div/mult_267459/A2_2/NEG
+                                       627.4541      0.0      627.4541        0.0000  0.0000  MulDiv_DW01_inc_1_DW01_inc_101
+core/csr_exe_unit/div/div/mult_267459/A3
+                                       650.4498      0.0      650.4498        0.0000  0.0000  MulDiv_DW01_inc_2_DW01_inc_102
+core/csr_exe_unit/div/div/mult_267459/FS_2
+                                      1172.7807      0.0     1172.7807        0.0000  0.0000  MulDiv_DW01_add_1_DW01_add_99
+core/csr_exe_unit/div/div/sll_267805
+                                      2365.2720      0.0     2365.2720        0.0000  0.0000  MulDiv_DW01_ash_0_DW01_ash_162
+core/csr_exe_unit/div/div/sub_267438
+                                       669.6911      0.0      669.6911        0.0000  0.0000  MulDiv_DW01_sub_2_DW01_sub_35
+core/csr_exe_unit/div/div/sub_267442
+                                       532.1862      0.0      532.1862        0.0000  0.0000  MulDiv_DW01_sub_1_DW01_sub_34
+core/csr_exe_unit/div/div/sub_267798
+                                        60.5397      0.0       60.5397        0.0000  0.0000  MulDiv_DW01_sub_0_DW01_sub_33
+core/dec_brmask_logic                 1148.3771      0.0     1052.6399       95.7372  0.0000  BranchMaskGenerationLogic
+core/decode_units_0                   1498.0056      0.0     1498.0056        0.0000  0.0000  DecodeUnit_2
+core/decode_units_1                   1491.9047      0.0     1491.9047        0.0000  0.0000  DecodeUnit_1
+core/decode_units_2                   1488.6196      0.0     1488.6196        0.0000  0.0000  DecodeUnit_0
+core/dispatcher                        189.5972      0.0      189.5972        0.0000  0.0000  BasicDispatcher
+core/fp_pipeline                    853066.7792      7.4     2827.0632      590.3794  0.0000  FpPipeline
+core/fp_pipeline/fp_issue_unit      413226.6217      3.6   202362.1568       23.9343  0.0000  IssueUnitCollapsing
+core/fp_pipeline/fp_issue_unit/slots_0
+                                      8734.1422      0.1     3923.3480     4810.7942  0.0000  IssueSlot_23
+core/fp_pipeline/fp_issue_unit/slots_1
+                                      8779.6643      0.1     3968.8701     4810.7942  0.0000  IssueSlot_22
+core/fp_pipeline/fp_issue_unit/slots_10
+                                      8766.9932      0.1     3956.1990     4810.7942  0.0000  IssueSlot_13
+core/fp_pipeline/fp_issue_unit/slots_11
+                                      8762.3002      0.1     3951.5060     4810.7942  0.0000  IssueSlot_12
+core/fp_pipeline/fp_issue_unit/slots_12
+                                      8773.0941      0.1     3962.2999     4810.7942  0.0000  IssueSlot_11
+core/fp_pipeline/fp_issue_unit/slots_13
+                                      8782.9494      0.1     3972.1552     4810.7942  0.0000  IssueSlot_10
+core/fp_pipeline/fp_issue_unit/slots_14
+                                      8777.3178      0.1     3966.5236     4810.7942  0.0000  IssueSlot_9
+core/fp_pipeline/fp_issue_unit/slots_15
+                                      8776.3792      0.1     3965.5850     4810.7942  0.0000  IssueSlot_8
+core/fp_pipeline/fp_issue_unit/slots_16
+                                      8781.5415      0.1     3970.7473     4810.7942  0.0000  IssueSlot_7
+core/fp_pipeline/fp_issue_unit/slots_17
+                                      8819.0855      0.1     4008.2913     4810.7942  0.0000  IssueSlot_6
+core/fp_pipeline/fp_issue_unit/slots_18
+                                      8819.0855      0.1     4008.2913     4810.7942  0.0000  IssueSlot_5
+core/fp_pipeline/fp_issue_unit/slots_19
+                                      8816.7390      0.1     4005.9448     4810.7942  0.0000  IssueSlot_4
+core/fp_pipeline/fp_issue_unit/slots_2
+                                      8797.0284      0.1     3986.2342     4810.7942  0.0000  IssueSlot_21
+core/fp_pipeline/fp_issue_unit/slots_20
+                                      8811.5767      0.1     4000.7825     4810.7942  0.0000  IssueSlot_3
+core/fp_pipeline/fp_issue_unit/slots_21
+                                      8801.7214      0.1     3990.9272     4810.7942  0.0000  IssueSlot_2
+core/fp_pipeline/fp_issue_unit/slots_22
+                                      8821.4320      0.1     4010.6378     4810.7942  0.0000  IssueSlot_1
+core/fp_pipeline/fp_issue_unit/slots_23
+                                      8743.9975      0.1     3933.2033     4810.7942  0.0000  IssueSlot_0
+core/fp_pipeline/fp_issue_unit/slots_3
+                                      8781.5415      0.1     3970.7473     4810.7942  0.0000  IssueSlot_20
+core/fp_pipeline/fp_issue_unit/slots_4
+                                      8782.0108      0.1     3971.2166     4810.7942  0.0000  IssueSlot_19
+core/fp_pipeline/fp_issue_unit/slots_5
+                                      8785.2959      0.1     3974.5017     4810.7942  0.0000  IssueSlot_18
+core/fp_pipeline/fp_issue_unit/slots_6
+                                      8779.6643      0.1     3968.8701     4810.7942  0.0000  IssueSlot_17
+core/fp_pipeline/fp_issue_unit/slots_7
+                                      8784.8266      0.1     3974.0324     4810.7942  0.0000  IssueSlot_16
+core/fp_pipeline/fp_issue_unit/slots_8
+                                      8779.1950      0.1     3968.4008     4810.7942  0.0000  IssueSlot_15
+core/fp_pipeline/fp_issue_unit/slots_9
+                                      8782.9494      0.1     3972.1552     4810.7942  0.0000  IssueSlot_14
+core/fp_pipeline/fpiu_unit          257511.0099      2.2     1387.7201        0.0000  0.0000  FPUExeUnit
+core/fp_pipeline/fpiu_unit/Arbiter
+                                       667.3446      0.0      667.3446        0.0000  0.0000  Arbiter_14_0
+core/fp_pipeline/fpiu_unit/BranchKillableQueue
+                                     15651.6241      0.1     8670.7867     6980.8373  0.0000  BranchKillableQueue_5
+core/fp_pipeline/fpiu_unit/BranchKillableQueue_1
+                                      6379.1948      0.1     3682.5971     2696.5977  0.0000  BranchKillableQueue_6
+core/fp_pipeline/fpiu_unit/fdivsqrt
+                                     98643.1054      0.9    15384.1231    16402.9732  0.0000  FDivSqrtUnit
+core/fp_pipeline/fpiu_unit/fdivsqrt/RecFNToRecFN
+                                       142.6672      0.0       19.7106        0.0000  0.0000  RecFNToRecFN_1_1
+core/fp_pipeline/fpiu_unit/fdivsqrt/RecFNToRecFN/RoundAnyRawFNToRecFN
+                                       122.9566      0.0      122.9566        0.0000  0.0000  RoundAnyRawFNToRecFN_5_1
+core/fp_pipeline/fpiu_unit/fdivsqrt/RecFNToRecFN_1
+                                       143.6058      0.0       19.7106        0.0000  0.0000  RecFNToRecFN_1_0
+core/fp_pipeline/fpiu_unit/fdivsqrt/RecFNToRecFN_1/RoundAnyRawFNToRecFN
+                                       123.8952      0.0      123.8952        0.0000  0.0000  RoundAnyRawFNToRecFN_5_0
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt
+                                     65213.4592      0.6        0.0000        0.0000  0.0000  DivSqrtRecF64
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds
+                                     17651.7807      0.2        0.0000        0.0000  0.0000  DivSqrtRecF64_mulAddZ31
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw
+                                     15346.1098      0.1     8458.6631     5074.0715  0.0000  DivSqrtRecF64ToRaw_mulAddZ31
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/add_282127
+                                       117.3250      0.0      117.3250        0.0000  0.0000  DivSqrtRecF64ToRaw_mulAddZ31_DW01_add_3_DW01_add_18
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/add_282436
+                                       159.0927      0.0      159.0927        0.0000  0.0000  DivSqrtRecF64ToRaw_mulAddZ31_DW01_add_4_DW01_add_115
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/add_282439
+                                        29.5659      0.0       29.5659        0.0000  0.0000  DivSqrtRecF64ToRaw_mulAddZ31_DW01_inc_2_DW01_inc_80
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/add_282673
+                                        57.7239      0.0       57.7239        0.0000  0.0000  DivSqrtRecF64ToRaw_mulAddZ31_DW01_inc_1_DW01_inc_79
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/add_282675
+                                       250.1369      0.0      250.1369        0.0000  0.0000  DivSqrtRecF64ToRaw_mulAddZ31_DW01_inc_0_DW01_inc_78
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/mult_282434
+                                      1199.5308      0.0     1091.1225        0.0000  0.0000  DivSqrtRecF64ToRaw_mulAddZ31_DW02_mult_0_DW02_mult_4
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/mult_282434/FS_1
+                                       108.4083      0.0      108.4083        0.0000  0.0000  DivSqrtRecF64ToRaw_mulAddZ31_DW01_add_5_DW01_add_116
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/roundRawFNToRecFN
+                                      2305.6709      0.0        0.0000        0.0000  0.0000  RoundRawFNToRecFN_2
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/roundRawFNToRecFN/roundAnyRawFNToRecFN
+                                      2305.6709      0.0     2057.4112        0.0000  0.0000  RoundAnyRawFNToRecFN_7
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/roundRawFNToRecFN/roundAnyRawFNToRecFN/add_283629
+                                       248.2597      0.0      248.2597        0.0000  0.0000  RoundAnyRawFNToRecFN_7_DW01_inc_0_DW01_inc_77
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/mul
+                                     47561.6785      0.4     1829.8007     2576.9262  0.0000  Mul54
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/mul/add_283924
+                                      2453.5003      0.0     2453.5003        0.0000  0.0000  Mul54_DW01_add_J32_0
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/mul/mult_283922
+                                     40701.4512      0.4    39522.5696        0.0000  0.0000  Mul54_DW02_mult_0_DW02_mult_3
+core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/mul/mult_283922/FS_1
+                                      1178.8816      0.0     1178.8816        0.0000  0.0000  Mul54_DW01_add_J33_0
+core/fp_pipeline/fpiu_unit/fdivsqrt/downvert_d2s
+                                      1345.4831      0.0       22.5264        0.0000  0.0000  RecFNToRecFN_2
+core/fp_pipeline/fpiu_unit/fdivsqrt/downvert_d2s/RoundAnyRawFNToRecFN
+                                      1322.9567      0.0     1210.7940        0.0000  0.0000  RoundAnyRawFNToRecFN_4_1
+core/fp_pipeline/fpiu_unit/fdivsqrt/downvert_d2s/RoundAnyRawFNToRecFN/add_276730
+                                       112.1627      0.0      112.1627        0.0000  0.0000  RoundAnyRawFNToRecFN_4_1_DW01_inc_0_DW01_inc_76
+core/fp_pipeline/fpiu_unit/fdivsqrt/fdiv_decoder
+                                        10.7939      0.0       10.7939        0.0000  0.0000  UOPCodeFDivDecoder
+core/fp_pipeline/fpiu_unit/fpu      132865.3998      1.2      471.6465    19626.1256  0.0000  FPUUnit
+core/fp_pipeline/fpiu_unit/fpu/fpu
+                                    112767.6277      1.0     3812.5931     1739.2258  0.0000  FPU
+core/fp_pipeline/fpiu_unit/fpu/fpu/FMADecoder
+                                        29.5659      0.0       29.5659        0.0000  0.0000  FMADecoder_2
+core/fp_pipeline/fpiu_unit/fpu/fpu/FMADecoder_1
+                                        29.5659      0.0       29.5659        0.0000  0.0000  FMADecoder_1
+core/fp_pipeline/fpiu_unit/fpu/fpu/FMADecoder_2
+                                        27.2194      0.0       27.2194        0.0000  0.0000  FMADecoder_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma
+                                     68433.3264      0.6     1904.8887     2170.0432  0.0000  FPUFMAPipe
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma
+                                     64358.3946      0.6     1491.4354     2241.8461  0.0000  MulAddRecFNPipe
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/add_272812
+                                      2515.4479      0.0     2515.4479        0.0000  0.0000  MulAddRecFNPipe_DW01_add_J4_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_postMul
+                                     11177.7873      0.1     3592.0222        0.0000  0.0000  MulAddRecFNToRaw_postMul
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_postMul/add_271599
+                                       254.8299      0.0      254.8299        0.0000  0.0000  MulAddRecFNToRaw_postMul_DW01_inc_0_DW01_inc_86
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_postMul/add_271702
+                                      1458.1151      0.0     1458.1151        0.0000  0.0000  MulAddRecFNToRaw_postMul_DW01_add_J19_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_postMul/sll_271620
+                                      2992.7261      0.0     2992.7261        0.0000  0.0000  MulAddRecFNToRaw_postMul_DW01_ash_1_DW01_ash_161
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_postMul/sll_271935
+                                      2880.0941      0.0     2880.0941        0.0000  0.0000  MulAddRecFNToRaw_postMul_DW01_ash_0_DW01_ash_160
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_preMul
+                                      4340.0863      0.0     3754.8692        0.0000  0.0000  MulAddRecFNToRaw_preMul
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_preMul/add_0_root_add_0_root_add_270984
+                                       281.5800      0.0      281.5800        0.0000  0.0000  MulAddRecFNToRaw_preMul_DW01_add_J5_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mulAddRecFNToRaw_preMul/sub_270990
+                                       303.6371      0.0      303.6371        0.0000  0.0000  MulAddRecFNToRaw_preMul_DW01_sub_J5_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mult_272811
+                                     39792.4171      0.3    38539.3861        0.0000  0.0000  MulAddRecFNPipe_DW02_mult_0_DW02_mult_6
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/mult_272811/FS_1
+                                      1253.0310      0.0     1253.0310        0.0000  0.0000  MulAddRecFNPipe_DW01_add_2
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/roundRawFNToRecFN
+                                      2799.3745      0.0        0.0000        0.0000  0.0000  RoundRawFNToRecFN
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/roundRawFNToRecFN/roundAnyRawFNToRecFN
+                                      2799.3745      0.0     2549.2376        0.0000  0.0000  RoundAnyRawFNToRecFN_2
+core/fp_pipeline/fpiu_unit/fpu/fpu/dfma/fma/roundRawFNToRecFN/roundAnyRawFNToRecFN/add_272451
+                                       250.1369      0.0      250.1369        0.0000  0.0000  RoundAnyRawFNToRecFN_2_DW01_inc_0_DW01_inc_85
+core/fp_pipeline/fpiu_unit/fpu/fpu/fp_decoder
+                                       149.2374      0.0      149.2374        0.0000  0.0000  UOPCodeFPUDecoder_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu
+                                     11109.2695      0.1     1814.7831     1100.9778  0.0000  FPToInt
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/RecFNToIN
+                                      3593.4300      0.0     1294.7987        0.0000  0.0000  RecFNToIN
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/RecFNToIN/add_275644
+                                       297.0669      0.0      297.0669        0.0000  0.0000  RecFNToIN_DW01_inc_0_DW01_inc_82
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/RecFNToIN/sll_275611
+                                      2001.5645      0.0     2001.5645        0.0000  0.0000  RecFNToIN_DW01_ash_0_DW01_ash_157
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/RecFNToIN_1
+                                      1952.2880      0.0      392.3348        0.0000  0.0000  RecFNToIN_1
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/RecFNToIN_1/sll_275815
+                                      1559.9532      0.0     1559.9532        0.0000  0.0000  RecFNToIN_1_DW01_ash_0_DW01_ash_156
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/dcmp
+                                       787.0161      0.0      214.4701        0.0000  0.0000  CompareRecFN
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/dcmp/r58
+                                       572.5460      0.0      572.5460        0.0000  0.0000  CompareRecFN_DW01_cmp6_0_DW01_cmp6_1600
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/srl_276160
+                                      1404.1456      0.0     1404.1456        0.0000  0.0000  FPToInt_DW_rash_1_DW_rash_66
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpiu/srl_276194
+                                       456.6289      0.0      456.6289        0.0000  0.0000  FPToInt_DW_rash_0_DW_rash_65
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpmu
+                                      6942.8241      0.1     2821.9009     2792.3349  0.0000  FPToFP
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpmu/RecFNToRecFN
+                                      1328.5883      0.0       19.7106        0.0000  0.0000  RecFNToRecFN_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpmu/RecFNToRecFN/RoundAnyRawFNToRecFN
+                                      1308.8777      0.0     1196.7150        0.0000  0.0000  RoundAnyRawFNToRecFN_4_0
+core/fp_pipeline/fpiu_unit/fpu/fpu/fpmu/RecFNToRecFN/RoundAnyRawFNToRecFN/add_276730
+                                       112.1627      0.0      112.1627        0.0000  0.0000  RoundAnyRawFNToRecFN_4_0_DW01_inc_0_DW01_inc_81
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma
+                                     20494.8003      0.2     1002.4248     1148.8464  0.0000  FPUFMAPipe_1
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma
+                                     18343.5291      0.2      840.9856     1260.5398  0.0000  MulAddRecFNPipe_1
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/add_274848
+                                       426.5937      0.0      426.5937        0.0000  0.0000  MulAddRecFNPipe_1_DW01_add_0_DW01_add_133
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_postMul
+                                      4400.6261      0.0     1693.2344        0.0000  0.0000  MulAddRecFNToRaw_postMul_1
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_postMul/add_273921
+                                       118.7329      0.0      118.7329        0.0000  0.0000  MulAddRecFNToRaw_postMul_1_DW01_inc_0_DW01_inc_84
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_postMul/add_273989
+                                       356.6680      0.0      356.6680        0.0000  0.0000  MulAddRecFNToRaw_postMul_1_DW01_add_0_DW01_add_26
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_postMul/sll_273942
+                                      1126.7893      0.0     1126.7893        0.0000  0.0000  MulAddRecFNToRaw_postMul_1_DW01_ash_1_DW01_ash_159
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_postMul/sll_274102
+                                      1105.2015      0.0     1105.2015        0.0000  0.0000  MulAddRecFNToRaw_postMul_1_DW01_ash_0_DW01_ash_158
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_preMul
+                                      2015.1742      0.0     1822.2919        0.0000  0.0000  MulAddRecFNToRaw_preMul_1
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_preMul/add_0_root_add_0_root_add_273530
+                                        90.1056      0.0       90.1056        0.0000  0.0000  MulAddRecFNToRaw_preMul_1_DW01_add_0_DW01_add_100
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mulAddRecFNToRaw_preMul/sub_273536
+                                       102.7767      0.0      102.7767        0.0000  0.0000  MulAddRecFNToRaw_preMul_1_DW01_sub_1_DW01_sub_28
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mult_274847
+                                      8001.5651      0.1     7670.2393        0.0000  0.0000  MulAddRecFNPipe_1_DW02_mult_0_DW02_mult_5
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/mult_274847/FS_1
+                                       331.3258      0.0      331.3258        0.0000  0.0000  MulAddRecFNPipe_1_DW01_add_1_DW01_add_134
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/roundRawFNToRecFN
+                                      1398.0447      0.0        0.0000        0.0000  0.0000  RoundRawFNToRecFN_1
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/roundRawFNToRecFN/roundAnyRawFNToRecFN
+                                      1398.0447      0.0     1284.0048        0.0000  0.0000  RoundAnyRawFNToRecFN_3
+core/fp_pipeline/fpiu_unit/fpu/fpu/sfma/fma/roundRawFNToRecFN/roundAnyRawFNToRecFN/add_274487
+                                       114.0399      0.0      114.0399        0.0000  0.0000  RoundAnyRawFNToRecFN_3_DW01_inc_0_DW01_inc_83
+core/fp_pipeline/fpiu_unit/srl_291517
+                                      1401.7991      0.0     1401.7991        0.0000  0.0000  FPUExeUnit_DW_rash_1_DW_rash_61
+core/fp_pipeline/fpiu_unit/srl_291551
+                                       514.8221      0.0      514.8221        0.0000  0.0000  FPUExeUnit_DW_rash_0_DW_rash_60
+core/fp_pipeline/fregfile           159118.0394      1.4   109685.7329    49432.3065  0.0000  RegisterFileSynthesizable
+core/fp_pipeline/fregister_read      13306.0626      0.1     1725.1467    11304.9674  0.0000  RegisterRead
+core/fp_pipeline/fregister_read/RegisterReadDecode
+                                       275.9484      0.0      275.9484        0.0000  0.0000  RegisterReadDecode
+core/fp_pipeline/ll_wbarb              703.4807      0.0      703.4807        0.0000  0.0000  Arbiter_14_1
+core/fp_pipeline/sll_334301           1469.3783      0.0     1469.3783        0.0000  0.0000  FpPipeline_DW01_ash_1_DW01_ash_155
+core/fp_pipeline/sll_334378            504.0282      0.0      504.0282        0.0000  0.0000  FpPipeline_DW01_ash_0_DW01_ash_154
+core/fp_pipeline/srl_334464           1424.7948      0.0     1424.7948        0.0000  0.0000  FpPipeline_DW_rash_3_DW_rash_59
+core/fp_pipeline/srl_334498            492.2957      0.0      492.2957        0.0000  0.0000  FpPipeline_DW_rash_2_DW_rash_58
+core/fp_pipeline/srl_334533           1410.2465      0.0     1410.2465        0.0000  0.0000  FpPipeline_DW_rash_1_DW_rash_57
+core/fp_pipeline/srl_334567            483.3790      0.0      483.3790        0.0000  0.0000  FpPipeline_DW_rash_0_DW_rash_56
+core/fp_rename_stage                130983.0359      1.1     4785.9213     1555.7295  0.0000  RenameStage_1
+core/fp_rename_stage/busytable        9099.7268      0.1     1345.9524      765.8976  0.0000  RenameBusyTable_1
+core/fp_rename_stage/busytable/sll_393890
+                                       592.7259      0.0      592.7259        0.0000  0.0000  RenameBusyTable_1_DW01_ash_4_DW01_ash_121
+core/fp_rename_stage/busytable/sll_393894
+                                       561.7521      0.0      561.7521        0.0000  0.0000  RenameBusyTable_1_DW01_ash_3_DW01_ash_120
+core/fp_rename_stage/busytable/sll_393902
+                                       568.7916      0.0      568.7916        0.0000  0.0000  RenameBusyTable_1_DW01_ash_2_DW01_ash_119
+core/fp_rename_stage/busytable/sll_393906
+                                       564.5679      0.0      564.5679        0.0000  0.0000  RenameBusyTable_1_DW01_ash_1_DW01_ash_118
+core/fp_rename_stage/busytable/sll_393910
+                                       567.3837      0.0      567.3837        0.0000  0.0000  RenameBusyTable_1_DW01_ash_0_DW01_ash_117
+core/fp_rename_stage/busytable/srl_393917
+                                       464.6070      0.0      464.6070        0.0000  0.0000  RenameBusyTable_1_DW_rash_8_DW_rash_49
+core/fp_rename_stage/busytable/srl_393918
+                                       455.6903      0.0      455.6903        0.0000  0.0000  RenameBusyTable_1_DW_rash_7_DW_rash_48
+core/fp_rename_stage/busytable/srl_393919
+                                       451.9359      0.0      451.9359        0.0000  0.0000  RenameBusyTable_1_DW_rash_6_DW_rash_47
+core/fp_rename_stage/busytable/srl_393920
+                                       457.5675      0.0      457.5675        0.0000  0.0000  RenameBusyTable_1_DW_rash_5_DW_rash_46
+core/fp_rename_stage/busytable/srl_393921
+                                       457.5675      0.0      457.5675        0.0000  0.0000  RenameBusyTable_1_DW_rash_4_DW_rash_45
+core/fp_rename_stage/busytable/srl_393922
+                                       465.0763      0.0      465.0763        0.0000  0.0000  RenameBusyTable_1_DW_rash_3_DW_rash_44
+core/fp_rename_stage/busytable/srl_393923
+                                       464.6070      0.0      464.6070        0.0000  0.0000  RenameBusyTable_1_DW_rash_2_DW_rash_43
+core/fp_rename_stage/busytable/srl_393924
+                                       453.8131      0.0      453.8131        0.0000  0.0000  RenameBusyTable_1_DW_rash_1_DW_rash_42
+core/fp_rename_stage/busytable/srl_393925
+                                       461.7912      0.0      461.7912        0.0000  0.0000  RenameBusyTable_1_DW_rash_0_DW_rash_41
+core/fp_rename_stage/freelist        40580.3702      0.4    26965.5083    10044.4277  0.0000  RenameFreeList_1
+core/fp_rename_stage/freelist/sll_392998
+                                       682.3622      0.0      682.3622        0.0000  0.0000  RenameFreeList_1_DW01_ash_8_DW01_ash_130
+core/fp_rename_stage/freelist/sll_392999
+                                       573.9539      0.0      573.9539        0.0000  0.0000  RenameFreeList_1_DW01_ash_7_DW01_ash_129
+core/fp_rename_stage/freelist/sll_393000
+                                       561.7521      0.0      561.7521        0.0000  0.0000  RenameFreeList_1_DW01_ash_6_DW01_ash_128
+core/fp_rename_stage/freelist/sll_393045
+                                       582.8706      0.0      582.8706        0.0000  0.0000  RenameFreeList_1_DW01_ash_5_DW01_ash_127
+core/fp_rename_stage/freelist/sll_393049
+                                       583.3399      0.0      583.3399        0.0000  0.0000  RenameFreeList_1_DW01_ash_4_DW01_ash_126
+core/fp_rename_stage/freelist/sll_393053
+                                       586.1557      0.0      586.1557        0.0000  0.0000  RenameFreeList_1_DW01_ash_3_DW01_ash_125
+core/fp_rename_stage/maptable        74961.2881      0.7    51156.0461    23232.2267  0.0000  RenameMapTable_1
+core/fp_rename_stage/maptable/sll_369674
+                                       190.5358      0.0      190.5358        0.0000  0.0000  RenameMapTable_1_DW01_ash_2_DW01_ash_133
+core/fp_rename_stage/maptable/sll_369678
+                                       191.4744      0.0      191.4744        0.0000  0.0000  RenameMapTable_1_DW01_ash_1_DW01_ash_132
+core/fp_rename_stage/maptable/sll_369682
+                                       191.0051      0.0      191.0051        0.0000  0.0000  RenameMapTable_1_DW01_ash_0_DW01_ash_131
+core/ftq_arb                            33.7896      0.0       33.7896        0.0000  0.0000  Arbiter_17
+core/int_issue_unit                 465843.5980      4.1   239355.6672       23.9343  0.0000  IssueUnitCollapsing_2
+core/int_issue_unit/slots_0           9390.6929      0.1     4563.9425     4826.7504  0.0000  IssueSlot_24_23
+core/int_issue_unit/slots_1           9417.9123      0.1     4591.1619     4826.7504  0.0000  IssueSlot_24_22
+core/int_issue_unit/slots_10          9436.2149      0.1     4609.4646     4826.7504  0.0000  IssueSlot_24_13
+core/int_issue_unit/slots_11          9426.8289      0.1     4600.0786     4826.7504  0.0000  IssueSlot_24_12
+core/int_issue_unit/slots_12          9435.7456      0.1     4608.9953     4826.7504  0.0000  IssueSlot_24_11
+core/int_issue_unit/slots_13          9433.3991      0.1     4606.6488     4826.7504  0.0000  IssueSlot_24_10
+core/int_issue_unit/slots_14          9457.8027      0.1     4631.0524     4826.7504  0.0000  IssueSlot_24_9
+core/int_issue_unit/slots_15          9446.5395      0.1     4619.7892     4826.7504  0.0000  IssueSlot_24_8
+core/int_issue_unit/slots_16          9436.6842      0.1     4609.9339     4826.7504  0.0000  IssueSlot_24_7
+core/int_issue_unit/slots_17          9442.3158      0.1     4615.5655     4826.7504  0.0000  IssueSlot_24_6
+core/int_issue_unit/slots_18          9445.6009      0.1     4618.8506     4826.7504  0.0000  IssueSlot_24_5
+core/int_issue_unit/slots_19          9415.0964      0.1     4588.3461     4826.7504  0.0000  IssueSlot_24_4
+core/int_issue_unit/slots_2           9455.4562      0.1     4628.7059     4826.7504  0.0000  IssueSlot_24_21
+core/int_issue_unit/slots_20          9409.4649      0.1     4582.7145     4826.7504  0.0000  IssueSlot_24_3
+core/int_issue_unit/slots_21          9477.0440      0.1     4650.2937     4826.7504  0.0000  IssueSlot_24_2
+core/int_issue_unit/slots_22          9468.5966      0.1     4641.8463     4826.7504  0.0000  IssueSlot_24_1
+core/int_issue_unit/slots_23          9409.9341      0.1     4583.1838     4826.7504  0.0000  IssueSlot_24_0
+core/int_issue_unit/slots_3           9441.8465      0.1     4615.0962     4826.7504  0.0000  IssueSlot_24_20
+core/int_issue_unit/slots_4           9444.1930      0.1     4617.4427     4826.7504  0.0000  IssueSlot_24_19
+core/int_issue_unit/slots_5           9443.7237      0.1     4616.9734     4826.7504  0.0000  IssueSlot_24_18
+core/int_issue_unit/slots_6           9443.7237      0.1     4616.9734     4826.7504  0.0000  IssueSlot_24_17
+core/int_issue_unit/slots_7           9429.6448      0.1     4602.8944     4826.7504  0.0000  IssueSlot_24_16
+core/int_issue_unit/slots_8           9429.1754      0.1     4602.4251     4826.7504  0.0000  IssueSlot_24_15
+core/int_issue_unit/slots_9           9426.3597      0.1     4599.6093     4826.7504  0.0000  IssueSlot_24_14
+core/iregfile                       225577.4894      2.0   174693.1687    50884.3207  0.0000  RegisterFileSynthesizable_1
+core/iregister_read                  35040.2837      0.3     9652.5622    24476.8103  0.0000  RegisterRead_1
+core/iregister_read/RegisterReadDecode
+                                       123.4259      0.0      123.4259        0.0000  0.0000  RegisterReadDecode_1
+core/iregister_read/RegisterReadDecode_1
+                                       399.3743      0.0      399.3743        0.0000  0.0000  RegisterReadDecode_2
+core/iregister_read/RegisterReadDecode_2
+                                       388.1111      0.0      388.1111        0.0000  0.0000  RegisterReadDecode_3
+core/ll_wbarb                          447.7122      0.0      447.7122        0.0000  0.0000  Arbiter_16
+core/mem_issue_unit                 385639.7600      3.4   159032.6270       23.9343  0.0000  IssueUnitCollapsing_1
+core/mem_issue_unit/slots_0           9391.1622      0.1     4564.4118     4826.7504  0.0000  IssueSlot_24_47
+core/mem_issue_unit/slots_1           9431.9913      0.1     4605.2409     4826.7504  0.0000  IssueSlot_24_46
+core/mem_issue_unit/slots_10          9444.6623      0.1     4617.9120     4826.7504  0.0000  IssueSlot_24_37
+core/mem_issue_unit/slots_11          9441.3772      0.1     4614.6269     4826.7504  0.0000  IssueSlot_24_36
+core/mem_issue_unit/slots_12          9429.6447      0.1     4602.8944     4826.7504  0.0000  IssueSlot_24_35
+core/mem_issue_unit/slots_13          9454.0483      0.1     4627.2980     4826.7504  0.0000  IssueSlot_24_34
+core/mem_issue_unit/slots_14          9447.0088      0.1     4620.2585     4826.7504  0.0000  IssueSlot_24_33
+core/mem_issue_unit/slots_15          9436.6842      0.1     4609.9339     4826.7504  0.0000  IssueSlot_24_32
+core/mem_issue_unit/slots_16          9443.2544      0.1     4616.5041     4826.7504  0.0000  IssueSlot_24_31
+core/mem_issue_unit/slots_17          9430.1140      0.1     4603.3637     4826.7504  0.0000  IssueSlot_24_30
+core/mem_issue_unit/slots_18          9421.1973      0.1     4594.4470     4826.7504  0.0000  IssueSlot_24_29
+core/mem_issue_unit/slots_19          9431.5219      0.1     4604.7716     4826.7504  0.0000  IssueSlot_24_28
+core/mem_issue_unit/slots_2           9453.1097      0.1     4626.3594     4826.7504  0.0000  IssueSlot_24_45
+core/mem_issue_unit/slots_20          9433.8684      0.1     4607.1181     4826.7504  0.0000  IssueSlot_24_27
+core/mem_issue_unit/slots_21          9456.3948      0.1     4629.6445     4826.7504  0.0000  IssueSlot_24_26
+core/mem_issue_unit/slots_22          9478.4519      0.1     4651.7016     4826.7504  0.0000  IssueSlot_24_25
+core/mem_issue_unit/slots_23          9412.2806      0.1     4585.5303     4826.7504  0.0000  IssueSlot_24_24
+core/mem_issue_unit/slots_3           9439.5000      0.1     4612.7497     4826.7504  0.0000  IssueSlot_24_44
+core/mem_issue_unit/slots_4           9455.9255      0.1     4629.1752     4826.7504  0.0000  IssueSlot_24_43
+core/mem_issue_unit/slots_5           9456.3948      0.1     4629.6445     4826.7504  0.0000  IssueSlot_24_42
+core/mem_issue_unit/slots_6           9446.0702      0.1     4619.3199     4826.7504  0.0000  IssueSlot_24_41
+core/mem_issue_unit/slots_7           9453.5790      0.1     4626.8287     4826.7504  0.0000  IssueSlot_24_40
+core/mem_issue_unit/slots_8           9450.7632      0.1     4624.0129     4826.7504  0.0000  IssueSlot_24_39
+core/mem_issue_unit/slots_9           9444.1930      0.1     4617.4427     4826.7504  0.0000  IssueSlot_24_38
+core/mem_units_0                       889.7928      0.0        2.8158        0.0000  0.0000  ALUExeUnit
+core/mem_units_0/MemAddrCalcUnit       886.9770      0.0      313.0231        0.0000  0.0000  MemAddrCalcUnit
+core/mem_units_0/MemAddrCalcUnit/add_253538
+                                       573.9539      0.0      573.9539        0.0000  0.0000  MemAddrCalcUnit_DW01_add_0_DW01_add_35
+core/rename_stage                   149459.8459      1.3    12767.7757    13857.9594  0.0000  RenameStage
+core/rename_stage/busytable          10715.0574      0.1     2436.1363      797.8100  0.0000  RenameBusyTable
+core/rename_stage/busytable/sll_362739
+                                       582.4013      0.0      582.4013        0.0000  0.0000  RenameBusyTable_DW01_ash_7_DW01_ash_141
+core/rename_stage/busytable/sll_362743
+                                       603.0505      0.0      603.0505        0.0000  0.0000  RenameBusyTable_DW01_ash_6_DW01_ash_140
+core/rename_stage/busytable/sll_362747
+                                       577.2390      0.0      577.2390        0.0000  0.0000  RenameBusyTable_DW01_ash_5_DW01_ash_139
+core/rename_stage/busytable/sll_362751
+                                       611.4979      0.0      611.4979        0.0000  0.0000  RenameBusyTable_DW01_ash_4_DW01_ash_138
+core/rename_stage/busytable/sll_362755
+                                       615.7216      0.0      615.7216        0.0000  0.0000  RenameBusyTable_DW01_ash_3_DW01_ash_137
+core/rename_stage/busytable/sll_362766
+                                       589.4408      0.0      589.4408        0.0000  0.0000  RenameBusyTable_DW01_ash_2_DW01_ash_136
+core/rename_stage/busytable/sll_362770
+                                       596.4803      0.0      596.4803        0.0000  0.0000  RenameBusyTable_DW01_ash_1_DW01_ash_135
+core/rename_stage/busytable/sll_362774
+                                       593.6645      0.0      593.6645        0.0000  0.0000  RenameBusyTable_DW01_ash_0_DW01_ash_134
+core/rename_stage/busytable/srl_362781
+                                       448.6508      0.0      448.6508        0.0000  0.0000  RenameBusyTable_DW_rash_5_DW_rash_55
+core/rename_stage/busytable/srl_362782
+                                       447.2429      0.0      447.2429        0.0000  0.0000  RenameBusyTable_DW_rash_4_DW_rash_54
+core/rename_stage/busytable/srl_362783
+                                       456.1596      0.0      456.1596        0.0000  0.0000  RenameBusyTable_DW_rash_3_DW_rash_53
+core/rename_stage/busytable/srl_362784
+                                       453.3438      0.0      453.3438        0.0000  0.0000  RenameBusyTable_DW_rash_2_DW_rash_52
+core/rename_stage/busytable/srl_362785
+                                       453.3438      0.0      453.3438        0.0000  0.0000  RenameBusyTable_DW_rash_1_DW_rash_51
+core/rename_stage/busytable/srl_362786
+                                       452.8745      0.0      452.8745        0.0000  0.0000  RenameBusyTable_DW_rash_0_DW_rash_50
+core/rename_stage/freelist           42124.3672      0.4    27992.8059    10459.2889  0.0000  RenameFreeList
+core/rename_stage/freelist/sll_361827
+                                       686.1166      0.0      686.1166        0.0000  0.0000  RenameFreeList_DW01_ash_8_DW01_ash_150
+core/rename_stage/freelist/sll_361828
+                                       591.3180      0.0      591.3180        0.0000  0.0000  RenameFreeList_DW01_ash_7_DW01_ash_149
+core/rename_stage/freelist/sll_361829
+                                       584.7478      0.0      584.7478        0.0000  0.0000  RenameFreeList_DW01_ash_6_DW01_ash_148
+core/rename_stage/freelist/sll_361874
+                                       603.0505      0.0      603.0505        0.0000  0.0000  RenameFreeList_DW01_ash_5_DW01_ash_147
+core/rename_stage/freelist/sll_361878
+                                       603.5198      0.0      603.5198        0.0000  0.0000  RenameFreeList_DW01_ash_4_DW01_ash_146
+core/rename_stage/freelist/sll_361882
+                                       603.5198      0.0      603.5198        0.0000  0.0000  RenameFreeList_DW01_ash_3_DW01_ash_145
+core/rename_stage/maptable           69994.6862      0.6    46911.6969    22506.2196  0.0000  RenameMapTable
+core/rename_stage/maptable/sll_339192
+                                       192.4130      0.0      192.4130        0.0000  0.0000  RenameMapTable_DW01_ash_2_DW01_ash_153
+core/rename_stage/maptable/sll_339196
+                                       192.4130      0.0      192.4130        0.0000  0.0000  RenameMapTable_DW01_ash_1_DW01_ash_152
+core/rename_stage/maptable/sll_339200
+                                       191.9437      0.0      191.9437        0.0000  0.0000  RenameMapTable_DW01_ash_0_DW01_ash_151
+core/rob                           1350328.1345     11.8   841883.8328   508444.3017  0.0000  Rob
+dcache                              459421.6971      4.0     8755.7300     7579.1948  0.0000  BoomNonBlockingDCache
+dcache/MaxPeriodFibonacciLFSR          251.0755      0.0      123.4259      127.6496  0.0000  MaxPeriodFibonacciLFSR
+dcache/amoalu                         2319.2806      0.0     1204.2238        0.0000  0.0000  AMOALU
+dcache/amoalu/add_181350               569.2609      0.0      569.2609        0.0000  0.0000  AMOALU_DW01_add_0_DW01_add_97
+dcache/amoalu/lt_181363                226.6719      0.0      226.6719        0.0000  0.0000  AMOALU_DW01_cmp2_0_DW01_cmp2_375
+dcache/amoalu/r69                      319.1240      0.0      319.1240        0.0000  0.0000  AMOALU_DW01_cmp6_0_DW01_cmp6_1655
+dcache/data                            148.7681      0.0      148.7681        0.0000  0.0000  BoomDataArray
+dcache/dataReadArb                     160.9699      0.0      160.9699        0.0000  0.0000  Arbiter_12
+dcache/dataWriteArb                    739.1475      0.0      739.1475        0.0000  0.0000  Arbiter_11
+dcache/eq_183257                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_13_DW01_cmp6_1653
+dcache/eq_183259                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_12_DW01_cmp6_1652
+dcache/eq_183261                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_11_DW01_cmp6_1651
+dcache/eq_183263                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_10_DW01_cmp6_1650
+dcache/eq_183265                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_9_DW01_cmp6_1649
+dcache/eq_183267                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_8_DW01_cmp6_1648
+dcache/eq_183269                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_7_DW01_cmp6_1647
+dcache/eq_183271                       156.2769      0.0      156.2769        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_6_DW01_cmp6_1646
+dcache/eq_183334                       251.0755      0.0      251.0755        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_4_DW01_cmp6_1644
+dcache/eq_183585                       259.0536      0.0      259.0536        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_2_DW01_cmp6_1642
+dcache/eq_183588                       252.9527      0.0      252.9527        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_1_DW01_cmp6_1641
+dcache/eq_183591                       259.0536      0.0      259.0536        0.0000  0.0000  BoomNonBlockingDCache_DW01_cmp6_0_DW01_cmp6_1640
+dcache/metaReadArb                     111.2241      0.0      111.2241        0.0000  0.0000  Arbiter_10
+dcache/metaWriteArb                    219.1631      0.0      219.1631        0.0000  0.0000  Arbiter_9
+dcache/meta_0                       234576.3163      2.0   131988.2771   102558.4732  0.0000  L1MetadataArray
+dcache/meta_0/add_179403                29.5659      0.0       29.5659        0.0000  0.0000  L1MetadataArray_DW01_inc_0_DW01_inc_100
+dcache/mshrs                        190552.2225      1.7    32965.0396    25330.4669  0.0000  BoomMSHRFile
+dcache/mshrs/eq_178030                 197.5753      0.0      197.5753        0.0000  0.0000  BoomMSHRFile_DW01_cmp6_10_DW01_cmp6_1666
+dcache/mshrs/eq_178035                 197.5753      0.0      197.5753        0.0000  0.0000  BoomMSHRFile_DW01_cmp6_8_DW01_cmp6_1664
+dcache/mshrs/eq_178040                 197.5753      0.0      197.5753        0.0000  0.0000  BoomMSHRFile_DW01_cmp6_5_DW01_cmp6_1661
+dcache/mshrs/eq_178045                 197.5753      0.0      197.5753        0.0000  0.0000  BoomMSHRFile_DW01_cmp6_7_DW01_cmp6_1663
+dcache/mshrs/lb_read_arb                67.5792      0.0       67.5792        0.0000  0.0000  Arbiter
+dcache/mshrs/lb_write_arb             2164.8809      0.0     2164.8809        0.0000  0.0000  Arbiter_1
+dcache/mshrs/meta_read_arb             577.2390      0.0      577.2390        0.0000  0.0000  Arbiter_3
+dcache/mshrs/meta_write_arb            629.3313      0.0      629.3313        0.0000  0.0000  Arbiter_2
+dcache/mshrs/mmio_alloc_arb              0.0000      0.0        0.0000        0.0000  0.0000  Arbiter_8
+dcache/mshrs/mmios_0                  3854.8301      0.0     2219.3197     1635.5105  0.0000  BoomIOMSHR
+dcache/mshrs/mshrs_0                 30029.0986      0.3     2289.2454      773.8757  0.0000  BoomMSHR_3
+dcache/mshrs/mshrs_0/rpq             26965.9776      0.2    15788.6597    11177.3179  0.0000  BranchKillableQueue_3
+dcache/mshrs/mshrs_1                 29908.4885      0.3     2254.0479      773.8757  0.0000  BoomMSHR_2
+dcache/mshrs/mshrs_1/rpq             26880.5650      0.2    15703.2471    11177.3179  0.0000  BranchKillableQueue_2
+dcache/mshrs/mshrs_2                 29947.4404      0.3     2220.2583      773.8757  0.0000  BoomMSHR_1
+dcache/mshrs/mshrs_2/rpq             26953.3065      0.2    15775.9886    11177.3179  0.0000  BranchKillableQueue_1
+dcache/mshrs/mshrs_3                 29928.6684      0.3     2216.0346      773.8757  0.0000  BoomMSHR_0
+dcache/mshrs/mshrs_3/rpq             26938.7582      0.2    15761.4403    11177.3179  0.0000  BranchKillableQueue_0
+dcache/mshrs/refill_arb               1363.7858      0.0     1363.7858        0.0000  0.0000  Arbiter_7
+dcache/mshrs/replay_arb               1078.9207      0.0     1078.9207        0.0000  0.0000  Arbiter_5
+dcache/mshrs/resp_arb                 1169.0263      0.0     1169.0263        0.0000  0.0000  Arbiter_6
+dcache/mshrs/sll_178359                122.4873      0.0      122.4873        0.0000  0.0000  BoomMSHRFile_DW01_ash_0_DW01_ash_186
+dcache/mshrs/wb_req_arb                624.6383      0.0      624.6383        0.0000  0.0000  Arbiter_4
+dcache/prober                          995.3853      0.0      532.6555      462.7298  0.0000  BoomProbeUnit
+dcache/wb                            10540.9471      0.1     6009.3864     4531.5607  0.0000  BoomWritebackUnit
+dcache/wbArb                           199.9218      0.0      199.9218        0.0000  0.0000  Arbiter_13
+frontend                           6529019.7556     56.8      901.9946      710.0509  0.0000  BoomFrontend
+frontend/add_244931                    263.2773      0.0      263.2773        0.0000  0.0000  BoomFrontend_DW01_add_0_DW01_add_36
+frontend/bpdpipeline               1176321.5474     10.2      729.2922        0.0000  0.0000  BranchPredictionStage
+frontend/bpdpipeline/add_0_root_add_0_root_add_243560
+                                       270.7861      0.0      270.7861        0.0000  0.0000  BranchPredictionStage_DW01_add_0_DW01_add_105
+frontend/bpdpipeline/bpd            389075.5049      3.4   223106.1557   164500.4403  0.0000  GShareBrPredictor
+frontend/bpdpipeline/bpd/add_242979
+                                        29.5659      0.0       29.5659        0.0000  0.0000  GShareBrPredictor_DW01_inc_1_DW01_inc_91
+frontend/bpdpipeline/bpd/add_242982
+                                        53.0309      0.0       53.0309        0.0000  0.0000  GShareBrPredictor_DW01_inc_0_DW01_inc_90
+frontend/bpdpipeline/bpd/q_f3_history
+                                       787.0161      0.0      404.0673      382.9488  0.0000  ElasticReg_2
+frontend/bpdpipeline/bpd/q_s3_resp
+                                       599.2961      0.0      312.0845      287.2116  0.0000  ElasticReg_3
+frontend/bpdpipeline/btb            786245.9642      6.8   249386.4862   204374.9832  0.0000  BTBsa
+frontend/bpdpipeline/btb/bim        318464.1577      2.8   175758.9475   134287.3762  0.0000  BimodalTable
+frontend/bpdpipeline/btb/bim/Queue
+                                      1324.3646      0.0      741.9633      582.4013  0.0000  Queue_16_1
+frontend/bpdpipeline/btb/bim/Queue_1
+                                      2850.5282      0.0     1502.2293     1348.2989  0.0000  Queue_17_1
+frontend/bpdpipeline/btb/bim/Queue_2
+                                      1325.3032      0.0      742.9019      582.4013  0.0000  Queue_16_0
+frontend/bpdpipeline/btb/bim/Queue_3
+                                      2849.1203      0.0     1500.8214     1348.2989  0.0000  Queue_17_0
+frontend/bpdpipeline/btb/bim/add_239079
+                                        29.5659      0.0       29.5659        0.0000  0.0000  BimodalTable_DW01_inc_1_DW01_inc_94
+frontend/bpdpipeline/btb/bim/add_239082
+                                        38.9519      0.0       38.9519        0.0000  0.0000  BimodalTable_DW01_inc_0_DW01_inc_93
+frontend/bpdpipeline/btb/sll_241062
+                                      2810.6376      0.0     2810.6376        0.0000  0.0000  BTBsa_DW01_ash_2_DW01_ash_172
+frontend/bpdpipeline/btb/sll_241067
+                                      2938.2872      0.0     2938.2872        0.0000  0.0000  BTBsa_DW01_ash_1_DW01_ash_171
+frontend/bpdpipeline/btb/srl_241056
+                                      2051.7796      0.0     2051.7796        0.0000  0.0000  BTBsa_DW_rash_4_DW_rash_83
+frontend/bpdpipeline/btb/srl_241070
+                                      2070.5516      0.0     2070.5516        0.0000  0.0000  BTBsa_DW_rash_3_DW_rash_82
+frontend/bpdpipeline/btb/srl_241076
+                                      2073.3674      0.0     2073.3674        0.0000  0.0000  BTBsa_DW_rash_2_DW_rash_81
+frontend/bpdpipeline/btb/srl_241082
+                                      2075.7139      0.0     2075.7139        0.0000  0.0000  BTBsa_DW_rash_1_DW_rash_80
+frontend/fetch_controller           400686.9270      3.5    15244.7410    11624.0914  0.0000  FetchControlUnit
+frontend/fetch_controller/BranchDecode
+                                       961.1264      0.0      269.3782        0.0000  0.0000  BranchDecode_21
+frontend/fetch_controller/BranchDecode/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_21_DW01_add_1_DW01_add_78
+frontend/fetch_controller/BranchDecode/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_21_DW01_add_0_DW01_add_77
+frontend/fetch_controller/BranchDecode_1
+                                       954.0869      0.0      262.3387        0.0000  0.0000  BranchDecode_20
+frontend/fetch_controller/BranchDecode_1/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_20_DW01_add_1_DW01_add_76
+frontend/fetch_controller/BranchDecode_1/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_20_DW01_add_0_DW01_add_75
+frontend/fetch_controller/BranchDecode_10
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_11
+frontend/fetch_controller/BranchDecode_10/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_11_DW01_add_1_DW01_add_58
+frontend/fetch_controller/BranchDecode_10/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_11_DW01_add_0_DW01_add_57
+frontend/fetch_controller/BranchDecode_11
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_10
+frontend/fetch_controller/BranchDecode_11/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_10_DW01_add_1_DW01_add_56
+frontend/fetch_controller/BranchDecode_11/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_10_DW01_add_0_DW01_add_55
+frontend/fetch_controller/BranchDecode_12
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_9
+frontend/fetch_controller/BranchDecode_12/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_9_DW01_add_1_DW01_add_54
+frontend/fetch_controller/BranchDecode_12/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_9_DW01_add_0_DW01_add_53
+frontend/fetch_controller/BranchDecode_13
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_8
+frontend/fetch_controller/BranchDecode_13/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_8_DW01_add_1_DW01_add_52
+frontend/fetch_controller/BranchDecode_13/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_8_DW01_add_0_DW01_add_51
+frontend/fetch_controller/BranchDecode_14
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_7
+frontend/fetch_controller/BranchDecode_14/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_7_DW01_add_1_DW01_add_50
+frontend/fetch_controller/BranchDecode_14/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_7_DW01_add_0_DW01_add_49
+frontend/fetch_controller/BranchDecode_15
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_6
+frontend/fetch_controller/BranchDecode_15/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_6_DW01_add_1_DW01_add_48
+frontend/fetch_controller/BranchDecode_15/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_6_DW01_add_0_DW01_add_47
+frontend/fetch_controller/BranchDecode_16
+                                       918.8894      0.0      227.1412        0.0000  0.0000  BranchDecode_5
+frontend/fetch_controller/BranchDecode_16/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_5_DW01_add_1_DW01_add_46
+frontend/fetch_controller/BranchDecode_16/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_5_DW01_add_0_DW01_add_45
+frontend/fetch_controller/BranchDecode_2
+                                       956.9027      0.0      265.1545        0.0000  0.0000  BranchDecode_19
+frontend/fetch_controller/BranchDecode_2/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_19_DW01_add_1_DW01_add_74
+frontend/fetch_controller/BranchDecode_2/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_19_DW01_add_0_DW01_add_73
+frontend/fetch_controller/BranchDecode_3
+                                       957.3720      0.0      265.6238        0.0000  0.0000  BranchDecode_18
+frontend/fetch_controller/BranchDecode_3/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_18_DW01_add_1_DW01_add_72
+frontend/fetch_controller/BranchDecode_3/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_18_DW01_add_0_DW01_add_71
+frontend/fetch_controller/BranchDecode_4
+                                       955.9641      0.0      264.2159        0.0000  0.0000  BranchDecode_17
+frontend/fetch_controller/BranchDecode_4/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_17_DW01_add_1_DW01_add_70
+frontend/fetch_controller/BranchDecode_4/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_17_DW01_add_0_DW01_add_69
+frontend/fetch_controller/BranchDecode_5
+                                       960.1878      0.0      268.4396        0.0000  0.0000  BranchDecode_16
+frontend/fetch_controller/BranchDecode_5/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_16_DW01_add_1_DW01_add_68
+frontend/fetch_controller/BranchDecode_5/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_16_DW01_add_0_DW01_add_67
+frontend/fetch_controller/BranchDecode_6
+                                       955.4948      0.0      263.7466        0.0000  0.0000  BranchDecode_15
+frontend/fetch_controller/BranchDecode_6/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_15_DW01_add_1_DW01_add_66
+frontend/fetch_controller/BranchDecode_6/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_15_DW01_add_0_DW01_add_65
+frontend/fetch_controller/BranchDecode_7
+                                       955.4948      0.0      263.7466        0.0000  0.0000  BranchDecode_14
+frontend/fetch_controller/BranchDecode_7/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_14_DW01_add_1_DW01_add_64
+frontend/fetch_controller/BranchDecode_7/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_14_DW01_add_0_DW01_add_63
+frontend/fetch_controller/BranchDecode_8
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_13
+frontend/fetch_controller/BranchDecode_8/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_13_DW01_add_1_DW01_add_62
+frontend/fetch_controller/BranchDecode_8/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_13_DW01_add_0_DW01_add_61
+frontend/fetch_controller/BranchDecode_9
+                                       926.8675      0.0      235.1193        0.0000  0.0000  BranchDecode_12
+frontend/fetch_controller/BranchDecode_9/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_12_DW01_add_1_DW01_add_60
+frontend/fetch_controller/BranchDecode_9/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_12_DW01_add_0_DW01_add_59
+frontend/fetch_controller/RVCExpander
+                                       757.9195      0.0      757.9195        0.0000  0.0000  RVCExpander_20
+frontend/fetch_controller/RVCExpander_1
+                                       770.5906      0.0      770.5906        0.0000  0.0000  RVCExpander_19
+frontend/fetch_controller/RVCExpander_10
+                                       935.7842      0.0      935.7842        0.0000  0.0000  RVCExpander_10
+frontend/fetch_controller/RVCExpander_11
+                                       925.4596      0.0      925.4596        0.0000  0.0000  RVCExpander_9
+frontend/fetch_controller/RVCExpander_12
+                                       923.5824      0.0      923.5824        0.0000  0.0000  RVCExpander_8
+frontend/fetch_controller/RVCExpander_13
+                                       925.4596      0.0      925.4596        0.0000  0.0000  RVCExpander_7
+frontend/fetch_controller/RVCExpander_14
+                                       922.6438      0.0      922.6438        0.0000  0.0000  RVCExpander_6
+frontend/fetch_controller/RVCExpander_15
+                                       922.6438      0.0      922.6438        0.0000  0.0000  RVCExpander_5
+frontend/fetch_controller/RVCExpander_16
+                                       912.3192      0.0      912.3192        0.0000  0.0000  RVCExpander_4
+frontend/fetch_controller/RVCExpander_2
+                                       768.2441      0.0      768.2441        0.0000  0.0000  RVCExpander_18
+frontend/fetch_controller/RVCExpander_3
+                                       770.1213      0.0      770.1213        0.0000  0.0000  RVCExpander_17
+frontend/fetch_controller/RVCExpander_4
+                                       768.2441      0.0      768.2441        0.0000  0.0000  RVCExpander_16
+frontend/fetch_controller/RVCExpander_5
+                                       769.6520      0.0      769.6520        0.0000  0.0000  RVCExpander_15
+frontend/fetch_controller/RVCExpander_6
+                                       766.8362      0.0      766.8362        0.0000  0.0000  RVCExpander_14
+frontend/fetch_controller/RVCExpander_7
+                                       774.3450      0.0      774.3450        0.0000  0.0000  RVCExpander_13
+frontend/fetch_controller/RVCExpander_8
+                                       890.7314      0.0      890.7314        0.0000  0.0000  RVCExpander_12
+frontend/fetch_controller/RVCExpander_9
+                                       923.1131      0.0      923.1131        0.0000  0.0000  RVCExpander_11
+frontend/fetch_controller/add_235224
+                                       252.4834      0.0      252.4834        0.0000  0.0000  FetchControlUnit_DW01_add_4_DW01_add_41
+frontend/fetch_controller/add_235229
+                                       252.4834      0.0      252.4834        0.0000  0.0000  FetchControlUnit_DW01_add_3_DW01_add_40
+frontend/fetch_controller/add_235234
+                                       252.4834      0.0      252.4834        0.0000  0.0000  FetchControlUnit_DW01_add_2_DW01_add_39
+frontend/fetch_controller/add_235239
+                                       252.4834      0.0      252.4834        0.0000  0.0000  FetchControlUnit_DW01_add_1_DW01_add_38
+frontend/fetch_controller/add_235262
+                                       259.9922      0.0      259.9922        0.0000  0.0000  FetchControlUnit_DW01_add_0_DW01_add_37
+frontend/fetch_controller/bchecker
+                                      4047.2431      0.0     3018.5376        0.0000  0.0000  BranchChecker
+frontend/fetch_controller/bchecker/add_0_root_add_0_root_add_197127
+                                       279.7028      0.0      279.7028        0.0000  0.0000  BranchChecker_DW01_add_1_DW01_add_142
+frontend/fetch_controller/bchecker/add_197058
+                                       259.9922      0.0      259.9922        0.0000  0.0000  BranchChecker_DW01_add_0_DW01_add_96
+frontend/fetch_controller/bchecker/ne_197015
+                                       244.5053      0.0      244.5053        0.0000  0.0000  BranchChecker_DW01_cmp6_1_DW01_cmp6_1620
+frontend/fetch_controller/bchecker/ne_197032
+                                       244.5053      0.0      244.5053        0.0000  0.0000  BranchChecker_DW01_cmp6_0_DW01_cmp6_1619
+frontend/fetch_controller/fb        214811.2783      1.9   157635.9912    50820.4959  0.0000  FetchBuffer
+frontend/fetch_controller/fb/add_206474
+                                       252.4834      0.0      252.4834        0.0000  0.0000  FetchBuffer_DW01_add_3_DW01_add_92
+frontend/fetch_controller/fb/add_206494
+                                       252.9527      0.0      252.9527        0.0000  0.0000  FetchBuffer_DW01_add_2_DW01_add_91
+frontend/fetch_controller/fb/add_206514
+                                       255.2992      0.0      255.2992        0.0000  0.0000  FetchBuffer_DW01_add_1_DW01_add_90
+frontend/fetch_controller/fb/add_206534
+                                       254.3606      0.0      254.3606        0.0000  0.0000  FetchBuffer_DW01_add_0_DW01_add_89
+frontend/fetch_controller/fb/gt_206406
+                                       312.5538      0.0      312.5538        0.0000  0.0000  FetchBuffer_DW01_cmp2_14_DW01_cmp2_363
+frontend/fetch_controller/fb/gt_206427
+                                       318.6547      0.0      318.6547        0.0000  0.0000  FetchBuffer_DW01_cmp2_12_DW01_cmp2_361
+frontend/fetch_controller/fb/gt_206447
+                                       318.6547      0.0      318.6547        0.0000  0.0000  FetchBuffer_DW01_cmp2_10_DW01_cmp2_359
+frontend/fetch_controller/fb/gt_206467
+                                       318.6547      0.0      318.6547        0.0000  0.0000  FetchBuffer_DW01_cmp2_8_DW01_cmp2_357
+frontend/fetch_controller/fb/gt_206487
+                                       323.3477      0.0      323.3477        0.0000  0.0000  FetchBuffer_DW01_cmp2_6_DW01_cmp2_355
+frontend/fetch_controller/fb/gt_206507
+                                       323.8170      0.0      323.8170        0.0000  0.0000  FetchBuffer_DW01_cmp2_4_DW01_cmp2_353
+frontend/fetch_controller/fb/gt_206527
+                                       324.2863      0.0      324.2863        0.0000  0.0000  FetchBuffer_DW01_cmp2_2_DW01_cmp2_351
+frontend/fetch_controller/fb/gt_206547
+                                       324.2863      0.0      324.2863        0.0000  0.0000  FetchBuffer_DW01_cmp2_0_DW01_cmp2_349
+frontend/fetch_controller/fb/lte_206404
+                                       309.2687      0.0      309.2687        0.0000  0.0000  FetchBuffer_DW01_cmp2_15_DW01_cmp2_364
+frontend/fetch_controller/fb/lte_206425
+                                       314.9003      0.0      314.9003        0.0000  0.0000  FetchBuffer_DW01_cmp2_13_DW01_cmp2_362
+frontend/fetch_controller/fb/lte_206445
+                                       314.9003      0.0      314.9003        0.0000  0.0000  FetchBuffer_DW01_cmp2_11_DW01_cmp2_360
+frontend/fetch_controller/fb/lte_206465
+                                       314.9003      0.0      314.9003        0.0000  0.0000  FetchBuffer_DW01_cmp2_9_DW01_cmp2_358
+frontend/fetch_controller/fb/lte_206485
+                                       312.5538      0.0      312.5538        0.0000  0.0000  FetchBuffer_DW01_cmp2_7_DW01_cmp2_356
+frontend/fetch_controller/fb/lte_206505
+                                       314.9003      0.0      314.9003        0.0000  0.0000  FetchBuffer_DW01_cmp2_5_DW01_cmp2_354
+frontend/fetch_controller/fb/lte_206525
+                                       315.3696      0.0      315.3696        0.0000  0.0000  FetchBuffer_DW01_cmp2_3_DW01_cmp2_352
+frontend/fetch_controller/fb/lte_206545
+                                       315.3696      0.0      315.3696        0.0000  0.0000  FetchBuffer_DW01_cmp2_1_DW01_cmp2_350
+frontend/fetch_controller/fb/sub_206391
+                                       263.2773      0.0      263.2773        0.0000  0.0000  FetchBuffer_DW01_sub_0_DW01_sub_40
+frontend/fetch_controller/ftq       105468.6030      0.9    76129.8449    28992.4148  0.0000  FetchTargetQueue
+frontend/fetch_controller/ftq/add_0_root_add_0_root_add_198770_aco
+                                       346.3434      0.0      346.3434        0.0000  0.0000  FetchTargetQueue_DW01_add_0_DW01_add_109
+frontend/fetch_controller/monitor     9187.9554      0.1      994.4467        0.0000  0.0000  FetchMonitor
+frontend/fetch_controller/monitor/BranchDecode
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_4
+frontend/fetch_controller/monitor/BranchDecode/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_4_DW01_add_1_DW01_add_88
+frontend/fetch_controller/monitor/BranchDecode/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_4_DW01_add_0_DW01_add_87
+frontend/fetch_controller/monitor/BranchDecode_1
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_3
+frontend/fetch_controller/monitor/BranchDecode_1/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_3_DW01_add_1_DW01_add_86
+frontend/fetch_controller/monitor/BranchDecode_1/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_3_DW01_add_0_DW01_add_85
+frontend/fetch_controller/monitor/BranchDecode_2
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_2
+frontend/fetch_controller/monitor/BranchDecode_2/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_2_DW01_add_1_DW01_add_84
+frontend/fetch_controller/monitor/BranchDecode_2/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_2_DW01_add_0_DW01_add_83
+frontend/fetch_controller/monitor/BranchDecode_3
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_1
+frontend/fetch_controller/monitor/BranchDecode_3/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_1_DW01_add_1_DW01_add_82
+frontend/fetch_controller/monitor/BranchDecode_3/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_1_DW01_add_0_DW01_add_81
+frontend/fetch_controller/monitor/BranchDecode_4
+                                       923.1131      0.0      231.3649        0.0000  0.0000  BranchDecode_0
+frontend/fetch_controller/monitor/BranchDecode_4/add_230137
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_0_DW01_add_1_DW01_add_80
+frontend/fetch_controller/monitor/BranchDecode_4/add_230149
+                                       345.8741      0.0      345.8741        0.0000  0.0000  BranchDecode_0_DW01_add_0_DW01_add_79
+frontend/fetch_controller/monitor/RVCExpander
+                                       886.9770      0.0      886.9770        0.0000  0.0000  RVCExpander_3
+frontend/fetch_controller/monitor/RVCExpander_1
+                                       886.9770      0.0      886.9770        0.0000  0.0000  RVCExpander_2
+frontend/fetch_controller/monitor/RVCExpander_2
+                                       890.2621      0.0      890.2621        0.0000  0.0000  RVCExpander_1
+frontend/fetch_controller/monitor/RVCExpander_3
+                                       913.7271      0.0      913.7271        0.0000  0.0000  RVCExpander_0
+frontend/fetch_controller/q_f3_btb_resp
+                                      2751.5059      0.0     1379.2727     1372.2332  0.0000  ElasticReg_1
+frontend/fetch_controller/q_f3_imemresp
+                                      5628.7841      0.0     2756.6682     2872.1159  0.0000  ElasticReg
+frontend/fetch_controller/sub_236048
+                                       260.9308      0.0      260.9308        0.0000  0.0000  FetchControlUnit_DW01_sub_0_DW01_sub_39
+frontend/icache                    4913541.3529     42.8  2703993.4665  2203583.0835  0.0000  ICache
+frontend/icache/MaxPeriodFibonacciLFSR
+                                       279.2335      0.0      151.5839      127.6496  0.0000  MaxPeriodFibonacciLFSR_1
+frontend/icache/add_186193_round        37.5440      0.0       37.5440        0.0000  0.0000  ICache_DW01_inc_0_DW01_inc_99
+frontend/icache/sll_186325            2884.7870      0.0     2884.7870        0.0000  0.0000  ICache_DW01_ash_0_DW01_ash_183
+frontend/icache/srl_186243             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_7_DW_rash_99
+frontend/icache/srl_186251             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_6_DW_rash_98
+frontend/icache/srl_186259             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_5_DW_rash_97
+frontend/icache/srl_186267             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_4_DW_rash_96
+frontend/icache/srl_186275             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_3_DW_rash_95
+frontend/icache/srl_186283             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_2_DW_rash_94
+frontend/icache/srl_186291             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_1_DW_rash_93
+frontend/icache/srl_186299             345.4048      0.0      345.4048        0.0000  0.0000  ICache_DW_rash_0_DW_rash_92
+frontend/tlb                         36594.6055      0.3    17614.2367    13738.2879  0.0000  TLB
+frontend/tlb/pmp                      5242.0809      0.0     3496.2849        0.0000  0.0000  PMPChecker
+frontend/tlb/pmp/lt_187668             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_7_DW01_cmp2_372
+frontend/tlb/pmp/lt_187673             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_6_DW01_cmp2_371
+frontend/tlb/pmp/lt_187722             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_5_DW01_cmp2_370
+frontend/tlb/pmp/lt_187773             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_4_DW01_cmp2_369
+frontend/tlb/pmp/lt_187824             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_3_DW01_cmp2_368
+frontend/tlb/pmp/lt_187875             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_2_DW01_cmp2_367
+frontend/tlb/pmp/lt_187926             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_1_DW01_cmp2_366
+frontend/tlb/pmp/lt_187977             218.2245      0.0      218.2245        0.0000  0.0000  PMPChecker_DW01_cmp2_0_DW01_cmp2_365
+frontend/tlb/u_1                         0.0000      0.0        0.0000        0.0000  0.0000  _1_65
+frontend/tlb/u_1_1                       0.0000      0.0        0.0000        0.0000  0.0000  _1_64
+frontend/tlb/u_1_10                      0.0000      0.0        0.0000        0.0000  0.0000  _1_55
+frontend/tlb/u_1_11                      0.0000      0.0        0.0000        0.0000  0.0000  _1_54
+frontend/tlb/u_1_12                      0.0000      0.0        0.0000        0.0000  0.0000  _1_53
+frontend/tlb/u_1_13                      0.0000      0.0        0.0000        0.0000  0.0000  _1_52
+frontend/tlb/u_1_14                      0.0000      0.0        0.0000        0.0000  0.0000  _1_51
+frontend/tlb/u_1_15                      0.0000      0.0        0.0000        0.0000  0.0000  _1_50
+frontend/tlb/u_1_16                      0.0000      0.0        0.0000        0.0000  0.0000  _1_49
+frontend/tlb/u_1_17                      0.0000      0.0        0.0000        0.0000  0.0000  _1_48
+frontend/tlb/u_1_18                      0.0000      0.0        0.0000        0.0000  0.0000  _1_47
+frontend/tlb/u_1_19                      0.0000      0.0        0.0000        0.0000  0.0000  _1_46
+frontend/tlb/u_1_2                       0.0000      0.0        0.0000        0.0000  0.0000  _1_63
+frontend/tlb/u_1_20                      0.0000      0.0        0.0000        0.0000  0.0000  _1_45
+frontend/tlb/u_1_21                      0.0000      0.0        0.0000        0.0000  0.0000  _1_44
+frontend/tlb/u_1_22                      0.0000      0.0        0.0000        0.0000  0.0000  _1_43
+frontend/tlb/u_1_23                      0.0000      0.0        0.0000        0.0000  0.0000  _1_42
+frontend/tlb/u_1_24                      0.0000      0.0        0.0000        0.0000  0.0000  _1_41
+frontend/tlb/u_1_25                      0.0000      0.0        0.0000        0.0000  0.0000  _1_40
+frontend/tlb/u_1_26                      0.0000      0.0        0.0000        0.0000  0.0000  _1_39
+frontend/tlb/u_1_27                      0.0000      0.0        0.0000        0.0000  0.0000  _1_38
+frontend/tlb/u_1_28                      0.0000      0.0        0.0000        0.0000  0.0000  _1_37
+frontend/tlb/u_1_29                      0.0000      0.0        0.0000        0.0000  0.0000  _1_36
+frontend/tlb/u_1_3                       0.0000      0.0        0.0000        0.0000  0.0000  _1_62
+frontend/tlb/u_1_30                      0.0000      0.0        0.0000        0.0000  0.0000  _1_35
+frontend/tlb/u_1_31                      0.0000      0.0        0.0000        0.0000  0.0000  _1_34
+frontend/tlb/u_1_32                      0.0000      0.0        0.0000        0.0000  0.0000  _1_33
+frontend/tlb/u_1_33                      0.0000      0.0        0.0000        0.0000  0.0000  _1_32
+frontend/tlb/u_1_34                      0.0000      0.0        0.0000        0.0000  0.0000  _1_31
+frontend/tlb/u_1_35                      0.0000      0.0        0.0000        0.0000  0.0000  _1_30
+frontend/tlb/u_1_36                      0.0000      0.0        0.0000        0.0000  0.0000  _1_29
+frontend/tlb/u_1_37                      0.0000      0.0        0.0000        0.0000  0.0000  _1_28
+frontend/tlb/u_1_38                      0.0000      0.0        0.0000        0.0000  0.0000  _1_27
+frontend/tlb/u_1_4                       0.0000      0.0        0.0000        0.0000  0.0000  _1_61
+frontend/tlb/u_1_5                       0.0000      0.0        0.0000        0.0000  0.0000  _1_60
+frontend/tlb/u_1_6                       0.0000      0.0        0.0000        0.0000  0.0000  _1_59
+frontend/tlb/u_1_7                       0.0000      0.0        0.0000        0.0000  0.0000  _1_58
+frontend/tlb/u_1_8                       0.0000      0.0        0.0000        0.0000  0.0000  _1_57
+frontend/tlb/u_1_9                       0.0000      0.0        0.0000        0.0000  0.0000  _1_56
+hellaCacheArb                            0.0000      0.0        0.0000        0.0000  0.0000  HellaCacheArbiter
+intXbar                                  0.0000      0.0        0.0000        0.0000  0.0000  IntXbar_4
+intsink                                 23.9343      0.0        0.0000        0.0000  0.0000  IntSyncCrossingSink
+intsink/SynchronizerShiftReg_w1_d3
+                                        23.9343      0.0        0.0000       23.9343  0.0000  SynchronizerShiftReg_w1_d3
+intsink_1                                0.0000      0.0        0.0000        0.0000  0.0000  IntSyncCrossingSink_1
+intsink_2                                0.0000      0.0        0.0000        0.0000  0.0000  IntSyncCrossingSource_1
+intsink_3                                0.0000      0.0        0.0000        0.0000  0.0000  IntSyncCrossingSource_0
+lsu                                 552794.0919      4.8   314089.8152   118442.8700  0.0000  LSU
+lsu/add_726599                         297.0669      0.0      297.0669        0.0000  0.0000  LSU_DW01_inc_21_DW01_inc_46
+lsu/add_726600                         297.0669      0.0      297.0669        0.0000  0.0000  LSU_DW01_inc_20_DW01_inc_45
+lsu/dtlb                             24577.7099      0.2    11068.9097     8169.5742  0.0000  NBDTLB
+lsu/dtlb/pmp_0                        5339.2260      0.0     3506.6095        0.0000  0.0000  PMPChecker_1
+lsu/dtlb/pmp_0/lt_670299               229.4877      0.0      229.4877        0.0000  0.0000  PMPChecker_1_DW01_cmp2_7_DW01_cmp2_286
+lsu/dtlb/pmp_0/lt_670308               229.0184      0.0      229.0184        0.0000  0.0000  PMPChecker_1_DW01_cmp2_6_DW01_cmp2_285
+lsu/dtlb/pmp_0/lt_670359               229.0184      0.0      229.0184        0.0000  0.0000  PMPChecker_1_DW01_cmp2_5_DW01_cmp2_284
+lsu/dtlb/pmp_0/lt_670415               229.0184      0.0      229.0184        0.0000  0.0000  PMPChecker_1_DW01_cmp2_4_DW01_cmp2_283
+lsu/dtlb/pmp_0/lt_670471               229.0184      0.0      229.0184        0.0000  0.0000  PMPChecker_1_DW01_cmp2_3_DW01_cmp2_282
+lsu/dtlb/pmp_0/lt_670527               229.0184      0.0      229.0184        0.0000  0.0000  PMPChecker_1_DW01_cmp2_2_DW01_cmp2_281
+lsu/dtlb/pmp_0/lt_670583               229.0184      0.0      229.0184        0.0000  0.0000  PMPChecker_1_DW01_cmp2_1_DW01_cmp2_280
+lsu/dtlb/pmp_0/lt_670639               229.0184      0.0      229.0184        0.0000  0.0000  PMPChecker_1_DW01_cmp2_0_DW01_cmp2_279
+lsu/dtlb/u_1                             0.0000      0.0        0.0000        0.0000  0.0000  _1_26
+lsu/dtlb/u_1_1                           0.0000      0.0        0.0000        0.0000  0.0000  _1_25
+lsu/dtlb/u_1_10                          0.0000      0.0        0.0000        0.0000  0.0000  _1_16
+lsu/dtlb/u_1_11                          0.0000      0.0        0.0000        0.0000  0.0000  _1_15
+lsu/dtlb/u_1_12                          0.0000      0.0        0.0000        0.0000  0.0000  _1_14
+lsu/dtlb/u_1_13                          0.0000      0.0        0.0000        0.0000  0.0000  _1_13
+lsu/dtlb/u_1_14                          0.0000      0.0        0.0000        0.0000  0.0000  _1_12
+lsu/dtlb/u_1_15                          0.0000      0.0        0.0000        0.0000  0.0000  _1_11
+lsu/dtlb/u_1_16                          0.0000      0.0        0.0000        0.0000  0.0000  _1_10
+lsu/dtlb/u_1_17                          0.0000      0.0        0.0000        0.0000  0.0000  _1_9
+lsu/dtlb/u_1_18                          0.0000      0.0        0.0000        0.0000  0.0000  _1_8
+lsu/dtlb/u_1_19                          0.0000      0.0        0.0000        0.0000  0.0000  _1_7
+lsu/dtlb/u_1_2                           0.0000      0.0        0.0000        0.0000  0.0000  _1_24
+lsu/dtlb/u_1_20                          0.0000      0.0        0.0000        0.0000  0.0000  _1_6
+lsu/dtlb/u_1_21                          0.0000      0.0        0.0000        0.0000  0.0000  _1_5
+lsu/dtlb/u_1_22                          0.0000      0.0        0.0000        0.0000  0.0000  _1_4
+lsu/dtlb/u_1_23                          0.0000      0.0        0.0000        0.0000  0.0000  _1_3
+lsu/dtlb/u_1_24                          0.0000      0.0        0.0000        0.0000  0.0000  _1_2
+lsu/dtlb/u_1_25                          0.0000      0.0        0.0000        0.0000  0.0000  _1_1
+lsu/dtlb/u_1_26                          0.0000      0.0        0.0000        0.0000  0.0000  _1_0
+lsu/dtlb/u_1_3                           0.0000      0.0        0.0000        0.0000  0.0000  _1_23
+lsu/dtlb/u_1_4                           0.0000      0.0        0.0000        0.0000  0.0000  _1_22
+lsu/dtlb/u_1_5                           0.0000      0.0        0.0000        0.0000  0.0000  _1_21
+lsu/dtlb/u_1_6                           0.0000      0.0        0.0000        0.0000  0.0000  _1_20
+lsu/dtlb/u_1_7                           0.0000      0.0        0.0000        0.0000  0.0000  _1_19
+lsu/dtlb/u_1_8                           0.0000      0.0        0.0000        0.0000  0.0000  _1_18
+lsu/dtlb/u_1_9                           0.0000      0.0        0.0000        0.0000  0.0000  _1_17
+lsu/eq_725442                          275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_99_DW01_cmp6_195
+lsu/eq_725452                          279.7028      0.0      279.7028        0.0000  0.0000  LSU_DW01_cmp6_98_DW01_cmp6_194
+lsu/eq_725462                          274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_97_DW01_cmp6_193
+lsu/eq_725472                          280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_96_DW01_cmp6_192
+lsu/eq_725482                          267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_95_DW01_cmp6_191
+lsu/eq_725492                          267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_94_DW01_cmp6_190
+lsu/eq_725502                          267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_93_DW01_cmp6_189
+lsu/eq_725512                          267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_92_DW01_cmp6_188
+lsu/eq_725522                          274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_91_DW01_cmp6_187
+lsu/eq_725532                          279.7028      0.0      279.7028        0.0000  0.0000  LSU_DW01_cmp6_90_DW01_cmp6_186
+lsu/eq_725542                          274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_89_DW01_cmp6_185
+lsu/eq_725552                          274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_88_DW01_cmp6_184
+lsu/eq_725562                          279.7028      0.0      279.7028        0.0000  0.0000  LSU_DW01_cmp6_87_DW01_cmp6_183
+lsu/eq_725572                          280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_86_DW01_cmp6_182
+lsu/eq_725582                          280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_85_DW01_cmp6_181
+lsu/eq_725592                          275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_84_DW01_cmp6_180
+lsu/eq_725602                          275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_83_DW01_cmp6_179
+lsu/eq_725612                          280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_82_DW01_cmp6_178
+lsu/eq_725622                          273.1326      0.0      273.1326        0.0000  0.0000  LSU_DW01_cmp6_81_DW01_cmp6_177
+lsu/eq_725632                          275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_80_DW01_cmp6_176
+lsu/eq_725642                          273.1326      0.0      273.1326        0.0000  0.0000  LSU_DW01_cmp6_79_DW01_cmp6_175
+lsu/eq_725652                          281.1107      0.0      281.1107        0.0000  0.0000  LSU_DW01_cmp6_78_DW01_cmp6_174
+lsu/eq_725662                          275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_77_DW01_cmp6_173
+lsu/eq_725672                          275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_76_DW01_cmp6_172
+lsu/eq_736644                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_71_DW01_cmp6_167
+lsu/eq_736917                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_70_DW01_cmp6_166
+lsu/eq_737187                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_69_DW01_cmp6_165
+lsu/eq_737457                          252.4834      0.0      252.4834        0.0000  0.0000  LSU_DW01_cmp6_68_DW01_cmp6_164
+lsu/eq_737727                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_67_DW01_cmp6_163
+lsu/eq_737997                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_66_DW01_cmp6_162
+lsu/eq_738267                          252.4834      0.0      252.4834        0.0000  0.0000  LSU_DW01_cmp6_65_DW01_cmp6_161
+lsu/eq_738537                          252.4834      0.0      252.4834        0.0000  0.0000  LSU_DW01_cmp6_64_DW01_cmp6_160
+lsu/eq_738807                          252.4834      0.0      252.4834        0.0000  0.0000  LSU_DW01_cmp6_63_DW01_cmp6_159
+lsu/eq_739077                          251.5448      0.0      251.5448        0.0000  0.0000  LSU_DW01_cmp6_62_DW01_cmp6_158
+lsu/eq_739347                          252.0141      0.0      252.0141        0.0000  0.0000  LSU_DW01_cmp6_61_DW01_cmp6_157
+lsu/eq_739617                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_60_DW01_cmp6_156
+lsu/eq_739887                          255.2992      0.0      255.2992        0.0000  0.0000  LSU_DW01_cmp6_59_DW01_cmp6_155
+lsu/eq_740157                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_58_DW01_cmp6_154
+lsu/eq_740427                          254.3606      0.0      254.3606        0.0000  0.0000  LSU_DW01_cmp6_57_DW01_cmp6_153
+lsu/eq_740697                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_56_DW01_cmp6_152
+lsu/eq_740967                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_55_DW01_cmp6_151
+lsu/eq_741237                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_54_DW01_cmp6_150
+lsu/eq_741507                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_53_DW01_cmp6_149
+lsu/eq_741777                          252.9527      0.0      252.9527        0.0000  0.0000  LSU_DW01_cmp6_52_DW01_cmp6_148
+lsu/eq_742047                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_51_DW01_cmp6_147
+lsu/eq_742317                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_50_DW01_cmp6_146
+lsu/eq_742587                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_49_DW01_cmp6_145
+lsu/eq_742857                          255.7685      0.0      255.7685        0.0000  0.0000  LSU_DW01_cmp6_48_DW01_cmp6_144
+lsu/eq_743117                          225.2640      0.0      225.2640        0.0000  0.0000  LSU_DW01_cmp6_47_DW01_cmp6_143
+lsu/eq_743276                          229.0184      0.0      229.0184        0.0000  0.0000  LSU_DW01_cmp6_45_DW01_cmp6_141
+lsu/eq_743435                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_43_DW01_cmp6_139
+lsu/eq_743594                          226.6719      0.0      226.6719        0.0000  0.0000  LSU_DW01_cmp6_41_DW01_cmp6_137
+lsu/eq_743753                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_39_DW01_cmp6_135
+lsu/eq_743912                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_37_DW01_cmp6_133
+lsu/eq_744071                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_35_DW01_cmp6_131
+lsu/eq_744230                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_33_DW01_cmp6_129
+lsu/eq_744389                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_31_DW01_cmp6_127
+lsu/eq_744548                          228.5491      0.0      228.5491        0.0000  0.0000  LSU_DW01_cmp6_29_DW01_cmp6_125
+lsu/eq_744707                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_27_DW01_cmp6_123
+lsu/eq_744866                          228.5491      0.0      228.5491        0.0000  0.0000  LSU_DW01_cmp6_25_DW01_cmp6_121
+lsu/eq_745025                          228.0798      0.0      228.0798        0.0000  0.0000  LSU_DW01_cmp6_23_DW01_cmp6_119
+lsu/eq_745184                          228.5491      0.0      228.5491        0.0000  0.0000  LSU_DW01_cmp6_21_DW01_cmp6_117
+lsu/eq_745343                          231.8342      0.0      231.8342        0.0000  0.0000  LSU_DW01_cmp6_19_DW01_cmp6_115
+lsu/eq_745502                          233.7114      0.0      233.7114        0.0000  0.0000  LSU_DW01_cmp6_17_DW01_cmp6_113
+lsu/eq_745661                          229.4877      0.0      229.4877        0.0000  0.0000  LSU_DW01_cmp6_15_DW01_cmp6_111
+lsu/eq_745820                          234.1807      0.0      234.1807        0.0000  0.0000  LSU_DW01_cmp6_13_DW01_cmp6_109
+lsu/eq_745979                          229.4877      0.0      229.4877        0.0000  0.0000  LSU_DW01_cmp6_11_DW01_cmp6_107
+lsu/eq_746138                          229.4877      0.0      229.4877        0.0000  0.0000  LSU_DW01_cmp6_9_DW01_cmp6_105
+lsu/eq_746297                          229.4877      0.0      229.4877        0.0000  0.0000  LSU_DW01_cmp6_7_DW01_cmp6_103
+lsu/eq_746456                          229.4877      0.0      229.4877        0.0000  0.0000  LSU_DW01_cmp6_5_DW01_cmp6_101
+lsu/eq_746615                          233.7114      0.0      233.7114        0.0000  0.0000  LSU_DW01_cmp6_3_DW01_cmp6_99
+lsu/eq_746774                          229.4877      0.0      229.4877        0.0000  0.0000  LSU_DW01_cmp6_1_DW01_cmp6_97
+lsu/forwarding_age_logic_0             405.0059      0.0      405.0059        0.0000  0.0000  ForwardingAgeLogic
+lsu/r72790                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_399_DW01_cmp6_495
+lsu/r72791                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_398_DW01_cmp6_494
+lsu/r72792                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_397_DW01_cmp6_493
+lsu/r72793                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_396_DW01_cmp6_492
+lsu/r72794                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_395_DW01_cmp6_491
+lsu/r72795                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_394_DW01_cmp6_490
+lsu/r72796                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_393_DW01_cmp6_489
+lsu/r72797                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_392_DW01_cmp6_488
+lsu/r72798                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_391_DW01_cmp6_487
+lsu/r72799                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_390_DW01_cmp6_486
+lsu/r72800                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_389_DW01_cmp6_485
+lsu/r72801                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_388_DW01_cmp6_484
+lsu/r72802                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_387_DW01_cmp6_483
+lsu/r72803                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_386_DW01_cmp6_482
+lsu/r72804                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_385_DW01_cmp6_481
+lsu/r72805                             267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_384_DW01_cmp6_480
+lsu/r72806                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_383_DW01_cmp6_479
+lsu/r72807                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_382_DW01_cmp6_478
+lsu/r72808                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_381_DW01_cmp6_477
+lsu/r72809                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_380_DW01_cmp6_476
+lsu/r72810                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_379_DW01_cmp6_475
+lsu/r72811                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_378_DW01_cmp6_474
+lsu/r72812                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_377_DW01_cmp6_473
+lsu/r72814                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_376_DW01_cmp6_472
+lsu/r72815                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_375_DW01_cmp6_471
+lsu/r72816                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_374_DW01_cmp6_470
+lsu/r72817                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_373_DW01_cmp6_469
+lsu/r72818                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_372_DW01_cmp6_468
+lsu/r72819                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_371_DW01_cmp6_467
+lsu/r72820                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_370_DW01_cmp6_466
+lsu/r72821                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_369_DW01_cmp6_465
+lsu/r72822                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_368_DW01_cmp6_464
+lsu/r72823                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_367_DW01_cmp6_463
+lsu/r72824                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_366_DW01_cmp6_462
+lsu/r72825                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_365_DW01_cmp6_461
+lsu/r72826                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_364_DW01_cmp6_460
+lsu/r72827                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_363_DW01_cmp6_459
+lsu/r72828                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_362_DW01_cmp6_458
+lsu/r72829                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_361_DW01_cmp6_457
+lsu/r72830                             279.2335      0.0      279.2335        0.0000  0.0000  LSU_DW01_cmp6_360_DW01_cmp6_456
+lsu/r72831                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_359_DW01_cmp6_455
+lsu/r72832                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_358_DW01_cmp6_454
+lsu/r72833                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_357_DW01_cmp6_453
+lsu/r72834                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_356_DW01_cmp6_452
+lsu/r72835                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_355_DW01_cmp6_451
+lsu/r72837                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_354_DW01_cmp6_450
+lsu/r72838                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_353_DW01_cmp6_449
+lsu/r72839                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_352_DW01_cmp6_448
+lsu/r72840                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_351_DW01_cmp6_447
+lsu/r72841                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_350_DW01_cmp6_446
+lsu/r72842                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_349_DW01_cmp6_445
+lsu/r72843                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_348_DW01_cmp6_444
+lsu/r72844                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_347_DW01_cmp6_443
+lsu/r72845                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_346_DW01_cmp6_442
+lsu/r72846                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_345_DW01_cmp6_441
+lsu/r72847                             265.6238      0.0      265.6238        0.0000  0.0000  LSU_DW01_cmp6_344_DW01_cmp6_440
+lsu/r72848                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_343_DW01_cmp6_439
+lsu/r72849                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_342_DW01_cmp6_438
+lsu/r72850                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_341_DW01_cmp6_437
+lsu/r72851                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_340_DW01_cmp6_436
+lsu/r72852                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_339_DW01_cmp6_435
+lsu/r72853                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_338_DW01_cmp6_434
+lsu/r72854                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_337_DW01_cmp6_433
+lsu/r72855                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_336_DW01_cmp6_432
+lsu/r72856                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_335_DW01_cmp6_431
+lsu/r72857                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_334_DW01_cmp6_430
+lsu/r72859                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_333_DW01_cmp6_429
+lsu/r72860                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_332_DW01_cmp6_428
+lsu/r72861                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_331_DW01_cmp6_427
+lsu/r72862                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_330_DW01_cmp6_426
+lsu/r72863                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_329_DW01_cmp6_425
+lsu/r72864                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_328_DW01_cmp6_424
+lsu/r72865                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_327_DW01_cmp6_423
+lsu/r72866                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_326_DW01_cmp6_422
+lsu/r72867                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_325_DW01_cmp6_421
+lsu/r72868                             265.6238      0.0      265.6238        0.0000  0.0000  LSU_DW01_cmp6_324_DW01_cmp6_420
+lsu/r72869                             267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_323_DW01_cmp6_419
+lsu/r72870                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_322_DW01_cmp6_418
+lsu/r72871                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_321_DW01_cmp6_417
+lsu/r72872                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_320_DW01_cmp6_416
+lsu/r72873                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_319_DW01_cmp6_415
+lsu/r72874                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_318_DW01_cmp6_414
+lsu/r72875                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_317_DW01_cmp6_413
+lsu/r72876                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_316_DW01_cmp6_412
+lsu/r72877                             267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_315_DW01_cmp6_411
+lsu/r72878                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_314_DW01_cmp6_410
+lsu/r72880                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_313_DW01_cmp6_409
+lsu/r72881                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_312_DW01_cmp6_408
+lsu/r72882                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_311_DW01_cmp6_407
+lsu/r72883                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_310_DW01_cmp6_406
+lsu/r72884                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_309_DW01_cmp6_405
+lsu/r72885                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_308_DW01_cmp6_404
+lsu/r72886                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_307_DW01_cmp6_403
+lsu/r72887                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_306_DW01_cmp6_402
+lsu/r72888                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_305_DW01_cmp6_401
+lsu/r72889                             267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_304_DW01_cmp6_400
+lsu/r72890                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_303_DW01_cmp6_399
+lsu/r72891                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_302_DW01_cmp6_398
+lsu/r72892                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_301_DW01_cmp6_397
+lsu/r72893                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_300_DW01_cmp6_396
+lsu/r72894                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_299_DW01_cmp6_395
+lsu/r72895                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_298_DW01_cmp6_394
+lsu/r72896                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_297_DW01_cmp6_393
+lsu/r72897                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_296_DW01_cmp6_392
+lsu/r72898                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_295_DW01_cmp6_391
+lsu/r72900                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_294_DW01_cmp6_390
+lsu/r72901                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_293_DW01_cmp6_389
+lsu/r72902                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_292_DW01_cmp6_388
+lsu/r72903                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_291_DW01_cmp6_387
+lsu/r72904                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_290_DW01_cmp6_386
+lsu/r72905                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_289_DW01_cmp6_385
+lsu/r72906                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_288_DW01_cmp6_384
+lsu/r72907                             265.6238      0.0      265.6238        0.0000  0.0000  LSU_DW01_cmp6_287_DW01_cmp6_383
+lsu/r72908                             267.9703      0.0      267.9703        0.0000  0.0000  LSU_DW01_cmp6_286_DW01_cmp6_382
+lsu/r72909                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_285_DW01_cmp6_381
+lsu/r72910                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_284_DW01_cmp6_380
+lsu/r72911                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_283_DW01_cmp6_379
+lsu/r72912                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_282_DW01_cmp6_378
+lsu/r72913                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_281_DW01_cmp6_377
+lsu/r72914                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_280_DW01_cmp6_376
+lsu/r72915                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_279_DW01_cmp6_375
+lsu/r72916                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_278_DW01_cmp6_374
+lsu/r72917                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_277_DW01_cmp6_373
+lsu/r72919                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_276_DW01_cmp6_372
+lsu/r72920                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_275_DW01_cmp6_371
+lsu/r72921                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_274_DW01_cmp6_370
+lsu/r72922                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_273_DW01_cmp6_369
+lsu/r72923                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_272_DW01_cmp6_368
+lsu/r72924                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_271_DW01_cmp6_367
+lsu/r72925                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_270_DW01_cmp6_366
+lsu/r72926                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_269_DW01_cmp6_365
+lsu/r72927                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_268_DW01_cmp6_364
+lsu/r72928                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_267_DW01_cmp6_363
+lsu/r72929                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_266_DW01_cmp6_362
+lsu/r72930                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_265_DW01_cmp6_361
+lsu/r72931                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_264_DW01_cmp6_360
+lsu/r72932                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_263_DW01_cmp6_359
+lsu/r72933                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_262_DW01_cmp6_358
+lsu/r72934                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_261_DW01_cmp6_357
+lsu/r72935                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_260_DW01_cmp6_356
+lsu/r72937                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_259_DW01_cmp6_355
+lsu/r72938                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_258_DW01_cmp6_354
+lsu/r72939                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_257_DW01_cmp6_353
+lsu/r72940                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_256_DW01_cmp6_352
+lsu/r72941                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_255_DW01_cmp6_351
+lsu/r72942                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_254_DW01_cmp6_350
+lsu/r72943                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_253_DW01_cmp6_349
+lsu/r72944                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_252_DW01_cmp6_348
+lsu/r72945                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_251_DW01_cmp6_347
+lsu/r72946                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_250_DW01_cmp6_346
+lsu/r72947                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_249_DW01_cmp6_345
+lsu/r72948                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_248_DW01_cmp6_344
+lsu/r72949                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_247_DW01_cmp6_343
+lsu/r72950                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_246_DW01_cmp6_342
+lsu/r72951                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_245_DW01_cmp6_341
+lsu/r72952                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_244_DW01_cmp6_340
+lsu/r72954                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_243_DW01_cmp6_339
+lsu/r72955                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_242_DW01_cmp6_338
+lsu/r72956                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_241_DW01_cmp6_337
+lsu/r72957                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_240_DW01_cmp6_336
+lsu/r72958                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_239_DW01_cmp6_335
+lsu/r72959                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_238_DW01_cmp6_334
+lsu/r72960                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_237_DW01_cmp6_333
+lsu/r72961                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_236_DW01_cmp6_332
+lsu/r72962                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_235_DW01_cmp6_331
+lsu/r72963                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_234_DW01_cmp6_330
+lsu/r72964                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_233_DW01_cmp6_329
+lsu/r72965                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_232_DW01_cmp6_328
+lsu/r72966                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_231_DW01_cmp6_327
+lsu/r72967                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_230_DW01_cmp6_326
+lsu/r72968                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_229_DW01_cmp6_325
+lsu/r72970                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_228_DW01_cmp6_324
+lsu/r72971                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_227_DW01_cmp6_323
+lsu/r72972                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_226_DW01_cmp6_322
+lsu/r72973                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_225_DW01_cmp6_321
+lsu/r72974                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_224_DW01_cmp6_320
+lsu/r72975                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_223_DW01_cmp6_319
+lsu/r72976                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_222_DW01_cmp6_318
+lsu/r72977                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_221_DW01_cmp6_317
+lsu/r72978                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_220_DW01_cmp6_316
+lsu/r72979                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_219_DW01_cmp6_315
+lsu/r72980                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_218_DW01_cmp6_314
+lsu/r72981                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_217_DW01_cmp6_313
+lsu/r72982                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_216_DW01_cmp6_312
+lsu/r72983                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_215_DW01_cmp6_311
+lsu/r72985                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_214_DW01_cmp6_310
+lsu/r72986                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_213_DW01_cmp6_309
+lsu/r72987                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_212_DW01_cmp6_308
+lsu/r72988                             269.3782      0.0      269.3782        0.0000  0.0000  LSU_DW01_cmp6_211_DW01_cmp6_307
+lsu/r72989                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_210_DW01_cmp6_306
+lsu/r72990                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_209_DW01_cmp6_305
+lsu/r72991                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_208_DW01_cmp6_304
+lsu/r72992                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_207_DW01_cmp6_303
+lsu/r72993                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_206_DW01_cmp6_302
+lsu/r72994                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_205_DW01_cmp6_301
+lsu/r72995                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_204_DW01_cmp6_300
+lsu/r72996                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_203_DW01_cmp6_299
+lsu/r72997                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_202_DW01_cmp6_298
+lsu/r72999                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_201_DW01_cmp6_297
+lsu/r73000                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_200_DW01_cmp6_296
+lsu/r73001                             280.1721      0.0      280.1721        0.0000  0.0000  LSU_DW01_cmp6_199_DW01_cmp6_295
+lsu/r73002                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_198_DW01_cmp6_294
+lsu/r73003                             267.5010      0.0      267.5010        0.0000  0.0000  LSU_DW01_cmp6_197_DW01_cmp6_293
+lsu/r73004                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_196_DW01_cmp6_292
+lsu/r73005                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_195_DW01_cmp6_291
+lsu/r73006                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_194_DW01_cmp6_290
+lsu/r73007                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_193_DW01_cmp6_289
+lsu/r73008                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_192_DW01_cmp6_288
+lsu/r73009                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_191_DW01_cmp6_287
+lsu/r73010                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_190_DW01_cmp6_286
+lsu/r73012                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_189_DW01_cmp6_285
+lsu/r73013                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_188_DW01_cmp6_284
+lsu/r73014                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_187_DW01_cmp6_283
+lsu/r73015                             267.5010      0.0      267.5010        0.0000  0.0000  LSU_DW01_cmp6_186_DW01_cmp6_282
+lsu/r73016                             268.4396      0.0      268.4396        0.0000  0.0000  LSU_DW01_cmp6_185_DW01_cmp6_281
+lsu/r73017                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_184_DW01_cmp6_280
+lsu/r73018                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_183_DW01_cmp6_279
+lsu/r73019                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_182_DW01_cmp6_278
+lsu/r73020                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_181_DW01_cmp6_277
+lsu/r73021                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_180_DW01_cmp6_276
+lsu/r73022                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_179_DW01_cmp6_275
+lsu/r73024                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_178_DW01_cmp6_274
+lsu/r73025                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_177_DW01_cmp6_273
+lsu/r73026                             267.5010      0.0      267.5010        0.0000  0.0000  LSU_DW01_cmp6_176_DW01_cmp6_272
+lsu/r73027                             280.6414      0.0      280.6414        0.0000  0.0000  LSU_DW01_cmp6_175_DW01_cmp6_271
+lsu/r73028                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_174_DW01_cmp6_270
+lsu/r73029                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_173_DW01_cmp6_269
+lsu/r73030                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_172_DW01_cmp6_268
+lsu/r73031                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_171_DW01_cmp6_267
+lsu/r73032                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_170_DW01_cmp6_266
+lsu/r73033                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_169_DW01_cmp6_265
+lsu/r73035                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_168_DW01_cmp6_264
+lsu/r73036                             279.2335      0.0      279.2335        0.0000  0.0000  LSU_DW01_cmp6_167_DW01_cmp6_263
+lsu/r73037                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_166_DW01_cmp6_262
+lsu/r73038                             274.5405      0.0      274.5405        0.0000  0.0000  LSU_DW01_cmp6_165_DW01_cmp6_261
+lsu/r73039                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_164_DW01_cmp6_260
+lsu/r73040                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_163_DW01_cmp6_259
+lsu/r73041                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_162_DW01_cmp6_258
+lsu/r73042                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_161_DW01_cmp6_257
+lsu/r73043                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_160_DW01_cmp6_256
+lsu/r73045                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_159_DW01_cmp6_255
+lsu/r73046                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_158_DW01_cmp6_254
+lsu/r73047                             274.0712      0.0      274.0712        0.0000  0.0000  LSU_DW01_cmp6_157_DW01_cmp6_253
+lsu/r73048                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_156_DW01_cmp6_252
+lsu/r73049                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_155_DW01_cmp6_251
+lsu/r73050                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_154_DW01_cmp6_250
+lsu/r73051                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_153_DW01_cmp6_249
+lsu/r73052                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_152_DW01_cmp6_248
+lsu/r73054                             269.3782      0.0      269.3782        0.0000  0.0000  LSU_DW01_cmp6_151_DW01_cmp6_247
+lsu/r73055                             269.3782      0.0      269.3782        0.0000  0.0000  LSU_DW01_cmp6_150_DW01_cmp6_246
+lsu/r73056                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_149_DW01_cmp6_245
+lsu/r73057                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_148_DW01_cmp6_244
+lsu/r73058                             275.9484      0.0      275.9484        0.0000  0.0000  LSU_DW01_cmp6_147_DW01_cmp6_243
+lsu/r73059                             275.9484      0.0      275.9484        0.0000  0.0000  LSU_DW01_cmp6_146_DW01_cmp6_242
+lsu/r73060                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_145_DW01_cmp6_241
+lsu/r73062                             269.3782      0.0      269.3782        0.0000  0.0000  LSU_DW01_cmp6_144_DW01_cmp6_240
+lsu/r73063                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_143_DW01_cmp6_239
+lsu/r73064                             275.4791      0.0      275.4791        0.0000  0.0000  LSU_DW01_cmp6_142_DW01_cmp6_238
+lsu/r73065                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_141_DW01_cmp6_237
+lsu/r73066                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_140_DW01_cmp6_236
+lsu/r73067                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_139_DW01_cmp6_235
+lsu/r73069                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_138_DW01_cmp6_234
+lsu/r73070                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_137_DW01_cmp6_233
+lsu/r73071                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_136_DW01_cmp6_232
+lsu/r73072                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_135_DW01_cmp6_231
+lsu/r73073                             275.9484      0.0      275.9484        0.0000  0.0000  LSU_DW01_cmp6_134_DW01_cmp6_230
+lsu/r73075                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_133_DW01_cmp6_229
+lsu/r73076                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_132_DW01_cmp6_228
+lsu/r73077                             275.9484      0.0      275.9484        0.0000  0.0000  LSU_DW01_cmp6_131_DW01_cmp6_227
+lsu/r73078                             275.9484      0.0      275.9484        0.0000  0.0000  LSU_DW01_cmp6_130_DW01_cmp6_226
+lsu/r73080                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_129_DW01_cmp6_225
+lsu/r73081                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_128_DW01_cmp6_224
+lsu/r73082                             275.0098      0.0      275.0098        0.0000  0.0000  LSU_DW01_cmp6_127_DW01_cmp6_223
+lsu/r73084                             269.3782      0.0      269.3782        0.0000  0.0000  LSU_DW01_cmp6_126_DW01_cmp6_222
+lsu/r73085                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_125_DW01_cmp6_221
+lsu/r73087                             276.4177      0.0      276.4177        0.0000  0.0000  LSU_DW01_cmp6_124_DW01_cmp6_220
+lsu/sll_717273                         168.0094      0.0      168.0094        0.0000  0.0000  LSU_DW01_ash_101_DW01_ash_116
+lsu/sll_719723                         145.9523      0.0      145.9523        0.0000  0.0000  LSU_DW01_ash_100_DW01_ash_115
+lsu/sll_721938                         145.4830      0.0      145.4830        0.0000  0.0000  LSU_DW01_ash_99_DW01_ash_114
+lsu/sll_722928                         139.3821      0.0      139.3821        0.0000  0.0000  LSU_DW01_ash_98_DW01_ash_113
+ptw                                  75115.6871      0.7    29079.2354    21684.4753  0.0000  PTW
+ptw/arb                                194.2902      0.0      178.3340       15.9562  0.0000  RRArbiter
+ptw/eq_1085127                         298.4748      0.0      298.4748        0.0000  0.0000  PTW_DW01_cmp6_8_DW01_cmp6_95
+ptw/eq_1085129                         298.4748      0.0      298.4748        0.0000  0.0000  PTW_DW01_cmp6_7_DW01_cmp6_94
+ptw/eq_1085131                         293.7818      0.0      293.7818        0.0000  0.0000  PTW_DW01_cmp6_6_DW01_cmp6_93
+ptw/eq_1085133                         293.7818      0.0      293.7818        0.0000  0.0000  PTW_DW01_cmp6_5_DW01_cmp6_92
+ptw/eq_1085135                         289.0888      0.0      289.0888        0.0000  0.0000  PTW_DW01_cmp6_4_DW01_cmp6_91
+ptw/eq_1085137                         289.0888      0.0      289.0888        0.0000  0.0000  PTW_DW01_cmp6_3_DW01_cmp6_90
+ptw/eq_1085139                         289.0888      0.0      289.0888        0.0000  0.0000  PTW_DW01_cmp6_2_DW01_cmp6_89
+ptw/eq_1085141                         289.0888      0.0      289.0888        0.0000  0.0000  PTW_DW01_cmp6_1_DW01_cmp6_88
+ptw/lt_1085392                         234.6500      0.0      234.6500        0.0000  0.0000  PTW_DW01_cmp2_15_DW01_cmp2_86
+ptw/lt_1085430                         234.6500      0.0      234.6500        0.0000  0.0000  PTW_DW01_cmp2_13_DW01_cmp2_84
+ptw/lt_1085466                         234.6500      0.0      234.6500        0.0000  0.0000  PTW_DW01_cmp2_11_DW01_cmp2_82
+ptw/lt_1085502                         234.6500      0.0      234.6500        0.0000  0.0000  PTW_DW01_cmp2_9_DW01_cmp2_80
+ptw/lt_1085538                         234.6500      0.0      234.6500        0.0000  0.0000  PTW_DW01_cmp2_7_DW01_cmp2_78
+ptw/lt_1085574                         235.1193      0.0      235.1193        0.0000  0.0000  PTW_DW01_cmp2_5_DW01_cmp2_76
+ptw/lt_1085610                         234.6500      0.0      234.6500        0.0000  0.0000  PTW_DW01_cmp2_3_DW01_cmp2_74
+ptw/lt_1085646                         234.1807      0.0      234.1807        0.0000  0.0000  PTW_DW01_cmp2_1_DW01_cmp2_72
+ptw/sll_1085252                       5694.9553      0.0     5694.9553        0.0000  0.0000  PTW_DW01_ash_1_DW01_ash_12
+ptw/sll_1085258                       6152.0535      0.1     6152.0535        0.0000  0.0000  PTW_DW01_ash_0_DW01_ash_11
+ptw/srl_1085264                       4046.3045      0.0     4046.3045        0.0000  0.0000  PTW_DW_rash_1_DW_rash_7
+ptw/srl_1085266                       4046.3045      0.0     4046.3045        0.0000  0.0000  PTW_DW_rash_0_DW_rash_6
+ptw/u_1                                  0.0000      0.0        0.0000        0.0000  0.0000  _1_66
+ptw/u_1_1                                0.0000      0.0        0.0000        0.0000  0.0000  _1_67
+tlMasterXbar                          1041.8460      0.0      946.1088       95.7372  0.0000  TLXbar_8
+trace                                    0.0000      0.0        0.0000        0.0000  0.0000  BundleBroadcast
+--------------------------------  -------------  -------  ------------  ------------  ------  ----------------------------------------------------
+Total                                                     7084476.2219  4400336.9136  0.0000
+
+1

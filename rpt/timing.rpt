@@ -1,0 +1,224 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BoomTile
+Version: Q-2019.12-SP2
+Date   : Thu Nov 12 04:28:43 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: core/ALUExeUnit/imul/imul/inPipe_bits_in1_reg_0_
+              (rising edge-triggered flip-flop clocked by clk_input)
+  Endpoint: core/ALUExeUnit/imul/imul/u_T_34_reg_56_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                             0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core/ALUExeUnit/imul/imul/inPipe_bits_in1_reg_0_/CLK (DFFPOSX1)
+                                                          0.00 #     0.00 r
+  core/ALUExeUnit/imul/imul/inPipe_bits_in1_reg_0_/Q (DFFPOSX1)
+                                                          0.10       0.10 f
+  core/ALUExeUnit/imul/imul/mult_257942/A[0] (PipelinedMultiplier_DW02_mult_0_DW02_mult_1)
+                                                          0.00       0.10 f
+  core/ALUExeUnit/imul/imul/mult_257942/U760/Y (BUFX2)
+                                                          0.04       0.15 f
+  core/ALUExeUnit/imul/imul/mult_257942/U766/Y (INVX4)
+                                                          0.02       0.17 r
+  core/ALUExeUnit/imul/imul/mult_257942/U5271/Y (OR2X2)
+                                                          0.05       0.23 r
+  core/ALUExeUnit/imul/imul/mult_257942/U768/Y (XNOR2X1)
+                                                          0.07       0.29 r
+  core/ALUExeUnit/imul/imul/mult_257942/S2_2_43/YS (FAX1)
+                                                          0.09       0.39 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_3_42/YS (FAX1)
+                                                          0.09       0.48 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_4_41/YC (FAX1)
+                                                          0.08       0.56 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_5_41/YC (FAX1)
+                                                          0.09       0.65 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_6_41/YC (FAX1)
+                                                          0.09       0.74 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_7_41/YC (FAX1)
+                                                          0.09       0.84 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_8_41/YC (FAX1)
+                                                          0.09       0.93 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_9_41/YC (FAX1)
+                                                          0.09       1.02 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_10_41/YC (FAX1)
+                                                          0.09       1.11 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_11_41/YC (FAX1)
+                                                          0.09       1.20 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_12_41/YC (FAX1)
+                                                          0.09       1.30 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_13_41/YC (FAX1)
+                                                          0.09       1.39 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_14_41/YC (FAX1)
+                                                          0.09       1.48 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_15_41/YC (FAX1)
+                                                          0.09       1.57 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_16_41/YC (FAX1)
+                                                          0.09       1.66 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_17_41/YC (FAX1)
+                                                          0.09       1.76 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_18_41/YC (FAX1)
+                                                          0.09       1.85 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_19_41/YC (FAX1)
+                                                          0.09       1.94 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_20_41/YC (FAX1)
+                                                          0.09       2.03 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_21_41/YC (FAX1)
+                                                          0.09       2.12 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_22_41/YC (FAX1)
+                                                          0.09       2.22 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_23_41/YC (FAX1)
+                                                          0.09       2.31 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_24_41/YC (FAX1)
+                                                          0.09       2.40 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_25_41/YC (FAX1)
+                                                          0.09       2.49 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_26_41/YC (FAX1)
+                                                          0.09       2.58 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_27_41/YC (FAX1)
+                                                          0.09       2.68 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_28_41/YC (FAX1)
+                                                          0.09       2.77 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_29_41/YC (FAX1)
+                                                          0.09       2.86 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_30_41/YC (FAX1)
+                                                          0.09       2.95 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_31_41/YC (FAX1)
+                                                          0.09       3.04 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_32_41/YC (FAX1)
+                                                          0.09       3.14 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_33_41/YC (FAX1)
+                                                          0.09       3.23 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_34_41/YC (FAX1)
+                                                          0.09       3.32 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_35_41/YC (FAX1)
+                                                          0.09       3.41 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_36_41/YC (FAX1)
+                                                          0.09       3.50 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_37_41/YC (FAX1)
+                                                          0.09       3.60 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_38_41/YC (FAX1)
+                                                          0.09       3.69 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_39_41/YC (FAX1)
+                                                          0.09       3.78 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_40_41/YC (FAX1)
+                                                          0.09       3.87 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_41_41/YC (FAX1)
+                                                          0.09       3.96 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_42_41/YC (FAX1)
+                                                          0.09       4.06 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_43_41/YC (FAX1)
+                                                          0.09       4.15 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_44_41/YC (FAX1)
+                                                          0.09       4.24 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_45_41/YC (FAX1)
+                                                          0.09       4.33 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_46_41/YC (FAX1)
+                                                          0.09       4.42 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_47_41/YC (FAX1)
+                                                          0.09       4.52 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_48_41/YC (FAX1)
+                                                          0.09       4.61 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_49_41/YC (FAX1)
+                                                          0.09       4.70 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_50_41/YC (FAX1)
+                                                          0.09       4.79 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_51_41/YC (FAX1)
+                                                          0.09       4.88 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_52_41/YC (FAX1)
+                                                          0.09       4.98 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_53_41/YC (FAX1)
+                                                          0.09       5.07 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_54_41/YC (FAX1)
+                                                          0.09       5.16 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_55_41/YC (FAX1)
+                                                          0.09       5.25 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_56_41/YC (FAX1)
+                                                          0.09       5.34 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_57_41/YC (FAX1)
+                                                          0.09       5.44 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_58_41/YC (FAX1)
+                                                          0.09       5.53 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_59_41/YC (FAX1)
+                                                          0.09       5.62 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_60_41/YC (FAX1)
+                                                          0.09       5.71 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_61_41/YC (FAX1)
+                                                          0.09       5.80 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_62_41/YC (FAX1)
+                                                          0.09       5.90 f
+  core/ALUExeUnit/imul/imul/mult_257942/S2_63_41/YC (FAX1)
+                                                          0.09       5.99 f
+  core/ALUExeUnit/imul/imul/mult_257942/S4_41/YC (FAX1)
+                                                          0.09       6.08 f
+  core/ALUExeUnit/imul/imul/mult_257942/U8972/Y (XOR2X1)
+                                                          0.06       6.14 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/A[104] (PipelinedMultiplier_DW01_add_1)
+                                                          0.00       6.14 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U232/Y (AND2X2)
+                                                          0.03       6.17 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U338/Y (INVX1)
+                                                          0.02       6.19 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U752/Y (OAI21X1)
+                                                          0.04       6.23 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U751/Y (NAND2X1)
+                                                          0.02       6.25 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U242/Y (AND2X2)
+                                                          0.04       6.29 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U717/Y (OAI21X1)
+                                                          0.04       6.33 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U716/Y (AOI21X1)
+                                                          0.03       6.35 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U268/Y (NAND2X1)
+                                                          0.02       6.37 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U693/Y (NAND2X1)
+                                                          0.02       6.39 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U687/Y (NAND3X1)
+                                                          0.03       6.43 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U686/Y (AOI21X1)
+                                                          0.02       6.45 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U680/Y (NOR2X1)
+                                                          0.03       6.48 r
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U679/Y (NOR2X1)
+                                                          0.02       6.50 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/U677/Y (XNOR2X1)
+                                                          0.03       6.53 f
+  core/ALUExeUnit/imul/imul/mult_257942/FS_1/SUM[118] (PipelinedMultiplier_DW01_add_1)
+                                                          0.00       6.53 f
+  core/ALUExeUnit/imul/imul/mult_257942/PRODUCT[120] (PipelinedMultiplier_DW02_mult_0_DW02_mult_1)
+                                                          0.00       6.53 f
+  core/ALUExeUnit/imul/imul/U715/Y (AOI22X1)              0.04       6.57 r
+  core/ALUExeUnit/imul/imul/U716/Y (NAND3X1)              0.02       6.59 f
+  core/ALUExeUnit/imul/imul/u_T_34_reg_56_/D (DFFPOSX1)
+                                                          0.00       6.59 f
+  data arrival time                                                  6.59
+
+  clock clk_input (rise edge)                             1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock uncertainty                                      -0.20       0.80
+  core/ALUExeUnit/imul/imul/u_T_34_reg_56_/CLK (DFFPOSX1)
+                                                          0.00       0.80 r
+  library setup time                                     -0.06       0.74
+  data required time                                                 0.74
+  --------------------------------------------------------------------------
+  data required time                                                 0.74
+  data arrival time                                                 -6.59
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -5.84
+
+
+1

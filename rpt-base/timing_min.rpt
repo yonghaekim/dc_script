@@ -1,0 +1,1758 @@
+Warning: Design 'BoomTile' has '130' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 50
+        -max_paths 50
+        -sort_by slack
+Design : BoomTile
+Version: T-2022.03-SP1
+Date   : Fri Jul 29 23:36:39 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/REG_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_input (rise edge)             0.000      0.000
+  clock network delay (ideal)             0.000      0.000
+  input external delay                    0.025      0.025 r
+  reset (in)                              0.000 #    0.025 r
+  frontend/reset (BoomFrontend)           0.000 #    0.025 r
+  frontend/REG_reg/D (DFFPOSX1)           0.000 #    0.025 r
+  data arrival time                                  0.025
+
+  clock clk_input (rise edge)             0.000      0.000
+  clock network delay (ideal)             0.000      0.000
+  clock uncertainty                       0.200      0.200
+  frontend/REG_reg/CLK (DFFPOSX1)         0.000      0.200 r
+  library hold time                      -0.023      0.177
+  data required time                                 0.177
+  -----------------------------------------------------------
+  data required time                                 0.177
+  data arrival time                                 -0.025
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -0.152
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_0/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_0/reset (LoopBranchPredictorColumn_7)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_0/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_0/components_0/columns_0/U4533/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_0/components_0/columns_0/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_0/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_1/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_1/reset (LoopBranchPredictorColumn_6)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_1/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_0/components_0/columns_1/U4534/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_0/components_0/columns_1/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_1/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_2/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_2/reset (LoopBranchPredictorColumn_5)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_2/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_0/components_0/columns_2/U4533/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_0/components_0/columns_2/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_2/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_3/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_3/reset (LoopBranchPredictorColumn_4)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_0/components_0/columns_3/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_0/components_0/columns_3/U4532/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_0/components_0/columns_3/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_3/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_0/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_0/reset (LoopBranchPredictorColumn_3)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_0/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_1/components_0/columns_0/U4533/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_1/components_0/columns_0/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_0/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_1/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_1/reset (LoopBranchPredictorColumn_2)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_1/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_1/components_0/columns_1/U4534/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_1/components_0/columns_1/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_1/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_2/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_2/reset (LoopBranchPredictorColumn_1)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_2/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_1/components_0/columns_2/U4532/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_1/components_0/columns_2/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_2/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_3/doing_reset_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 r
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_3/reset (LoopBranchPredictorColumn_0)
+                                                         0.000 #    0.025 r
+  frontend/bpd/banked_predictors_1/components_0/columns_3/U3065/Y (AOI21X1)
+                                                         0.007 #    0.032 f
+  frontend/bpd/banked_predictors_1/components_0/columns_3/U4534/Y (INVX1)
+                                                        -0.004      0.028 r
+  frontend/bpd/banked_predictors_1/components_0/columns_3/doing_reset_reg/D (DFFPOSX1)
+                                                         0.000      0.028 r
+  data arrival time                                                 0.028
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_3/doing_reset_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.028
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.149
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_0/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_0/reset (LoopBranchPredictorColumn_7)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_0/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_0/components_0/columns_0/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_0/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_1/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_1/reset (LoopBranchPredictorColumn_6)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_1/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_0/components_0/columns_1/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_1/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_2/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_2/reset (LoopBranchPredictorColumn_5)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_2/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_0/components_0/columns_2/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_2/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_0/columns_3/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/reset (LoopBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_3/reset (LoopBranchPredictorColumn_4)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_0/columns_3/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_0/components_0/columns_3/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_0/columns_3/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_0/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_0/reset (LoopBranchPredictorColumn_3)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_0/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_1/components_0/columns_0/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_0/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_1/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_1/reset (LoopBranchPredictorColumn_2)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_1/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_1/components_0/columns_1/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_1/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_2/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_2/reset (LoopBranchPredictorColumn_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_2/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_1/components_0/columns_2/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_2/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_0/columns_3/reset_idx_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/reset (LoopBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_3/reset (LoopBranchPredictorColumn_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_0/columns_3/U3053/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_1/components_0/columns_3/reset_idx_reg_3_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_0/columns_3/reset_idx_reg_3_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_1/tables_4/wrbypass_enq_idx_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_1/reset (TageBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_1/tables_4/reset (TageTable_4_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_1/tables_4/U228/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_0/components_1/tables_4/wrbypass_enq_idx_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_1/tables_4/wrbypass_enq_idx_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_1/tables_4/wrbypass_enq_idx_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_1/reset (TageBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_1/tables_4/reset (TageTable_4_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_1/tables_4/U228/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_1/components_1/tables_4/wrbypass_enq_idx_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_1/tables_4/wrbypass_enq_idx_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PA_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_pipeline/reset (FpPipeline)                    0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/reset (FPUExeUnit)          0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/reset (FDivSqrtUnit)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/reset (DivSqrtRecF64)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/reset (DivSqrtRecF64_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/reset (DivSqrtRecF64ToRaw_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/U1525/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PA_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PA_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PC_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_pipeline/reset (FpPipeline)                    0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/reset (FPUExeUnit)          0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/reset (FDivSqrtUnit)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/reset (DivSqrtRecF64)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/reset (DivSqrtRecF64_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/reset (DivSqrtRecF64ToRaw_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/U1572/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PC_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PC_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/io_status_cease_r_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/csr/reset (CSRFile)                               0.000 #    0.025 f
+  core/csr/U5264/Y (AOI21X1)                             0.014 #    0.039 r
+  core/csr/io_status_cease_r_reg/D (DFFPOSX1)            0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/io_status_cease_r_reg/CLK (DFFPOSX1)          0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_0/components_4/wrbypass_enq_idx_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/reset (ComposedBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_4/reset (BIMBranchPredictorBank_1)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_0/components_4/U73/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_0/components_4/wrbypass_enq_idx_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_0/components_4/wrbypass_enq_idx_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpd/banked_predictors_1/components_4/wrbypass_enq_idx_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpd/reset (BranchPredictor)                   0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/reset (ComposedBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_4/reset (BIMBranchPredictorBank_0)
+                                                         0.000 #    0.025 f
+  frontend/bpd/banked_predictors_1/components_4/U73/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpd/banked_predictors_1/components_4/wrbypass_enq_idx_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpd/banked_predictors_1/components_4/wrbypass_enq_idx_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_6_bits_uop_br_mask_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43017/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_6_bits_uop_br_mask_reg_1_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_6_bits_uop_br_mask_reg_1_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_6_bits_uop_br_mask_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43023/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_6_bits_uop_br_mask_reg_0_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_6_bits_uop_br_mask_reg_0_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_15_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43262/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_15_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_15_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_14_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43268/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_14_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_14_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_13_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43274/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_13_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_13_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_12_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43280/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_12_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_12_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_11_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43286/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_11_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_11_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_10_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43292/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_10_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_10_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_9_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43298/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_9_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_9_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_8_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43304/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_8_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_8_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43310/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_7_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_7_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43316/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_6_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_6_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43328/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_4_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_4_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43346/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_1_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_1_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_br_mask_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43352/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_br_mask_reg_0_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_br_mask_reg_0_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_br_mask_reg_15_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43591/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_br_mask_reg_15_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_br_mask_reg_15_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_br_mask_reg_14_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43597/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_br_mask_reg_14_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_br_mask_reg_14_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_br_mask_reg_12_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43609/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_br_mask_reg_12_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_br_mask_reg_12_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_br_mask_reg_10_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43621/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_br_mask_reg_10_/D (DFFPOSX1)        0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_br_mask_reg_10_/CLK (DFFPOSX1)      0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_br_mask_reg_9_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43627/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_br_mask_reg_9_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_br_mask_reg_9_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_br_mask_reg_8_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43633/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_br_mask_reg_8_/D (DFFPOSX1)         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_br_mask_reg_8_/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_pdst_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43140/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_pdst_reg_5_/D (DFFPOSX1)            0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_pdst_reg_5_/CLK (DFFPOSX1)          0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_pdst_reg_3_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43481/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_pdst_reg_3_/D (DFFPOSX1)            0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_pdst_reg_3_/CLK (DFFPOSX1)          0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_pdst_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43164/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_pdst_reg_1_/D (DFFPOSX1)            0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_pdst_reg_1_/CLK (DFFPOSX1)          0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_5_bits_uop_pdst_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43170/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_5_bits_uop_pdst_reg_0_/D (DFFPOSX1)            0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_5_bits_uop_pdst_reg_0_/CLK (DFFPOSX1)          0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: lsu/stq_4_bits_uop_pdst_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  lsu/reset (LSU)                                        0.000 #    0.025 f
+  lsu/U43499/Y (AOI21X1)                                 0.014 #    0.039 r
+  lsu/stq_4_bits_uop_pdst_reg_0_/D (DFFPOSX1)            0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  lsu/stq_4_bits_uop_pdst_reg_0_/CLK (DFFPOSX1)          0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+1

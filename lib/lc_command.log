@@ -1,0 +1,40 @@
+#@ # 
+#@ # Running lc_shell Version T-2022.03-SP1 for linux64 -- Apr 12, 2022
+#@ # Date:   Fri Jul 29 18:32:29 2022
+#@ # Run by: ykim816@gtcad-srv3.ece.gatech.edu
+#@ 
+
+read_lib sram_11_128_freepdk45_TT_1p0V_25C.lib
+write_lib sram_11_128_freepdk45_TT_1p0V_25C_lib
+write_lib sram_11_128_freepdk45_TT_1p0V_25C_lib -f db
+read_lib sram_11_128_freepdk45_TT_1p0V_25C.lib
+read_lib sram_40_128_freepdk45_TT_1p0V_25C.lib
+read_lib sram_20_64_freepdk45_TT_1p0V_25C.lib
+read_lib sram_64_256_freepdk45_TT_1p0V_25C.lib
+read_lib sram_2_2048_freepdk45_TT_1p0V_25C.lib
+read_lib sram_240_32_freepdk45_TT_1p0V_25C.lib
+read_lib sram_32_32_freepdk45_TT_1p0V_25C.lib
+read_lib sram_64_8192_freepdk45_TT_1p0V_25C.lib
+read_lib sram_14_128_freepdk45_TT_1p0V_25C.lib
+read_lib sram_13_128_freepdk45_TT_1p0V_25C.lib
+read_lib sram_22_64_freepdk45_TT_1p0V_25C.lib
+read_lib sram_12_256_freepdk45_TT_1p0V_25C.lib
+read_lib sram_30_128_freepdk45_TT_1p0V_25C.lib
+read_lib sram_45_512_freepdk45_TT_1p0V_25C.lib
+read_lib sram_17_1024_freepdk45_TT_1p0V_25C.lib
+write_lib sram_11_128_freepdk45_TT_1p0V_25C_lib
+write_lib sram_40_128_freepdk45_TT_1p0V_25C_lib
+write_lib sram_20_64_freepdk45_TT_1p0V_25C_lib
+write_lib sram_64_256_freepdk45_TT_1p0V_25C_lib
+write_lib sram_2_2048_freepdk45_TT_1p0V_25C_lib
+write_lib sram_240_32_freepdk45_TT_1p0V_25C_lib
+write_lib sram_32_32_freepdk45_TT_1p0V_25C_lib
+write_lib sram_64_8192_freepdk45_TT_1p0V_25C_lib
+write_lib sram_14_128_freepdk45_TT_1p0V_25C_lib
+write_lib sram_13_128_freepdk45_TT_1p0V_25C_lib
+write_lib sram_22_64_freepdk45_TT_1p0V_25C_lib
+write_lib sram_12_256_freepdk45_TT_1p0V_25C_lib
+write_lib sram_30_128_freepdk45_TT_1p0V_25C_lib
+write_lib sram_45_512_freepdk45_TT_1p0V_25C_lib
+write_lib sram_17_1024_freepdk45_TT_1p0V_25C_lib
+quit

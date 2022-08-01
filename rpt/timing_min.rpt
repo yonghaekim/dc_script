@@ -1,0 +1,1689 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 50
+        -max_paths 50
+        -sort_by slack
+Design : BoomTile
+Version: Q-2019.12-SP2
+Date   : Thu Nov 12 04:28:39 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: auto_intsink_in_sync_0
+              (input port clocked by clk_input)
+  Endpoint: intsink/SynchronizerShiftReg_w1_d3/sync_2_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  auto_intsink_in_sync_0 (in)                            0.000      0.025 r
+  intsink/auto_in_sync_0 (IntSyncCrossingSink)           0.000      0.025 r
+  intsink/SynchronizerShiftReg_w1_d3/io_d (SynchronizerShiftReg_w1_d3)
+                                                         0.000      0.025 r
+  intsink/SynchronizerShiftReg_w1_d3/sync_2_reg/D (DFFPOSX1)
+                                                         0.000      0.025 r
+  data arrival time                                                 0.025
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  intsink/SynchronizerShiftReg_w1_d3/sync_2_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.023      0.177
+  data required time                                                0.177
+  --------------------------------------------------------------------------
+  data required time                                                0.177
+  data arrival time                                                -0.025
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.152
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: buffer/Queue_4/value_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  buffer/reset (TLBuffer_13)                             0.000 #    0.025 f
+  buffer/Queue_4/reset (Queue_24)                        0.000 #    0.025 f
+  buffer/Queue_4/U32/Y (AOI21X1)                         0.014 #    0.039 r
+  buffer/Queue_4/value_reg/D (DFFPOSX1)                  0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  buffer/Queue_4/value_reg/CLK (DFFPOSX1)                0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpdpipeline/btb/bim/Queue/value_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpdpipeline/reset (BranchPredictionStage)     0.000 #    0.025 f
+  frontend/bpdpipeline/btb/reset (BTBsa)                 0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/reset (BimodalTable)      0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue/reset (Queue_16_1)
+                                                         0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue/U231/Y (AOI21X1)    0.014 #    0.039 r
+  frontend/bpdpipeline/btb/bim/Queue/value_reg_1_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpdpipeline/btb/bim/Queue/value_reg_1_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpdpipeline/btb/bim/Queue_2/value_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpdpipeline/reset (BranchPredictionStage)     0.000 #    0.025 f
+  frontend/bpdpipeline/btb/reset (BTBsa)                 0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/reset (BimodalTable)      0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue_2/reset (Queue_16_0)
+                                                         0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue_2/U231/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpdpipeline/btb/bim/Queue_2/value_reg_1_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpdpipeline/btb/bim/Queue_2/value_reg_1_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpdpipeline/btb/bim/Queue_1/value_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpdpipeline/reset (BranchPredictionStage)     0.000 #    0.025 f
+  frontend/bpdpipeline/btb/reset (BTBsa)                 0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/reset (BimodalTable)      0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue_1/reset (Queue_17_1)
+                                                         0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue_1/U445/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpdpipeline/btb/bim/Queue_1/value_reg_1_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpdpipeline/btb/bim/Queue_1/value_reg_1_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/bpdpipeline/btb/bim/Queue_3/value_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/bpdpipeline/reset (BranchPredictionStage)     0.000 #    0.025 f
+  frontend/bpdpipeline/btb/reset (BTBsa)                 0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/reset (BimodalTable)      0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue_3/reset (Queue_17_0)
+                                                         0.000 #    0.025 f
+  frontend/bpdpipeline/btb/bim/Queue_3/U444/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  frontend/bpdpipeline/btb/bim/Queue_3/value_reg_1_/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/bpdpipeline/btb/bim/Queue_3/value_reg_1_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_rename_stage/freelist/u_T_997_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_rename_stage/reset (RenameStage_1)             0.000 #    0.025 f
+  core/fp_rename_stage/freelist/reset (RenameFreeList_1)
+                                                         0.000 #    0.025 f
+  core/fp_rename_stage/freelist/U10711/Y (AOI21X1)       0.014 #    0.039 r
+  core/fp_rename_stage/freelist/u_T_997_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_rename_stage/freelist/u_T_997_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_rename_stage/freelist/u_T_957_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_rename_stage/reset (RenameStage_1)             0.000 #    0.025 f
+  core/fp_rename_stage/freelist/reset (RenameFreeList_1)
+                                                         0.000 #    0.025 f
+  core/fp_rename_stage/freelist/U10727/Y (AOI21X1)       0.014 #    0.039 r
+  core/fp_rename_stage/freelist/u_T_957_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_rename_stage/freelist/u_T_957_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_rename_stage/freelist/u_T_917_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_rename_stage/reset (RenameStage_1)             0.000 #    0.025 f
+  core/fp_rename_stage/freelist/reset (RenameFreeList_1)
+                                                         0.000 #    0.025 f
+  core/fp_rename_stage/freelist/U10719/Y (AOI21X1)       0.014 #    0.039 r
+  core/fp_rename_stage/freelist/u_T_917_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_rename_stage/freelist/u_T_917_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/rename_stage/freelist/u_T_1021_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/rename_stage/reset (RenameStage)                  0.000 #    0.025 f
+  core/rename_stage/freelist/reset (RenameFreeList)      0.000 #    0.025 f
+  core/rename_stage/freelist/U11279/Y (AOI21X1)          0.014 #    0.039 r
+  core/rename_stage/freelist/u_T_1021_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/rename_stage/freelist/u_T_1021_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/rename_stage/freelist/u_T_981_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/rename_stage/reset (RenameStage)                  0.000 #    0.025 f
+  core/rename_stage/freelist/reset (RenameFreeList)      0.000 #    0.025 f
+  core/rename_stage/freelist/U11129/Y (AOI21X1)          0.014 #    0.039 r
+  core/rename_stage/freelist/u_T_981_reg/D (DFFPOSX1)    0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/rename_stage/freelist/u_T_981_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/rename_stage/freelist/u_T_941_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/rename_stage/reset (RenameStage)                  0.000 #    0.025 f
+  core/rename_stage/freelist/reset (RenameFreeList)      0.000 #    0.025 f
+  core/rename_stage/freelist/U11137/Y (AOI21X1)          0.014 #    0.039 r
+  core/rename_stage/freelist/u_T_941_reg/D (DFFPOSX1)    0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/rename_stage/freelist/u_T_941_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PA_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_pipeline/reset (FpPipeline)                    0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/reset (FPUExeUnit)          0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/reset (FDivSqrtUnit)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/reset (DivSqrtRecF64)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/reset (DivSqrtRecF64_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/reset (DivSqrtRecF64ToRaw_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/U1707/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PA_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PA_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PB_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_pipeline/reset (FpPipeline)                    0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/reset (FPUExeUnit)          0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/reset (FDivSqrtUnit)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/reset (DivSqrtRecF64)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/reset (DivSqrtRecF64_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/reset (DivSqrtRecF64ToRaw_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/U1706/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PB_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PB_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PC_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_pipeline/reset (FpPipeline)                    0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/reset (FPUExeUnit)          0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/reset (FDivSqrtUnit)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/reset (DivSqrtRecF64)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/reset (DivSqrtRecF64_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/reset (DivSqrtRecF64ToRaw_mulAddZ31)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/U1693/Y (AOI21X1)
+                                                         0.014 #    0.039 r
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PC_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_pipeline/fpiu_unit/fdivsqrt/divsqrt/ds/divSqrtRecF64ToRaw/valid_PC_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/fetch_controller/prev_is_half_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/fetch_controller/reset (FetchControlUnit)     0.000 #    0.025 f
+  frontend/fetch_controller/U3471/Y (AOI21X1)            0.014 #    0.039 r
+  frontend/fetch_controller/prev_is_half_reg/D (DFFPOSX1)
+                                                         0.000      0.039 r
+  data arrival time                                                 0.039
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/fetch_controller/prev_is_half_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.015      0.185
+  data required time                                                0.185
+  --------------------------------------------------------------------------
+  data required time                                                0.185
+  data arrival time                                                -0.039
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/u_T_2772_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_input (rise edge)             0.000      0.000
+  clock network delay (ideal)             0.000      0.000
+  input external delay                    0.025      0.025 f
+  reset (in)                              0.000 #    0.025 f
+  core/reset (BoomCore)                   0.000 #    0.025 f
+  core/csr/reset (CSRFile)                0.000 #    0.025 f
+  core/csr/U5932/Y (AOI21X1)              0.014 #    0.039 r
+  core/csr/u_T_2772_reg/D (DFFPOSX1)      0.000      0.039 r
+  data arrival time                                  0.039
+
+  clock clk_input (rise edge)             0.000      0.000
+  clock network delay (ideal)             0.000      0.000
+  clock uncertainty                       0.200      0.200
+  core/csr/u_T_2772_reg/CLK (DFFPOSX1)    0.000      0.200 r
+  library hold time                      -0.015      0.185
+  data required time                                 0.185
+  -----------------------------------------------------------
+  data required time                                 0.185
+  data arrival time                                 -0.039
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -0.146
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_mstatus_mpp_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10598/Y (MUX2X1)                             0.016 #    0.041 f
+  core/csr/U10599/Y (NAND2X1)                            0.008      0.049 r
+  core/csr/reg_mstatus_mpp_reg_1_/D (DFFPOSX1)           0.000      0.049 r
+  data arrival time                                                 0.049
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_mstatus_mpp_reg_1_/CLK (DFFPOSX1)         0.000      0.200 r
+  library hold time                                     -0.010      0.190
+  data required time                                                0.190
+  --------------------------------------------------------------------------
+  data required time                                                0.190
+  data arrival time                                                -0.049
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.142
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/fp_pipeline/fpiu_unit/BranchKillableQueue/valids_0_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/fp_pipeline/reset (FpPipeline)                    0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/reset (FPUExeUnit)          0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/BranchKillableQueue/reset (BranchKillableQueue_5)
+                                                         0.000 #    0.025 f
+  core/fp_pipeline/fpiu_unit/BranchKillableQueue/U1687/Y (NOR3X1)
+                                                         0.034 #    0.059 r
+  core/fp_pipeline/fpiu_unit/BranchKillableQueue/valids_0_reg/D (DFFPOSX1)
+                                                         0.000      0.059 r
+  data arrival time                                                 0.059
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/fp_pipeline/fpiu_unit/BranchKillableQueue/valids_0_reg/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.006      0.194
+  data required time                                                0.194
+  --------------------------------------------------------------------------
+  data required time                                                0.194
+  data arrival time                                                -0.059
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/ALUExeUnit/ifpu/u_T_1_1_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/ALUExeUnit/reset (ALUExeUnit_1)                   0.000 #    0.025 f
+  core/ALUExeUnit/ifpu/reset (IntToFPUnit)               0.000 #    0.025 f
+  core/ALUExeUnit/ifpu/U211/Y (NOR3X1)                   0.034 #    0.059 r
+  core/ALUExeUnit/ifpu/u_T_1_1_reg/D (DFFPOSX1)          0.000      0.059 r
+  data arrival time                                                 0.059
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/ALUExeUnit/ifpu/u_T_1_1_reg/CLK (DFFPOSX1)        0.000      0.200 r
+  library hold time                                     -0.006      0.194
+  data required time                                                0.194
+  --------------------------------------------------------------------------
+  data required time                                                0.194
+  data arrival time                                                -0.059
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/icache/refill_valid_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/icache/reset (ICache)                         0.000 #    0.025 f
+  frontend/icache/U832481/Y (NOR3X1)                     0.034 #    0.059 r
+  frontend/icache/refill_valid_reg/D (DFFPOSX1)          0.000      0.059 r
+  data arrival time                                                 0.059
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/icache/refill_valid_reg/CLK (DFFPOSX1)        0.000      0.200 r
+  library hold time                                     -0.006      0.194
+  data required time                                                0.194
+  --------------------------------------------------------------------------
+  data required time                                                0.194
+  data arrival time                                                -0.059
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/ALUExeUnit/alu/br_unit_btb_update_bits_bpd_type_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/ALUExeUnit/reset (ALUExeUnit_1)                   0.000 #    0.025 f
+  core/ALUExeUnit/alu/reset (ALUUnit)                    0.000 #    0.025 f
+  core/ALUExeUnit/alu/U1578/Y (NOR3X1)                   0.034 #    0.059 r
+  core/ALUExeUnit/alu/br_unit_btb_update_bits_bpd_type_reg_2_/D (DFFPOSX1)
+                                                         0.000      0.059 r
+  data arrival time                                                 0.059
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/ALUExeUnit/alu/br_unit_btb_update_bits_bpd_type_reg_2_/CLK (DFFPOSX1)
+                                                         0.000      0.200 r
+  library hold time                                     -0.006      0.194
+  data required time                                                0.194
+  --------------------------------------------------------------------------
+  data required time                                                0.194
+  data arrival time                                                -0.059
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: buffer/Queue_4/u_T_1_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  buffer/reset (TLBuffer_13)                             0.000 #    0.025 f
+  buffer/Queue_4/reset (Queue_24)                        0.000 #    0.025 f
+  buffer/Queue_4/U37/Y (NOR2X1)                          0.025 #    0.050 r
+  buffer/Queue_4/u_T_1_reg/D (DFFPOSX1)                  0.000      0.050 r
+  data arrival time                                                 0.050
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  buffer/Queue_4/u_T_1_reg/CLK (DFFPOSX1)                0.000      0.200 r
+  library hold time                                     -0.014      0.186
+  data required time                                                0.186
+  --------------------------------------------------------------------------
+  data required time                                                0.186
+  data arrival time                                                -0.050
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: buffer/Queue_4/value_1_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  buffer/reset (TLBuffer_13)                             0.000 #    0.025 f
+  buffer/Queue_4/reset (Queue_24)                        0.000 #    0.025 f
+  buffer/Queue_4/U35/Y (NOR2X1)                          0.025 #    0.050 r
+  buffer/Queue_4/value_1_reg/D (DFFPOSX1)                0.000      0.050 r
+  data arrival time                                                 0.050
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  buffer/Queue_4/value_1_reg/CLK (DFFPOSX1)              0.000      0.200 r
+  library hold time                                     -0.014      0.186
+  data required time                                                0.186
+  --------------------------------------------------------------------------
+  data required time                                                0.186
+  data arrival time                                                -0.050
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: buffer/Queue/value_1_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  buffer/reset (TLBuffer_13)                             0.000 #    0.025 f
+  buffer/Queue/reset (Queue_20)                          0.000 #    0.025 f
+  buffer/Queue/U664/Y (NOR2X1)                           0.025 #    0.050 r
+  buffer/Queue/value_1_reg/D (DFFPOSX1)                  0.000      0.050 r
+  data arrival time                                                 0.050
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  buffer/Queue/value_1_reg/CLK (DFFPOSX1)                0.000      0.200 r
+  library hold time                                     -0.014      0.186
+  data required time                                                0.186
+  --------------------------------------------------------------------------
+  data required time                                                0.186
+  data arrival time                                                -0.050
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/icache/s1_valid_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  frontend/reset (BoomFrontend)                          0.000 #    0.025 f
+  frontend/icache/reset (ICache)                         0.000 #    0.025 f
+  frontend/icache/U832432/Y (NOR2X1)                     0.025 #    0.050 r
+  frontend/icache/s1_valid_reg/D (DFFPOSX1)              0.000      0.050 r
+  data arrival time                                                 0.050
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  frontend/icache/s1_valid_reg/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.014      0.186
+  data required time                                                0.186
+  --------------------------------------------------------------------------
+  data required time                                                0.186
+  data arrival time                                                -0.050
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: dcache/mshrs/mshr_head_reg_0_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  dcache/reset (BoomNonBlockingDCache)                   0.000 #    0.025 f
+  dcache/mshrs/reset (BoomMSHRFile)                      0.000 #    0.025 f
+  dcache/mshrs/U11271/Y (NOR2X1)                         0.025 #    0.050 r
+  dcache/mshrs/mshr_head_reg_0_/D (DFFPOSX1)             0.000      0.050 r
+  data arrival time                                                 0.050
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  dcache/mshrs/mshr_head_reg_0_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.014      0.186
+  data required time                                                0.186
+  --------------------------------------------------------------------------
+  data required time                                                0.186
+  data arrival time                                                -0.050
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/rob/r_partial_row_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/rob/reset (Rob)                                   0.000 #    0.025 f
+  core/rob/U132376/Y (NOR2X1)                            0.025 #    0.050 r
+  core/rob/r_partial_row_reg/D (DFFPOSX1)                0.000      0.050 r
+  data arrival time                                                 0.050
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/rob/r_partial_row_reg/CLK (DFFPOSX1)              0.000      0.200 r
+  library hold time                                     -0.014      0.186
+  data required time                                                0.186
+  --------------------------------------------------------------------------
+  data required time                                                0.186
+  data arrival time                                                -0.050
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.136
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr_exe_unit/alu/u_T_1_0_reg
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 f
+  reset (in)                                             0.000 #    0.025 f
+  core/reset (BoomCore)                                  0.000 #    0.025 f
+  core/csr_exe_unit/reset (ALUExeUnit_2)                 0.000 #    0.025 f
+  core/csr_exe_unit/alu/reset (ALUUnit_1)                0.000 #    0.025 f
+  core/csr_exe_unit/alu/U480/Y (NOR3X1)                  0.034 #    0.059 r
+  core/csr_exe_unit/alu/u_T_1_0_reg/D (DFFPOSX1)         0.000      0.059 r
+  data arrival time                                                 0.059
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr_exe_unit/alu/u_T_1_0_reg/CLK (DFFPOSX1)       0.000      0.200 r
+  library hold time                                     -0.008      0.192
+  data required time                                                0.192
+  --------------------------------------------------------------------------
+  data required time                                                0.192
+  data arrival time                                                -0.059
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_6_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10853/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10854/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_6_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_6_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_8_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10857/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10858/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_8_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_8_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_12_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10865/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10866/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_12_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_12_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_30_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10901/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10902/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_30_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_30_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_26_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10893/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10894/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_26_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_26_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_24_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10889/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10890/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_24_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_24_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_22_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10885/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10886/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_22_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_22_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_20_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10881/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10882/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_20_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_20_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_18_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10877/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10878/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_18_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_18_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_16_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10873/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10874/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_16_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_16_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_14_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10869/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10870/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_14_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_14_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_4_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10849/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10850/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_4_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_4_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_10_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10861/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10862/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_10_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_10_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: frontend/s2_pc_reg_16_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk_input (rise edge)             0.000      0.000
+  clock network delay (ideal)             0.000      0.000
+  input external delay                    0.025      0.025 r
+  reset (in)                              0.000 #    0.025 r
+  frontend/reset (BoomFrontend)           0.000 #    0.025 r
+  frontend/U370/Y (AOI21X1)               0.008 #    0.033 f
+  frontend/U371/Y (OAI21X1)               0.014      0.047 r
+  frontend/s2_pc_reg_16_/D (DFFPOSX1)     0.000      0.047 r
+  data arrival time                                  0.047
+
+  clock clk_input (rise edge)             0.000      0.000
+  clock network delay (ideal)             0.000      0.000
+  clock uncertainty                       0.200      0.200
+  frontend/s2_pc_reg_16_/CLK (DFFPOSX1)
+                                          0.000      0.200 r
+  library hold time                      -0.020      0.180
+  data required time                                 0.180
+  -----------------------------------------------------------
+  data required time                                 0.180
+  data arrival time                                 -0.047
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_1_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10843/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10844/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_1_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_1_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_2_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10845/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10846/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_2_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_2_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_7_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10855/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10856/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_7_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_7_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_5_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10851/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10852/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_5_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_5_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_11_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10863/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10864/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_11_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_11_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_13_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10867/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10868/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_13_/D (DFFPOSX1)             0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_13_/CLK (DFFPOSX1)           0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+  Startpoint: reset (input port clocked by clk_input)
+  Endpoint: core/csr/reg_custom_5_reg_9_
+            (rising edge-triggered flip-flop clocked by clk_input)
+  Path Group: clk_input
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  input external delay                                   0.025      0.025 r
+  reset (in)                                             0.000 #    0.025 r
+  core/reset (BoomCore)                                  0.000 #    0.025 r
+  core/csr/reset (CSRFile)                               0.000 #    0.025 r
+  core/csr/U10859/Y (AOI21X1)                            0.008 #    0.033 f
+  core/csr/U10860/Y (OAI21X1)                            0.014      0.047 r
+  core/csr/reg_custom_5_reg_9_/D (DFFPOSX1)              0.000      0.047 r
+  data arrival time                                                 0.047
+
+  clock clk_input (rise edge)                            0.000      0.000
+  clock network delay (ideal)                            0.000      0.000
+  clock uncertainty                                      0.200      0.200
+  core/csr/reg_custom_5_reg_9_/CLK (DFFPOSX1)            0.000      0.200 r
+  library hold time                                     -0.020      0.180
+  data required time                                                0.180
+  --------------------------------------------------------------------------
+  data required time                                                0.180
+  data arrival time                                                -0.047
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -0.133
+
+
+1
